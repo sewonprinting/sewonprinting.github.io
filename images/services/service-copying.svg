@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- 복사기 이미지 -->
+  <rect x="120" y="80" width="160" height="140" fill="#f5f5f5" stroke="#cccccc" stroke-width="2" rx="5" ry="5"/>
+  <rect x="140" y="100" width="120" height="80" fill="#1a3a5f" rx="3" ry="3"/>
+  <rect x="150" y="110" width="100" height="60" fill="#ffffff" rx="2" ry="2"/>
+  
+  <!-- 버튼 패널 -->
+  <rect x="140" y="190" width="120" height="20" fill="#333333" rx="2" ry="2"/>
+  <circle cx="150" cy="200" r="5" fill="#f27935"/>
+  <circle cx="170" cy="200" r="5" fill="#1a3a5f"/>
+  <rect x="190" cy="200" width="20" height="6" fill="#ffffff" rx="1" ry="1" y="197"/>
+  <rect x="220" cy="200" width="20" height="6" fill="#ffffff" rx="1" ry="1" y="197"/>
+  
+  <!-- 문서 표현 -->
+  <rect x="280" y="110" width="60" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="1" transform="rotate(-5, 310, 150)"/>
+  <rect x="290" y="120" width="40" height="5" fill="#333333" transform="rotate(-5, 310, 150)"/>
+  <rect x="290" y="130" width="40" height="5" fill="#333333" transform="rotate(-5, 310, 150)"/>
+  <rect x="290" y="140" width="40" height="5" fill="#333333" transform="rotate(-5, 310, 150)"/>
+  <rect x="290" y="150" width="30" height="5" fill="#333333" transform="rotate(-5, 310, 150)"/>
+  
+  <rect x="60" y="110" width="60" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="1" transform="rotate(5, 90, 150)"/>
+  <rect x="70" y="120" width="40" height="5" fill="#333333" transform="rotate(5, 90, 150)"/>
+  <rect x="70" y="130" width="40" height="5" fill="#333333" transform="rotate(5, 90, 150)"/>
+  <rect x="70" y="140" width="40" height="5" fill="#333333" transform="rotate(5, 90, 150)"/>
+  <rect x="70" y="150" width="30" height="5" fill="#333333" transform="rotate(5, 90, 150)"/>
+</svg>

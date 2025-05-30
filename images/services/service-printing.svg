@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="100%" height="100%" fill="#f0f0f0"/>
+  
+  <!-- 프린터 이미지 -->
+  <rect x="100" y="80" width="200" height="100" fill="#333333" rx="10" ry="10"/>
+  <rect x="120" y="100" width="160" height="60" fill="#ffffff" rx="5" ry="5"/>
+  <rect x="150" y="50" width="100" height="30" fill="#1a3a5f" rx="5" ry="5"/>
+  <rect x="150" y="180" width="100" height="10" fill="#333333"/>
+  <rect x="150" y="190" width="100" height="30" fill="#f27935" rx="5" ry="5"/>
+  
+  <!-- 출력물 표현 -->
+  <rect x="150" y="190" width="100" height="5" fill="#ffffff" opacity="0.3"/>
+  <rect x="260" y="130" width="60" height="80" fill="#ffffff" stroke="#cccccc" stroke-width="1" transform="rotate(10, 290, 170)"/>
+  <rect x="270" y="140" width="40" height="5" fill="#333333" transform="rotate(10, 290, 170)"/>
+  <rect x="270" y="150" width="40" height="5" fill="#333333" transform="rotate(10, 290, 170)"/>
+  <rect x="270" y="160" width="40" height="5" fill="#333333" transform="rotate(10, 290, 170)"/>
+  <rect x="270" y="170" width="30" height="5" fill="#333333" transform="rotate(10, 290, 170)"/>
+</svg>
