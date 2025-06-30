@@ -10,7 +10,7 @@ class PortfolioManager {
   }
 
   // JSON 파일에서 포트폴리오 데이터 로드
-  async loadData(forceRefresh = false) {
+  async loadData() {
     try {
       // 현재 경로에 따라 상대 경로 조정
       const currentPath = window.location.pathname;
@@ -24,81 +24,30 @@ class PortfolioManager {
         dataPath = 'data/portfolio.json';
       }
       
-      console.log('포트폴리오 데이터 로드 시도:', dataPath, forceRefresh ? '(강제 새로고침)' : '');
+      console.log('포트폴리오 데이터 로드 시도:', dataPath);
       
-      // 강제 새로고침이거나 localStorage에 데이터가 없을 때만 서버에서 로드
-      if (forceRefresh || !this.loadFromStorage()) {
-        // 캐시 무시를 위해 타임스탬프 추가
-        const response = await fetch(dataPath + '?cache=bust&t=' + Date.now());
-        if (!response.ok) {
-          throw new Error(`포트폴리오 데이터를 불러올 수 없습니다. Status: ${response.status}`);
-        }
-        
-        this.data = await response.json();
-        console.log('포트폴리오 데이터 로드 성공:', this.data);
-        // JSON 로드 성공시 localStorage 업데이트
-        this.saveData();
-        return this.data;
-      } else {
-        console.log('로컬 스토리지에서 포트폴리오 데이터 로드');
-        return this.data;
+      // 항상 서버에서 최신 데이터 로드 (캐시 무시)
+      const response = await fetch(dataPath + '?cache=bust&t=' + Date.now());
+      if (!response.ok) {
+        throw new Error(`포트폴리오 데이터를 불러올 수 없습니다. Status: ${response.status}`);
       }
+      
+      this.data = await response.json();
+      console.log('포트폴리오 데이터 로드 성공:', this.data);
+      return this.data;
     } catch (error) {
       console.error('포트폴리오 데이터 로드 오류:', error);
       
-      // 로컬 스토리지에서 백업 데이터 시도
+      // 서버 로드 실패시 기본 백업 데이터 사용
       const backup = this.getBackupData();
-      if (backup) {
-        console.log('백업 데이터 사용');
-        this.data = backup;
-        return this.data;
-      }
-      
-      throw error;
+      console.log('백업 데이터 사용');
+      this.data = backup;
+      return this.data;
     }
   }
 
-  // 데이터 저장 (로컬 스토리지 활용)
-  saveData() {
-    localStorage.setItem('portfolioData', JSON.stringify(this.data));
-  }
-
-  // 로컬 스토리지에서 데이터 로드
-  loadFromStorage() {
-    const stored = localStorage.getItem('portfolioData');
-    if (stored) {
-      try {
-        const data = JSON.parse(stored);
-        // 데이터 유효성 검사 - 탁상달력 카테고리가 있는지 확인
-        if (data.categories && data.categories.includes('탁상달력')) {
-          this.data = data;
-          return true;
-        } else {
-          // 구버전 데이터면 localStorage 삭제하고 새로 로드
-          console.log('구버전 포트폴리오 데이터 감지, 새로고침 필요');
-          localStorage.removeItem('portfolioData');
-          return false;
-        }
-      } catch (error) {
-        console.error('로컬 스토리지 데이터 파싱 오류:', error);
-        localStorage.removeItem('portfolioData');
-        return false;
-      }
-    }
-    return false;
-  }
-
-  // 백업 데이터 가져오기
+  // 백업 데이터 가져오기 (localStorage 사용하지 않음)
   getBackupData() {
-    const stored = localStorage.getItem('portfolioData');
-    if (stored) {
-      try {
-        return JSON.parse(stored);
-      } catch (error) {
-        console.error('로컬 스토리지 데이터 파싱 오류:', error);
-      }
-    }
-    
     // 기본 백업 데이터 (최소한의 데이터)
     return {
       categories: [
@@ -319,7 +268,7 @@ class PortfolioManager {
     document.addEventListener('keydown', handleEscape);
   }
 
-  // 새 포트폴리오 아이템 추가
+  // 새 포트폴리오 아이템 추가 (메모리에만 저장)
   addItem(item) {
     const newId = Math.max(...this.data.items.map(i => i.id), 0) + 1;
     const newItem = {
@@ -327,50 +276,50 @@ class PortfolioManager {
       id: newId
     };
     this.data.items.push(newItem);
-    this.saveData();
+    console.log('새 아이템이 메모리에 추가되었습니다. 영구 저장하려면 portfolio.json 파일을 직접 수정하세요.');
     return newItem;
   }
 
-  // 포트폴리오 아이템 수정
+  // 포트폴리오 아이템 수정 (메모리에만 저장)
   updateItem(id, updatedItem) {
     const index = this.data.items.findIndex(item => item.id === parseInt(id));
     if (index !== -1) {
       this.data.items[index] = { ...this.data.items[index], ...updatedItem };
-      this.saveData();
+      console.log('아이템이 메모리에서 수정되었습니다. 영구 저장하려면 portfolio.json 파일을 직접 수정하세요.');
       return this.data.items[index];
     }
     return null;
   }
 
-  // 포트폴리오 아이템 삭제
+  // 포트폴리오 아이템 삭제 (메모리에만 저장)
   deleteItem(id) {
     const index = this.data.items.findIndex(item => item.id === parseInt(id));
     if (index !== -1) {
       const deletedItem = this.data.items.splice(index, 1)[0];
-      this.saveData();
+      console.log('아이템이 메모리에서 삭제되었습니다. 영구 저장하려면 portfolio.json 파일을 직접 수정하세요.');
       return deletedItem;
     }
     return null;
   }
 
-  // 카테고리 추가
+  // 카테고리 추가 (메모리에만 저장)
   addCategory(categoryName) {
     if (!this.data.categories.includes(categoryName)) {
       this.data.categories.push(categoryName);
-      this.saveData();
+      console.log('카테고리가 메모리에 추가되었습니다. 영구 저장하려면 portfolio.json 파일을 직접 수정하세요.');
       return true;
     }
     return false;
   }
 
-  // 카테고리 삭제
+  // 카테고리 삭제 (메모리에만 저장)
   deleteCategory(categoryName) {
     const index = this.data.categories.indexOf(categoryName);
     if (index !== -1) {
       // 해당 카테고리의 아이템들도 삭제
       this.data.items = this.data.items.filter(item => item.category !== categoryName);
       this.data.categories.splice(index, 1);
-      this.saveData();
+      console.log('카테고리가 메모리에서 삭제되었습니다. 영구 저장하려면 portfolio.json 파일을 직접 수정하세요.');
       return true;
     }
     return false;
@@ -390,24 +339,12 @@ class PortfolioManager {
     return counts;
   }
 
-  // 캐시 강제 새로고침
-  async refreshCache() {
-    console.log('포트폴리오 캐시 강제 새로고침 시작');
-    localStorage.removeItem('portfolioData');
-    await this.loadData(true);
-    console.log('포트폴리오 캐시 새로고침 완료');
+  // 데이터 새로고침 (서버에서 최신 데이터 로드)
+  async refreshData() {
+    console.log('포트폴리오 데이터 새로고침 시작');
+    await this.loadData();
+    console.log('포트폴리오 데이터 새로고침 완료');
     return this.data;
-  }
-
-  // 캐시 상태 확인
-  isCacheAvailable() {
-    return localStorage.getItem('portfolioData') !== null;
-  }
-
-  // 캐시 수동 클리어
-  clearCache() {
-    localStorage.removeItem('portfolioData');
-    console.log('포트폴리오 캐시가 삭제되었습니다');
   }
 }
 
