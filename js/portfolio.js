@@ -26,13 +26,16 @@ class PortfolioManager {
       
       console.log('포트폴리오 데이터 로드 시도:', dataPath);
       
-      const response = await fetch(dataPath);
+      // 캐시 무시를 위해 타임스탬프 추가
+      const response = await fetch(dataPath + '?t=' + Date.now());
       if (!response.ok) {
         throw new Error(`포트폴리오 데이터를 불러올 수 없습니다. Status: ${response.status}`);
       }
       
       this.data = await response.json();
       console.log('포트폴리오 데이터 로드 성공:', this.data);
+      // JSON 로드 성공시 localStorage 업데이트
+      this.saveData();
       return this.data;
     } catch (error) {
       console.error('포트폴리오 데이터 로드 오류:', error);
