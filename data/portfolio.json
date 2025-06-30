@@ -10,7 +10,8 @@
     "카드.초대장",
     "팜플렛.전단지",
     "포토폴리오",
-    "탁상달력"
+    "탁상달력",
+    "대봉투"
   ],
   "items": [
     {
@@ -372,6 +373,22 @@
       "category": "탁상달력",
       "image": "images/portfolio/탁상달력-3.jpg",
       "alt": "탁상달력"
+    },
+    {
+      "id": 46,
+      "title": "대봉투",
+      "description": "고급 용지 옵션",
+      "category": "대봉투",
+      "image": "images/portfolio/대봉투-1.jpg",
+      "alt": "대봉투"
+    },
+    {
+      "id": 47,
+      "title": "대봉투",
+      "description": "고급 용지 옵션",
+      "category": "대봉투",
+      "image": "images/portfolio/대봉투-2.jpg",
+      "alt": "대봉투"
     }
   ]
 }
