@@ -282,22 +282,28 @@
   <!-- 방문자 수 스크립트 -->
   <script>
   function updateVisitorCount() {
-    var webAppUrl = "https://script.google.com/macros/s/AKfycbwwRzdIFxEUmgUpzRIxdf8uJPDkKOoDlt-qSxGGJjNNhesE_IrNZuckwIrkjEW5Djjf_Q/exec"; // Google Apps Script 웹 앱 URL
+    var webAppUrl = "https://script.google.com/macros/s/AKfycbwwRzdIFxEUmgUpzRIxdf8uJPDkKOoDlt-qSxGGJjNNhesE_IrNZuckwIrkjEW5Djjf_Q/exec?callback=handleVisitorCount"; // Google Apps Script 웹 앱 URL with JSONP
     var visitorCountElement = document.getElementById('visitorCount'); // 방문수를 표시할 HTML 요소
-    fetch(webAppUrl)
-      .then(response => response.text())
-      .then(data => {
-        console.log('현재 방문수:', data);
-        if (visitorCountElement) {
-          visitorCountElement.innerText = data; // 받아온 방문수를 화면에 표시
-        }
-      })
-      .catch(error => {
-        console.error('방문수 업데이트 오류:', error);
-        if (visitorCountElement) {
-          visitorCountElement.innerText = '오류 발생';
-        }
-      });
+    
+    // JSONP 방식으로 변경
+    var script = document.createElement('script');
+    script.src = webAppUrl;
+    script.onerror = function() {
+      console.error('방문수 업데이트 오류: JSONP 요청 실패');
+      if (visitorCountElement) {
+        visitorCountElement.innerText = '오류 발생';
+      }
+    };
+    document.head.appendChild(script);
+  }
+  
+  // JSONP 콜백 함수
+  function handleVisitorCount(data) {
+    console.log('현재 방문수:', data);
+    var visitorCountElement = document.getElementById('visitorCount');
+    if (visitorCountElement) {
+      visitorCountElement.innerText = data; // 받아온 방문수를 화면에 표시
+    }
   }
   // 페이지 로드 시 및 필요에 따라 방문자 수를 업데이트합니다.
   window.onload = updateVisitorCount;
