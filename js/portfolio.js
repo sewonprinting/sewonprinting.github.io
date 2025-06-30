@@ -10,7 +10,7 @@ class PortfolioManager {
   }
 
   // JSON 파일에서 포트폴리오 데이터 로드
-  async loadData() {
+  async loadData(forceRefresh = false) {
     try {
       // 현재 경로에 따라 상대 경로 조정
       const currentPath = window.location.pathname;
@@ -24,19 +24,25 @@ class PortfolioManager {
         dataPath = 'data/portfolio.json';
       }
       
-      console.log('포트폴리오 데이터 로드 시도:', dataPath);
+      console.log('포트폴리오 데이터 로드 시도:', dataPath, forceRefresh ? '(강제 새로고침)' : '');
       
-      // 캐시 무시를 위해 타임스탬프 추가
-      const response = await fetch(dataPath + '?t=' + Date.now());
-      if (!response.ok) {
-        throw new Error(`포트폴리오 데이터를 불러올 수 없습니다. Status: ${response.status}`);
+      // 강제 새로고침이거나 localStorage에 데이터가 없을 때만 서버에서 로드
+      if (forceRefresh || !this.loadFromStorage()) {
+        // 캐시 무시를 위해 타임스탬프 추가
+        const response = await fetch(dataPath + '?cache=bust&t=' + Date.now());
+        if (!response.ok) {
+          throw new Error(`포트폴리오 데이터를 불러올 수 없습니다. Status: ${response.status}`);
+        }
+        
+        this.data = await response.json();
+        console.log('포트폴리오 데이터 로드 성공:', this.data);
+        // JSON 로드 성공시 localStorage 업데이트
+        this.saveData();
+        return this.data;
+      } else {
+        console.log('로컬 스토리지에서 포트폴리오 데이터 로드');
+        return this.data;
       }
-      
-      this.data = await response.json();
-      console.log('포트폴리오 데이터 로드 성공:', this.data);
-      // JSON 로드 성공시 localStorage 업데이트
-      this.saveData();
-      return this.data;
     } catch (error) {
       console.error('포트폴리오 데이터 로드 오류:', error);
       
@@ -382,6 +388,26 @@ class PortfolioManager {
       counts[category] = this.data.items.filter(item => item.category === category).length;
     });
     return counts;
+  }
+
+  // 캐시 강제 새로고침
+  async refreshCache() {
+    console.log('포트폴리오 캐시 강제 새로고침 시작');
+    localStorage.removeItem('portfolioData');
+    await this.loadData(true);
+    console.log('포트폴리오 캐시 새로고침 완료');
+    return this.data;
+  }
+
+  // 캐시 상태 확인
+  isCacheAvailable() {
+    return localStorage.getItem('portfolioData') !== null;
+  }
+
+  // 캐시 수동 클리어
+  clearCache() {
+    localStorage.removeItem('portfolioData');
+    console.log('포트폴리오 캐시가 삭제되었습니다');
   }
 }
 
