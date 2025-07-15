@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>성과품 | 세원프린팅 - 인쇄·복사·제본 전문</title>
+  <title data-i18n="portfolio_page.page_title">성과품 | 세원프린팅 - 인쇄·복사·제본 전문</title>
   <meta name="description" content="세원프린팅의 다양한 성과품을 확인하세요. 메뉴판, 책자, 브로슈어, 제본 사례 등을 소개합니다.">
   <meta name="keywords" content="세원프린팅, 인쇄 성과물, 포트폴리오, 제본 사례, 인쇄 사례">
   
@@ -28,7 +28,7 @@
     <div class="container header-content">
       <a href="../index.html" class="logo">
         <img src="../images/sewon-logo-svg.svg" alt="세원 로고" width="50" height="50">
-        <span class="logo-text">세원프린팅</span>
+        <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
       <button class="nav-toggle">
@@ -39,29 +39,35 @@
       
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="../index.html" class="nav-link">홈</a>
+          <a href="../index.html" class="nav-link" data-i18n="navigation.home">홈</a>
         </li>
         <li class="nav-item">
-          <a href="services.html" class="nav-link">서비스</a>
+          <a href="services.html" class="nav-link" data-i18n="navigation.services">서비스</a>
         </li>
         <li class="nav-item">
-          <a href="portfolio.html" class="nav-link active">성과품</a>
+          <a href="portfolio.html" class="nav-link active" data-i18n="navigation.portfolio">성과품</a>
         </li>
         <li class="nav-item">
-          <a href="location.html" class="nav-link">오시는길</a>
+          <a href="location.html" class="nav-link" data-i18n="navigation.location">오시는길</a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" class="nav-link">문의하기</a>
+          <a href="contact.html" class="nav-link" data-i18n="navigation.contact">문의하기</a>
         </li>
       </ul>
+      
+      <!-- 언어 선택기 -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
+        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+      </div>
     </div>
   </header>
 
   <!-- 페이지 제목 섹션 -->
   <section class="page-header" style="background-color: rgba(26, 58, 95, 0.4); color: var(--white); padding: 6rem 0 3rem; margin-bottom: 3rem;">
     <div class="container">
-      <h1 style="color: var(--white); margin-bottom: 1rem;">성과품</h1>
-      <p style="font-size: var(--font-lg); max-width: 600px;">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 세원프린팅의 다양한 인쇄, 복사, 제본 성과물을 소개합니다. 저희의 다양한 작업물을 확인하시고, 귀하의 프로젝트에 맞는 아이디어를 얻어가세요.</p>
+      <h1 style="color: var(--white); margin-bottom: 1rem;" data-i18n="portfolio_page.header_title">성과품</h1>
+      <p style="font-size: var(--font-lg); max-width: 600px;" data-i18n="portfolio_page.header_subtitle">세원프린팅에서 제작한 다양한 인쇄물들을 확인하세요. 고품질 인쇄와 정밀한 제본 기술로 완성된 결과물들입니다.</p>
     </div>
   </section>
 
@@ -81,17 +87,17 @@
   <!-- 고객 후기 섹션 -->
   <section class="section" style="background-color: rgba(245, 245, 245, 0.5);">
     <div class="container">
-      <h2 class="section-title">고객 후기</h2>
+      <h2 class="section-title" data-i18n="customer_reviews.title">고객 후기</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
         <div class="card" style="flex: 1 1 300px; max-width: 350px;">
           <div style="display: flex; align-items: center; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold; margin-right: 1rem;">K</div>
             <div>
-              <h3 style="margin: 0; font-size: var(--font-lg);">김OO님</h3>
-              <p style="margin: 0; color: var(--dark-gray); font-size: var(--font-sm);">디자인 회사 대표</p>
+              <h3 style="margin: 0; font-size: var(--font-lg);" data-i18n="customer_reviews.review1.name">김OO님</h3>
+              <p style="margin: 0; color: var(--dark-gray); font-size: var(--font-sm);" data-i18n="customer_reviews.review1.title">디자인 회사 대표</p>
             </div>
           </div>
-          <p style="font-family: 'KoPub Batang', serif; font-style: italic; line-height: 1.6;">
+          <p style="font-family: 'KoPub Batang', serif; font-style: italic; line-height: 1.6;" data-i18n="customer_reviews.review1.content">
             "세원프린팅에서 회사 브로슈어를 제작했는데, 결과물이 정말 만족스러웠습니다. 색상이 정확하고 마감 처리가 깔끔해서 클라이언트에게 좋은 인상을 줄 수 있었습니다. 급한 일정에도 불구하고 빠르게 처리해주셔서 감사합니다."
           </p>
         </div>
@@ -100,12 +106,12 @@
           <div style="display: flex; align-items: center; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold; margin-right: 1rem;">L</div>
             <div>
-              <h3 style="margin: 0; font-size: var(--font-lg);">이OO님</h3>
-              <p style="margin: 0; color: var(--dark-gray); font-size: var(--font-sm);">대학원생</p>
+              <h3 style="margin: 0; font-size: var(--font-lg);" data-i18n="customer_reviews.review2.name">이OO님</h3>
+              <p style="margin: 0; color: var(--dark-gray); font-size: var(--font-sm);" data-i18n="customer_reviews.review2.title">대학원생</p>
             </div>
           </div>
           <p style="font-family: 'KoPub Batang', serif; font-style: italic; line-height: 1.6;">
-            "논문 제본을 맡겼는데, 정말 꼼꼼하게 작업해주셨습니다. 특히 교수님께 제출하는 중요한 논문이라 걱정했는데, 기대 이상의 퀄리티로 완성해주셔서 감사합니다. 다음에도 꼭 이용할 예정입니다."
+            <span data-i18n="customer_reviews.review2.content">"논문 제본을 맡겼는데, 정말 꼼꼼하게 작업해주셨습니다. 특히 교수님께 제출하는 중요한 논문이라 걱정했는데, 기대 이상의 퀄리티로 완성해주셔서 감사합니다. 다음에도 꼭 이용할 예정입니다."</span>
           </p>
         </div>
         
@@ -113,12 +119,12 @@
           <div style="display: flex; align-items: center; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-color); display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: bold; margin-right: 1rem;">P</div>
             <div>
-              <h3 style="margin: 0; font-size: var(--font-lg);">박OO님</h3>
-              <p style="margin: 0; color: var(--dark-gray); font-size: var(--font-sm);">카페 운영자</p>
+              <h3 style="margin: 0; font-size: var(--font-lg);" data-i18n="customer_reviews.review3.name">박OO님</h3>
+              <p style="margin: 0; color: var(--dark-gray); font-size: var(--font-sm);" data-i18n="customer_reviews.review3.title">카페 운영자</p>
             </div>
           </div>
           <p style="font-family: 'KoPub Batang', serif; font-style: italic; line-height: 1.6;">
-            "카페 메뉴판을 제작했는데, 고객들이 메뉴판 디자인에 호감을 보이더라고요. 코팅 처리가 잘 되어 있어서 오래 사용해도 깔끔함이 유지되고 있습니다. 가격도 합리적이고 서비스도 좋아서 주변 사장님들에게도 추천했습니다."
+            <span data-i18n="customer_reviews.review3.content">"카페 메뉴판을 제작했는데, 고객들이 메뉴판 디자인에 호감을 보이더라고요. 코팅 처리가 잘 되어 있어서 오래 사용해도 깔끔함이 유지되고 있습니다. 가격도 합리적이고 서비스도 좋아서 주변 사장님들에게도 추천했습니다."</span>
           </p>
         </div>
       </div>
@@ -128,66 +134,66 @@
   <!-- FAQ 섹션 -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">자주 묻는 질문</h2>
+      <h2 class="section-title" data-i18n="faq.title">자주 묻는 질문</h2>
       
       <div style="max-width: 800px; margin: 0 auto;">
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            대량 인쇄는 얼마나 걸리나요?
+            <span data-i18n="faq.q1.question">대량 인쇄는 얼마나 걸리나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <path fill="#1a3a5f" d="M7.41 8.84L12 13.42l4.59-4.58L18 10.25l-6 6-6-6 1.41-1.41z"/>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>대량 인쇄의 경우 주문량과 작업 복잡성에 따라 소요 시간이 달라집니다. 일반적으로 100페이지 미만은 당일 또는 익일, 500페이지 이상은 2~3일 정도 소요됩니다. 정확한 일정은 문의 시 알려드립니다.</p>
+            <p data-i18n="faq.q1.answer">대량 인쇄의 경우 주문량과 작업 복잡성에 따라 소요 시간이 달라집니다. 일반적으로 100페이지 미만은 당일 또는 익일, 500페이지 이상은 2~3일 정도 소요됩니다. 정확한 일정은 문의 시 알려드립니다.</p>
           </div>
         </div>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            파일 형식은 어떤 것을 지원하나요?
+            <span data-i18n="faq.q2.question">파일 형식은 어떤 것을 지원하나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <path fill="#1a3a5f" d="M7.41 8.84L12 13.42l4.59-4.58L18 10.25l-6 6-6-6 1.41-1.41z"/>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>PDF, Word(docx, doc), PowerPoint(pptx, ppt), Excel(xlsx, xls), JPG, PNG 등 대부분의 일반적인 파일 형식을 지원합니다. 특수한 파일 형식의 경우 미리 문의해주시면 지원 여부를 확인해드립니다.</p>
+            <p data-i18n="faq.q2.answer">PDF, Word(docx, doc), PowerPoint(pptx, ppt), Excel(xlsx, xls), JPG, PNG 등 대부분의 일반적인 파일 형식을 지원합니다. 특수한 파일 형식의 경우 미리 문의해주시면 지원 여부를 확인해드립니다.</p>
           </div>
         </div>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            제본 방식은 어떤 것이 있나요?
+            <span data-i18n="faq.q3.question">제본 방식은 어떤 것이 있나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <path fill="#1a3a5f" d="M7.41 8.84L12 13.42l4.59-4.58L18 10.25l-6 6-6-6 1.41-1.41z"/>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>스프링 제본, 무선 제본, 중철 제본, 하드커버 제본, 스테이플 제본 등 다양한 제본 방식을 제공합니다. 각 제본 방식은 용도와 페이지 수에 따라 적합한 방식이 다르므로, 상담을 통해 최적의 제본 방식을 추천해드립니다.</p>
+            <p data-i18n="faq.q3.answer">스프링 제본, 무선 제본, 중철 제본, 하드커버 제본, 스테이플 제본 등 다양한 제본 방식을 제공합니다. 각 제본 방식은 용도와 페이지 수에 따라 적합한 방식이 다르므로, 상담을 통해 최적의 제본 방식을 추천해드립니다.</p>
           </div>
         </div>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            견적은 어떻게 문의하나요?
+            <span data-i18n="faq.q4.question">견적은 어떻게 문의하나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <path fill="#1a3a5f" d="M7.41 8.84L12 13.42l4.59-4.58L18 10.25l-6 6-6-6 1.41-1.41z"/>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>전화(02-6015-3100), 이메일(eunyangp@hanmail.net) 또는 웹사이트 문의 양식을 통해 견적을 요청하실 수 있습니다. 정확한 견적을 위해 인쇄/복사/제본의 종류, 수량, 용지 종류, 마감 방식 등의 정보를 함께 알려주시면 더 빠른 답변이 가능합니다.</p>
+            <p data-i18n="faq.q4.answer">전화(02-6015-3100), 이메일(eunyangp@hanmail.net) 또는 웹사이트 문의 양식을 통해 견적을 요청하실 수 있습니다. 정확한 견적을 위해 인쇄/복사/제본의 종류, 수량, 용지 종류, 마감 방식 등의 정보를 함께 알려주시면 더 빠른 답변이 가능합니다.</p>
           </div>
         </div>
         
         <div class="card">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            급한 작업도 가능한가요?
+            <span data-i18n="faq.q5.question">급한 작업도 가능한가요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <path fill="#1a3a5f" d="M7.41 8.84L12 13.42l4.59-4.58L18 10.25l-6 6-6-6 1.41-1.41z"/>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>네, 급한 작업도 가능합니다. 사전에 연락주시면 최대한 빠른 시간 내에 작업을 완료할 수 있도록 도와드립니다. 단, 대량 작업이나 복잡한 제본의 경우 최소한의 작업 시간이 필요하니 양해 부탁드립니다.</p>
+            <p data-i18n="faq.q5.answer">네, 급한 작업도 가능합니다. 사전에 연락주시면 최대한 빠른 시간 내에 작업을 완료할 수 있도록 도와드립니다. 단, 대량 작업이나 복잡한 제본의 경우 최소한의 작업 시간이 필요하니 양해 부탁드립니다.</p>
           </div>
         </div>
       </div>
@@ -198,61 +204,62 @@
   <footer class="footer">
     <div class="container footer-content">
       <div>
-        <h3 class="footer-logo">세원프린팅</h3>
-        <p class="footer-description">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
-        <p class="footer-description">출력, 복사, 제본 전문</p>
+        <h3 class="footer-logo" data-i18n="footer.company_name">세원프린팅</h3>
+        <p class="footer-description" data-i18n="footer.tagline">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
+        <p class="footer-description" data-i18n="footer.expertise">출력, 복사, 제본 전문</p>
       </div>
       
       <div>
-        <h4 class="footer-title">서비스</h4>
+        <h4 class="footer-title" data-i18n="footer.services_title">서비스</h4>
         <ul class="footer-links">
-          <li class="footer-link"><a href="services.html#printing">POD 서비스</a></li>
-          <li class="footer-link"><a href="services.html#copying">복사 서비스</a></li>
-          <li class="footer-link"><a href="services.html#binding">제본 서비스</a></li>
-          <li class="footer-link"><a href="services.html#scanning">스캔 서비스</a></li>
-          <li class="footer-link"><a href="services.html#catalog">책자 제작</a></li>
-          <li class="footer-link"><a href="services.html#promotional">각종 인쇄물</a></li>
+          <li class="footer-link"><a href="services.html#printing" data-i18n="footer.services.pod">POD 서비스</a></li>
+          <li class="footer-link"><a href="services.html#copying" data-i18n="footer.services.copying">복사 서비스</a></li>
+          <li class="footer-link"><a href="services.html#binding" data-i18n="footer.services.binding">제본 서비스</a></li>
+          <li class="footer-link"><a href="services.html#scanning" data-i18n="footer.services.scanning">스캔 서비스</a></li>
+          <li class="footer-link"><a href="services.html#catalog" data-i18n="footer.services.booklets">책자 제작</a></li>
+          <li class="footer-link"><a href="services.html#promotional" data-i18n="footer.services.printing">각종 인쇄물</a></li>
         </ul>
       </div>
       
       <div>
-        <h4 class="footer-title">연락처</h4>
+        <h4 class="footer-title" data-i18n="footer.contact_title">연락처</h4>
         <ul class="footer-links">
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
             </svg>
-            <span>서울 영등포구 영신로 30길 15</span>
+            <span data-i18n="footer.address">서울 영등포구 영신로 30길 15</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
             </svg>
-            <span>02-6015-3100 / 010-2093-8756</span>
+            <span data-i18n="location.phone">02-6015-3100 / 010-2093-8756</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
-            <span>eunyangp@hanmail.net</span>
+            <span data-i18n="location.email">eunyangp@hanmail.net</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
               <path fill="#f27935" d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
             </svg>
-            <span>평일 08:00 - 18:00</span>
+            <span data-i18n="location.hours">평일 08:00 - 18:00</span>
           </li>
         </ul>
       </div>
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2025 세원프린팅. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">&copy; 2025 세원프린팅. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- 자바스크립트 -->
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/portfolio.js"></script>
   

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는길 | 세원프린팅 - 인쇄·복사·제본 전문</title>
-  <meta name="description" content="세원프린팅의 위치와 오시는 길을 안내합니다. 영등포에 위치한 인쇄, 복사, 제본 전문점입니다.">
-  <meta name="keywords" content="세원프린팅, 오시는길, 영등포, 위치, 지도">
+  <title data-i18n="location_page.page_title">오시는길 | 세원프린팅 - 인쇄·복사·제본 전문</title>
+  <meta name="description" data-i18n="location_page.page_description" content="세원프린팅의 위치와 오시는 길을 안내합니다. 영등포에 위치한 인쇄, 복사, 제본 전문점입니다.">
+  <meta name="keywords" data-i18n="location_page.page_keywords" content="세원프린팅, 오시는길, 영등포, 위치, 지도">
   
   <!-- 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,8 +77,8 @@
   <header class="header">
     <div class="container header-content">
       <a href="../index.html" class="logo">
-        <img src="../images/sewon-logo-svg.svg" alt="세원 로고" width="50" height="50">
-        <span class="logo-text">세원프린팅</span>
+        <img src="../images/sewon-logo-svg.svg" alt="세원 로고" data-i18n-alt="logo.alt" width="50" height="50">
+        <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
       <button class="nav-toggle">
@@ -89,29 +89,35 @@
       
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="../index.html" class="nav-link">홈</a>
+          <a href="../index.html" class="nav-link" data-i18n="navigation.home">홈</a>
         </li>
         <li class="nav-item">
-          <a href="services.html" class="nav-link">서비스</a>
+          <a href="services.html" class="nav-link" data-i18n="navigation.services">서비스</a>
         </li>
         <li class="nav-item">
-          <a href="portfolio.html" class="nav-link">성과품</a>
+          <a href="portfolio.html" class="nav-link" data-i18n="navigation.portfolio">성과품</a>
         </li>
         <li class="nav-item">
-          <a href="location.html" class="nav-link active">오시는길</a>
+          <a href="location.html" class="nav-link active" data-i18n="navigation.location">오시는길</a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" class="nav-link">문의하기</a>
+          <a href="contact.html" class="nav-link" data-i18n="navigation.contact">문의하기</a>
         </li>
       </ul>
+      
+      <!-- 언어 선택기 -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
+        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+      </div>
     </div>
   </header>
 
   <!-- 페이지 제목 섹션 -->
   <section class="page-header" style="background-color: rgba(26, 58, 95, 0.4); color: var(--white); padding: 6rem 0 3rem; margin-bottom: 3rem;">
     <div class="container">
-      <h1 style="color: var(--white); margin-bottom: 1rem;">오시는길</h1>
-      <p style="font-size: var(--font-lg); max-width: 600px;">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 세원프린팅은 영등포에 위치하고 있습니다. 아래 지도와 안내를 참고하시어 방문해주세요.</p>
+      <h1 style="color: var(--white); margin-bottom: 1rem;" data-i18n="location_page.header_title">오시는길</h1>
+      <p style="font-size: var(--font-lg); max-width: 600px;" data-i18n="location_page.header_subtitle">세원프린팅의 위치와 교통편을 안내해드립니다.</p>
     </div>
   </section>
 
@@ -123,7 +129,7 @@
       </div>
 
       <div style="margin-top: 2rem;">
-        <h2 class="section-title">찾아오시는 방법</h2>
+        <h2 class="section-title" data-i18n="location_page.directions_title">찾아오시는 방법</h2>
         
         <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
           <div style="flex: 1 1 400px;">
@@ -132,9 +138,9 @@
                 <use xlink:href="../images/icons.svg#icon-location"></use>
               </svg>
               <div>
-                <h3>주소</h3>
-                <p>서울특별시 영등포구 영신로 30길 15 (영등포동4가 113-4) 1층</p>
-                <p><strong>세원프린팅</strong></p>
+                <h3 data-i18n="location_page.address_title">주소</h3>
+                <p data-i18n="location_page.full_address">서울특별시 영등포구 영신로 30길 15 (영등포동4가 113-4) 1층</p>
+                <p><strong data-i18n="footer.company_name">세원프린팅</strong></p>
               </div>
             </div>
             
@@ -143,16 +149,16 @@
                 <use xlink:href="../images/icons.svg#icon-clock"></use>
               </svg>
               <div>
-                <h3>영업시간</h3>
-                <p><strong>평일:</strong> 오전 8:00 - 오후 6:00</p>
-                <p><strong>주말 및 공휴일:</strong> 휴무</p>
-                <p>* 급한 작업의 경우 미리 연락주시면 조정 가능합니다.</p>
+                <h3 data-i18n="location_page.hours_title">영업시간</h3>
+                <p><strong data-i18n="location_page.weekdays">평일:</strong> <span data-i18n="location_page.weekday_hours">오전 8:00 - 오후 6:00</span></p>
+                <p><strong data-i18n="location_page.weekend">주말 및 공휴일:</strong> <span data-i18n="location_page.closed">휴무</span></p>
+                <p data-i18n="location_page.urgent_note">* 급한 작업의 경우 미리 연락주시면 조정 가능합니다.</p>
                 
                 <div class="business-hours">
-                  <div class="business-day highlight">평일</div>
-                  <div class="business-day">토요일</div>
-                  <div class="business-day">일요일</div>
-                  <div class="business-day">공휴일</div>
+                  <div class="business-day highlight" data-i18n="location_page.business_hours.weekdays">평일</div>
+                  <div class="business-day" data-i18n="location_page.business_hours.saturday">토요일</div>
+                  <div class="business-day" data-i18n="location_page.business_hours.sunday">일요일</div>
+                  <div class="business-day" data-i18n="location_page.holidays">공휴일</div>
                 </div>
               </div>
             </div>
@@ -162,12 +168,12 @@
                 <use xlink:href="../images/icons.svg#icon-phone"></use>
               </svg>
               <div>
-                <h3>연락처</h3>
-                <p><strong>전화:</strong> 02-6015-3100</p>
-                <p><strong>휴대폰:</strong> 010-2093-8756</p>
-                <p><strong>이메일:</strong> eunyangp@hanmail.net</p>
-                <p><strong>웹하드:</strong> ID: sw3100 / PW: 3100</p>
-                <p>* 언제든지 문의주세요!</p>
+                <h3 data-i18n="location_page.contact_title">연락처</h3>
+                <p><strong data-i18n="location_page.phone_label">전화:</strong> 02-6015-3100</p>
+                <p><strong data-i18n="location_page.mobile_label">휴대폰:</strong> 010-2093-8756</p>
+                <p><strong data-i18n="location_page.email_label">이메일:</strong> eunyangp@hanmail.net</p>
+                <p><strong data-i18n="location_page.webhard_label">웹하드:</strong> ID: sw3100 / PW: 3100</p>
+                <p data-i18n="location_page.contact_note">* 언제든지 문의주세요!</p>
               </div>
             </div>
           </div>
@@ -178,14 +184,14 @@
                 <use xlink:href="../images/icons.svg#icon-arrow"></use>
               </svg>
               <div>
-                <h3>찾아오시는 길</h3>
-                <p>영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.</p>
+                <h3 data-i18n="location_page.directions_detail_title">찾아오시는 길</h3>
+                <p data-i18n="location_page.location_description">영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.</p>
                 <ul style="padding-left: 1.5rem; margin: 1rem 0;">
-                  <li style="margin-bottom: 0.5rem;">영등포역에서 도보 약 10분 거리</li>
-                  <li style="margin-bottom: 0.5rem;">영등포시장역 3번 출구에서 도보 약 5분 거리</li>
-                  <li style="margin-bottom: 0.5rem;">버스 정류장 '영등포시장' 하차 후 도보 3분 거리</li>
+                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.from_yeongdeungpo_station">영등포역에서 도보 약 10분 거리</li>
+                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.from_market_station">영등포시장역 3번 출구에서 도보 약 5분 거리</li>
+                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.from_bus_stop">버스 정류장 '영등포시장' 하차 후 도보 3분 거리</li>
                 </ul>
-                <p>* 주변 건물: 영등포소방서, 타임스퀘어, 영등포전통시장</p>
+                <p data-i18n="location_page.nearby_landmarks">* 주변 건물: 영등포소방서, 타임스퀘어, 영등포전통시장</p>
               </div>
             </div>
             
@@ -194,14 +200,14 @@
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
               <div>
-                <h3>주차 정보</h3>
-                <p>사무실 앞 잠시 정차 가능합니다.</p>
-                <p>장시간 주차가 필요하신 경우 근처 공영주차장을 이용해주세요:</p>
+                <h3 data-i18n="location_page.parking_title">주차 정보</h3>
+                <p data-i18n="location_page.short_parking">사무실 앞 잠시 정차 가능합니다.</p>
+                <p data-i18n="location_page.parking_options">장시간 주차가 필요하신 경우 근처 공영주차장을 이용해주세요:</p>
                 <ul style="padding-left: 1.5rem; margin: 1rem 0;">
-                  <li style="margin-bottom: 0.5rem;">영등포시장 공영주차장 (도보 3분)</li>
-                  <li style="margin-bottom: 0.5rem;">타임스퀘어 주차장 (도보 5분)</li>
+                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.market_parking">영등포시장 공영주차장 (도보 3분)</li>
+                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.timessquare_parking">타임스퀘어 주차장 (도보 5분)</li>
                 </ul>
-                <p>* 간단한 업무의 경우 무료 정차 가능</p>
+                <p data-i18n="location_page.free_parking_note">* 간단한 업무의 경우 무료 정차 가능</p>
               </div>
             </div>
             
@@ -210,10 +216,10 @@
                 <use xlink:href="../images/icons.svg#icon-document"></use>
               </svg>
               <div>
-                <h3>알림사항</h3>
-                <p>대량 인쇄/복사나 시간이 소요되는 작업은 미리 예약해주시면 더 신속하게 처리 가능합니다.</p>
-                <p>파일 전송이 필요하신 경우 웹하드나 이메일을 이용해주세요.</p>
-                <p>* 궁금하신 사항은 언제든지 연락주세요!</p>
+                <h3 data-i18n="location_page.notice_title">알림사항</h3>
+                <p data-i18n="location_page.reservation_note">대량 인쇄/복사나 시간이 소요되는 작업은 미리 예약해주시면 더 신속하게 처리 가능합니다.</p>
+                <p data-i18n="location_page.file_transfer_note">파일 전송이 필요하신 경우 웹하드나 이메일을 이용해주세요.</p>
+                <p data-i18n="location_page.general_inquiry_note">* 궁금하신 사항은 언제든지 연락주세요!</p>
               </div>
             </div>
           </div>
@@ -225,11 +231,11 @@
   <!-- 약도 섹션 -->
   <section class="section" style="background-color: rgba(245, 245, 245, 0.5);">
     <div class="container">
-      <h2 class="section-title">약도</h2>
+      <h2 class="section-title" data-i18n="location_page.map_title">약도</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center;">
         <div style="flex: 1 1 400px; text-align: center;">
           <a href="../images/location-map.svg" target="_blank" style="display: block; position: relative; border-radius: var(--border-radius); box-shadow: var(--box-shadow); overflow: hidden;">
-            <img src="../images/location-map.svg" alt="세원프린팅 약도" style="max-width: 100%; display: block; transition: transform 0.3s ease;">
+            <img src="../images/location-map.svg" alt="세원프린팅 약도" data-i18n-alt="location_page.map_alt" style="max-width: 100%; display: block; transition: transform 0.3s ease;">
             <div style="position: absolute; bottom: 15px; right: 15px; background-color: rgba(255,255,255,0.8); padding: 8px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 3H21V9" stroke="#1a3a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -239,33 +245,33 @@
               </svg>
             </div>
           </a>
-          <p style="margin-top: 1rem; font-size: var(--font-sm);">* 클릭하시면 확대해서 보실 수 있습니다.</p>
+          <p style="margin-top: 1rem; font-size: var(--font-sm);" data-i18n="location_page.map_click_note">* 클릭하시면 확대해서 보실 수 있습니다.</p>
         </div>
         
         <div style="flex: 1 1 400px;">
           <div class="card">
-            <h3>대중교통 이용 시</h3>
+            <h3 data-i18n="location_page.public_transport_title">대중교통 이용 시</h3>
             <ul style="padding-left: 1.5rem; margin: 1rem 0;">
               <li style="margin-bottom: 0.8rem;">
-                <strong>지하철:</strong> 
+                <strong data-i18n="location_page.subway_label">지하철:</strong> 
                 <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
-                  <li>영등포역 (1호선) - 도보 10분</li>
-                  <li>영등포시장역 (5호선) 3번 출구 - 도보 5분</li>
+                  <li data-i18n="location_page.subway_line1">영등포역 (1호선) - 도보 10분</li>
+                  <li data-i18n="location_page.subway_line5">영등포시장역 (5호선) 3번 출구 - 도보 5분</li>
                 </ul>
               </li>
               <li style="margin-bottom: 0.8rem;">
-                <strong>버스:</strong>
+                <strong data-i18n="location_page.bus_label">버스:</strong>
                 <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
-                  <li>일반버스: 152, 5620, 5714, 6628, 6631</li>
-                  <li>간선버스: 605, 640, 650, 662</li>
-                  <li>지선버스: 5012, 5615, 5618</li>
-                  <li>정류장: '영등포시장' 하차</li>
+                  <li data-i18n="location_page.regular_bus">일반버스: 152, 5620, 5714, 6628, 6631</li>
+                  <li data-i18n="location_page.trunk_bus">간선버스: 605, 640, 650, 662</li>
+                  <li data-i18n="location_page.feeder_bus">지선버스: 5012, 5615, 5618</li>
+                  <li data-i18n="location_page.bus_stop">정류장: '영등포시장' 하차</li>
                 </ul>
               </li>
               <li>
-                <strong>택시:</strong>
+                <strong data-i18n="location_page.taxi_label">택시:</strong>
                 <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
-                  <li>택시 기사님께 "영등포 소방서 근처 영신로 30길"로 안내를 요청하세요.</li>
+                  <li data-i18n="location_page.taxi_guide">택시 기사님께 "영등포 소방서 근처 영신로 30길"로 안내를 요청하세요.</li>
                 </ul>
               </li>
             </ul>
@@ -278,17 +284,17 @@
   <!-- 문의하기 섹션 -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">찾아오시기 어렵다면?</h2>
+      <h2 class="section-title" data-i18n="location_page.help_title">찾아오시기 어렵다면?</h2>
       <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-        <p>찾아오시는 길에 어려움이 있으시거나, 추가 정보가 필요하시면 언제든지 연락해주세요. 친절하게 안내해드리겠습니다.</p>
+        <p data-i18n="location_page.help_description">찾아오시는 길에 어려움이 있으시거나, 추가 정보가 필요하시면 언제든지 연락해주세요. 친절하게 안내해드리겠습니다.</p>
         <div style="margin-top: 2rem;">
           <a href="tel:02-6015-3100" class="btn" style="margin-right: 1rem; margin-bottom: 1rem; display: inline-flex; align-items: center; justify-content: center;">
-            <img src="../images/phone-icon.svg" alt="전화 아이콘" style="width: 16px; height: 16px; margin-right: 0.5rem;">
-            <span>전화하기</span>
+            <img src="../images/phone-icon.svg" alt="전화 아이콘" data-i18n-alt="location_page.phone_icon_alt" style="width: 16px; height: 16px; margin-right: 0.5rem;">
+            <span data-i18n="location_page.call_btn">전화하기</span>
           </a>
           <a href="contact.html" class="btn" style="display: inline-flex; align-items: center; justify-content: center;">
-            <img src="../images/email-icon.svg" alt="이메일 아이콘" style="width: 16px; height: 16px; margin-right: 0.5rem;">
-            <span>문의하기</span>
+            <img src="../images/email-icon.svg" alt="이메일 아이콘" data-i18n-alt="location_page.email_icon_alt" style="width: 16px; height: 16px; margin-right: 0.5rem;">
+            <span data-i18n="navigation.contact">문의하기</span>
           </a>
         </div>
       </div>
@@ -299,59 +305,60 @@
   <footer class="footer">
     <div class="container footer-content">
       <div>
-        <h3 class="footer-logo">세원프린팅</h3>
-        <p class="footer-description">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
-        <p class="footer-description">출력, 복사, 제본 전문</p>
+        <h3 class="footer-logo" data-i18n="footer.company_name">세원프린팅</h3>
+        <p class="footer-description" data-i18n="footer.tagline">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
+        <p class="footer-description" data-i18n="footer.expertise">출력, 복사, 제본 전문</p>
       </div>
       
       <div>
-        <h4 class="footer-title">서비스</h4>
+        <h4 class="footer-title" data-i18n="footer.services_title">서비스</h4>
         <ul class="footer-links">
-          <li class="footer-link"><a href="services.html#printing">인쇄 서비스</a></li>
-          <li class="footer-link"><a href="services.html#copying">복사 서비스</a></li>
-          <li class="footer-link"><a href="services.html#binding">제본 서비스</a></li>
-          <li class="footer-link"><a href="services.html#scanning">스캔 서비스</a></li>
-          <li class="footer-link"><a href="services.html#catalog">카탈로그 제작</a></li>
+          <li class="footer-link"><a href="services.html#printing" data-i18n="footer.services.pod">POD 서비스</a></li>
+          <li class="footer-link"><a href="services.html#copying" data-i18n="footer.services.copying">복사 서비스</a></li>
+          <li class="footer-link"><a href="services.html#binding" data-i18n="footer.services.binding">제본 서비스</a></li>
+          <li class="footer-link"><a href="services.html#scanning" data-i18n="footer.services.scanning">스캔 서비스</a></li>
+          <li class="footer-link"><a href="services.html#catalog" data-i18n="footer.services.booklets">책자 제작</a></li>
         </ul>
       </div>
       
       <div>
-        <h4 class="footer-title">연락처</h4>
+        <h4 class="footer-title" data-i18n="footer.contact_title">연락처</h4>
         <ul class="footer-links">
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-location"></use>
             </svg>
-            <span>서울 영등포구 영신로 30길 15</span>
+            <span data-i18n="footer.address">서울 영등포구 영신로 30길 15</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-phone"></use>
             </svg>
-            <span>02-6015-3100 / 010-2093-8756</span>
+            <span data-i18n="location.phone">02-6015-3100 / 010-2093-8756</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-email"></use>
             </svg>
-            <span>eunyangp@hanmail.net</span>
+            <span data-i18n="location.email">eunyangp@hanmail.net</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-clock"></use>
             </svg>
-            <span>평일 08:00 - 18:00</span>
+            <span data-i18n="location.hours">평일 08:00 - 18:00</span>
           </li>
         </ul>
       </div>
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2025 세원프린팅. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">&copy; 2025 세원프린팅. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- 자바스크립트 -->
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

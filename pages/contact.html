@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문의하기 | 세원프린팅 - 인쇄·복사·제본 전문</title>
-  <meta name="description" content="세원프린팅에 문의하세요. 인쇄, 복사, 제본 서비스에 대한 견적이나 문의사항을 남겨주시면 빠르게 답변해드립니다.">
-  <meta name="keywords" content="세원프린팅, 문의하기, 견적요청, 연락처, 인쇄 문의">
+  <title data-i18n="contact.page_title">문의하기 | 세원프린팅 - 인쇄·복사·제본 전문</title>
+  <meta name="description" data-i18n="contact.page_description" content="세원프린팅에 문의하세요. 인쇄, 복사, 제본 서비스에 대한 견적이나 문의사항을 남겨주시면 빠르게 답변해드립니다.">
+  <meta name="keywords" data-i18n="contact.page_keywords" content="세원프린팅, 문의하기, 견적요청, 연락처, 인쇄 문의">
   
   <!-- 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,8 +42,8 @@
   <header class="header">
     <div class="container header-content">
       <a href="../index.html" class="logo">
-        <img src="../images/sewon-logo-svg.svg" alt="세원 로고" width="50" height="50">
-        <span class="logo-text">세원프린팅</span>
+        <img src="../images/sewon-logo-svg.svg" alt="세원 로고" data-i18n-alt="logo.alt" width="50" height="50">
+        <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
       <button class="nav-toggle">
@@ -54,29 +54,35 @@
       
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="../index.html" class="nav-link">홈</a>
+          <a href="../index.html" class="nav-link" data-i18n="navigation.home">홈</a>
         </li>
         <li class="nav-item">
-          <a href="services.html" class="nav-link">서비스</a>
+          <a href="services.html" class="nav-link" data-i18n="navigation.services">서비스</a>
         </li>
         <li class="nav-item">
-          <a href="portfolio.html" class="nav-link">성과품</a>
+          <a href="portfolio.html" class="nav-link" data-i18n="navigation.portfolio">성과품</a>
         </li>
         <li class="nav-item">
-          <a href="location.html" class="nav-link">오시는길</a>
+          <a href="location.html" class="nav-link" data-i18n="navigation.location">오시는길</a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" class="nav-link active">문의하기</a>
+          <a href="contact.html" class="nav-link active" data-i18n="navigation.contact">문의하기</a>
         </li>
       </ul>
+      
+      <!-- 언어 선택기 -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
+        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+      </div>
     </div>
   </header>
 
   <!-- 페이지 제목 섹션 -->
   <section class="page-header" style="background-color: rgba(26, 58, 95, 0.4); color: var(--white); padding: 6rem 0 3rem; margin-bottom: 3rem;">
     <div class="container">
-      <h1 style="color: var(--white); margin-bottom: 1rem;">문의하기</h1>
-      <p style="font-size: var(--font-lg); max-width: 600px;">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 인쇄, 복사, 제본 서비스에 대한 문의나 견적 요청을 남겨주세요. 빠른 시일 내에 답변 드리겠습니다.</p>
+      <h1 style="color: var(--white); margin-bottom: 1rem;" data-i18n="contact.header_title">문의하기</h1>
+      <p style="font-size: var(--font-lg); max-width: 600px;" data-i18n="contact.header_subtitle">궁금한 사항이나 견적 요청 등 언제든지 문의해 주세요. 빠르고 정확한 답변을 드리겠습니다.</p>
     </div>
   </section>
 
@@ -85,73 +91,73 @@
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; gap: 3rem;">
         <div style="flex: 1 1 350px;">
-          <h2>연락처 정보</h2>
-          <p>아래 연락처로 직접 문의하시거나, 문의 양식을 작성해주세요.</p>
+          <h2 data-i18n="contact_info.title">연락처 정보</h2>
+          <p data-i18n="contact_info.subtitle">아래 연락처로 직접 문의하시거나, 문의 양식을 작성해주세요.</p>
           
           <div style="margin-top: 2rem;">
             <div style="text-align: center; margin-bottom: 2rem;">
               <svg class="contact-icon">
                 <use xlink:href="../images/icons.svg#icon-phone"></use>
               </svg>
-              <h3>전화 문의</h3>
+              <h3 data-i18n="contact_info.phone_inquiry">전화 문의</h3>
               <p>02-6015-3100</p>
               <p>010-2093-8756</p>
-              <p style="margin-top: 0.5rem; font-size: var(--font-sm);">평일 08:00 - 18:00</p>
+              <p style="margin-top: 0.5rem; font-size: var(--font-sm);" data-i18n="location.hours">평일 08:00 - 18:00</p>
             </div>
             
             <div style="text-align: center; margin-bottom: 2rem;">
               <svg class="contact-icon">
                 <use xlink:href="../images/icons.svg#icon-email"></use>
               </svg>
-              <h3>이메일 문의</h3>
+              <h3 data-i18n="contact_info.email_inquiry">이메일 문의</h3>
               <p>eunyangp@hanmail.net</p>
-              <p style="margin-top: 0.5rem; font-size: var(--font-sm);">24시간 접수 가능</p>
+              <p style="margin-top: 0.5rem; font-size: var(--font-sm);" data-i18n="contact_info.email_available">24시간 접수 가능</p>
             </div>
             
             <div style="text-align: center;">
               <svg class="contact-icon">
                 <use xlink:href="../images/icons.svg#icon-location"></use>
               </svg>
-              <h3>방문 문의</h3>
-              <p>서울 영등포구 영신로 30길 15</p>
-              <p style="margin-top: 0.5rem; font-size: var(--font-sm);">영등포소방서 근처</p>
+              <h3 data-i18n="contact_info.visit_inquiry">방문 문의</h3>
+              <p data-i18n="footer.address">서울 영등포구 영신로 30길 15</p>
+              <p style="margin-top: 0.5rem; font-size: var(--font-sm);" data-i18n="contact_info.visit_location">영등포소방서 근처</p>
             </div>
           </div>
           
           <div style="margin-top: 3rem;" class="info-box">
-            <h3>웹하드 정보</h3>
-            <p>대용량 파일은 웹하드를 이용해주세요.</p>
+            <h3 data-i18n="contact_info.webhard_info">웹하드 정보</h3>
+            <p data-i18n="contact_info.webhard_description">대용량 파일은 웹하드를 이용해주세요.</p>
             <ul style="padding-left: 1.5rem; margin: 1rem 0;">
-              <li><strong>ID:</strong> sw3100</li>
-              <li><strong>PW:</strong> 3100</li>
+              <li><strong data-i18n="contact_info.webhard_id">ID:</strong> sw3100</li>
+              <li><strong data-i18n="contact_info.webhard_pw">PW:</strong> 3100</li>
             </ul>
-            <p style="font-size: var(--font-sm);">* 파일 업로드 후 전화나 이메일로 알려주시면 빠른 확인이 가능합니다.</p>
+            <p style="font-size: var(--font-sm);" data-i18n="contact_info.webhard_note">* 파일 업로드 후 전화나 이메일로 알려주시면 빠른 확인이 가능합니다.</p>
           </div>
         </div>
         
         <div style="flex: 2 1 500px;">
-          <h2>문의 안내</h2>
-          <p>아래 연락처로 직접 문의해 주시기 바랍니다.</p>
+          <h2 data-i18n="inquiry_guide.title">문의 안내</h2>
+          <p data-i18n="inquiry_guide.subtitle">아래 연락처로 직접 문의해 주시기 바랍니다.</p>
           
           <div style="margin-top: 2rem;" class="info-box">
-            <h3 style="margin-bottom: 1.5rem; text-align: center;">문의 방법</h3>
+            <h3 style="margin-bottom: 1.5rem; text-align: center;" data-i18n="inquiry_guide.methods_title">문의 방법</h3>
             
             <div style="margin-bottom: 1.5rem;">
-              <h4 style="margin-bottom: 0.5rem;">📞 전화 문의</h4>
-              <p>02-6015-3100 또는 010-2093-8756로 연락주세요.</p>
-              <p>업무 시간: 평일 08:00 - 18:00</p>
+              <h4 style="margin-bottom: 0.5rem;" data-i18n="inquiry_guide.phone_method">📞 전화 문의</h4>
+              <p data-i18n="inquiry_guide.phone_description">02-6015-3100 또는 010-2093-8756로 연락주세요.</p>
+              <p data-i18n="inquiry_guide.phone_hours">업무 시간: 평일 08:00 - 18:00</p>
             </div>
             
             <div style="margin-bottom: 1.5rem;">
-              <h4 style="margin-bottom: 0.5rem;">📧 이메일 문의</h4>
-              <p>eunyangp@hanmail.net으로 견적 문의를 보내주세요.</p>
-              <p>견적 요청 시 작업 종류, 수량, 용지 종류, 사이즈, 컬러/흑백 여부, 제본 방식 등을 자세히 알려주시면 더 정확한 견적을 안내해드립니다.</p>
+              <h4 style="margin-bottom: 0.5rem;" data-i18n="inquiry_guide.email_method">📧 이메일 문의</h4>
+              <p data-i18n="inquiry_guide.email_description">eunyangp@hanmail.net으로 견적 문의를 보내주세요.</p>
+              <p data-i18n="inquiry_guide.email_details">견적 요청 시 작업 종류, 수량, 용지 종류, 사이즈, 컬러/흑백 여부, 제본 방식 등을 자세히 알려주시면 더 정확한 견적을 안내해드립니다.</p>
             </div>
             
             <div>
-              <h4 style="margin-bottom: 0.5rem;">🚗 방문 문의</h4>
-              <p>서울 영등포구 영신로 30길 15 (영등포소방서 근처)로 방문해주세요.</p>
-              <p>사무실 앞 잠시 정차 가능합니다!</p>
+              <h4 style="margin-bottom: 0.5rem;" data-i18n="inquiry_guide.visit_method">🚗 방문 문의</h4>
+              <p data-i18n="inquiry_guide.visit_description">서울 영등포구 영신로 30길 15 (영등포소방서 근처)로 방문해주세요.</p>
+              <p data-i18n="inquiry_guide.visit_parking">사무실 앞 잠시 정차 가능합니다!</p>
             </div>
           </div>
         </div>
@@ -162,66 +168,66 @@
   <!-- FAQ 섹션 -->
   <section class="section" style="background-color: rgba(245, 245, 245, 0.5);">
     <div class="container">
-      <h2 class="section-title">자주 묻는 질문</h2>
+      <h2 class="section-title" data-i18n="faq.title">자주 묻는 질문</h2>
       
       <div style="max-width: 800px; margin: 0 auto;">
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            견적은 어떻게 받을 수 있나요?
+            <span data-i18n="faq.contact.q1.question">견적은 어떻게 받을 수 있나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <use xlink:href="../images/icons.svg#icon-arrow"></use>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>견적은 전화, 이메일 또는 이 문의 양식을 통해 요청하실 수 있습니다. 견적 요청 시 작업 종류, 수량, 용지 종류, 사이즈, 컬러/흑백 여부, 제본 방식 등을 자세히 알려주시면 더 정확한 견적을 안내해드립니다.</p>
+            <p data-i18n="faq.contact.q1.answer">견적은 전화, 이메일 또는 이 문의 양식을 통해 요청하실 수 있습니다. 견적 요청 시 작업 종류, 수량, 용지 종류, 사이즈, 컬러/흑백 여부, 제본 방식 등을 자세히 알려주시면 더 정확한 견적을 안내해드립니다.</p>
           </div>
         </div>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            작업 완료까지 얼마나 걸리나요?
+            <span data-i18n="faq.contact.q2.question">작업 완료까지 얼마나 걸리나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <use xlink:href="../images/icons.svg#icon-arrow"></use>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>작업 기간은 작업 종류, 수량, 복잡성에 따라 달라집니다. 간단한 복사/제본은 당일 완료 가능하며, 대량 작업이나 특수 제본은 2~3일 정도 소요됩니다. 정확한 작업 기간은 주문 시 안내해드립니다.</p>
+            <p data-i18n="faq.contact.q2.answer">작업 기간은 작업 종류, 수량, 복잡성에 따라 달라집니다. 간단한 복사/제본은 당일 완료 가능하며, 대량 작업이나 특수 제본은 2~3일 정도 소요됩니다. 정확한 작업 기간은 주문 시 안내해드립니다.</p>
           </div>
         </div>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            파일은 어떻게 전송하나요?
+            <span data-i18n="faq.contact.q3.question">파일은 어떻게 전송하나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <use xlink:href="../images/icons.svg#icon-arrow"></use>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>소용량 파일은 이메일(eunyangp@hanmail.net)로 전송 가능하며, 대용량 파일은 웹하드를 이용해주세요. 웹하드 ID: sw3100 / PW: 3100 입니다. 파일 업로드 후 전화나 이메일로 알려주시면 더 빠른 확인이 가능합니다.</p>
+            <p data-i18n="faq.contact.q3.answer">소용량 파일은 이메일(eunyangp@hanmail.net)로 전송 가능하며, 대용량 파일은 웹하드를 이용해주세요. 웹하드 ID: sw3100 / PW: 3100 입니다. 파일 업로드 후 전화나 이메일로 알려주시면 더 빠른 확인이 가능합니다.</p>
           </div>
         </div>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            결제 방법은 어떻게 되나요?
+            <span data-i18n="faq.contact.q4.question">결제 방법은 어떻게 되나요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <use xlink:href="../images/icons.svg#icon-arrow"></use>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>현금, 카드 결제, 계좌이체 모두 가능합니다. 세금계산서 발행도 가능하니 필요하신 경우 미리 말씀해주세요. 대량 작업의 경우 선금을 요청드릴 수 있습니다.</p>
+            <p data-i18n="faq.contact.q4.answer">현금, 카드 결제, 계좌이체 모두 가능합니다. 세금계산서 발행도 가능하니 필요하신 경우 미리 말씀해주세요. 대량 작업의 경우 선금을 요청드릴 수 있습니다.</p>
           </div>
         </div>
         
         <div class="card">
           <h3 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 1rem;">
-            배송도 가능한가요?
+            <span data-i18n="faq.contact.q5.question">배송도 가능한가요?</span>
             <svg style="width: 24px; height: 24px; transition: transform 0.3s ease;">
               <use xlink:href="../images/icons.svg#icon-arrow"></use>
             </svg>
           </h3>
           <div style="padding: 0 1rem 1rem; display: none;">
-            <p>네, 택배 배송도 가능합니다. 배송비는 지역과 무게에 따라 달라질 수 있으며, 서울 지역 내 대량 주문의 경우 직접 배송도 가능합니다. 자세한 사항은 문의해주세요.</p>
+            <p data-i18n="faq.contact.q5.answer">네, 택배 배송도 가능합니다. 배송비는 지역과 무게에 따라 달라질 수 있으며, 서울 지역 내 대량 주문의 경우 직접 배송도 가능합니다. 자세한 사항은 문의해주세요.</p>
           </div>
         </div>
       </div>
@@ -232,59 +238,60 @@
   <footer class="footer">
     <div class="container footer-content">
       <div>
-        <h3 class="footer-logo">세원프린팅</h3>
-        <p class="footer-description">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
-        <p class="footer-description">출력, 복사, 제본 전문</p>
+        <h3 class="footer-logo" data-i18n="footer.company_name">세원프린팅</h3>
+        <p class="footer-description" data-i18n="footer.tagline">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
+        <p class="footer-description" data-i18n="footer.expertise">출력, 복사, 제본 전문</p>
       </div>
       
       <div>
-        <h4 class="footer-title">서비스</h4>
+        <h4 class="footer-title" data-i18n="footer.services_title">서비스</h4>
         <ul class="footer-links">
-          <li class="footer-link"><a href="services.html#printing">인쇄 서비스</a></li>
-          <li class="footer-link"><a href="services.html#copying">복사 서비스</a></li>
-          <li class="footer-link"><a href="services.html#binding">제본 서비스</a></li>
-          <li class="footer-link"><a href="services.html#scanning">스캔 서비스</a></li>
-          <li class="footer-link"><a href="services.html#catalog">카탈로그 제작</a></li>
+          <li class="footer-link"><a href="services.html#printing" data-i18n="footer.services.pod">POD 서비스</a></li>
+          <li class="footer-link"><a href="services.html#copying" data-i18n="footer.services.copying">복사 서비스</a></li>
+          <li class="footer-link"><a href="services.html#binding" data-i18n="footer.services.binding">제본 서비스</a></li>
+          <li class="footer-link"><a href="services.html#scanning" data-i18n="footer.services.scanning">스캔 서비스</a></li>
+          <li class="footer-link"><a href="services.html#catalog" data-i18n="footer.services.booklets">책자 제작</a></li>
         </ul>
       </div>
       
       <div>
-        <h4 class="footer-title">연락처</h4>
+        <h4 class="footer-title" data-i18n="footer.contact_title">연락처</h4>
         <ul class="footer-links">
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-location"></use>
             </svg>
-            <span>서울 영등포구 영신로 30길 15</span>
+            <span data-i18n="footer.address">서울 영등포구 영신로 30길 15</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-phone"></use>
             </svg>
-            <span>02-6015-3100 / 010-2093-8756</span>
+            <span data-i18n="location.phone">02-6015-3100 / 010-2093-8756</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-email"></use>
             </svg>
-            <span>eunyangp@hanmail.net</span>
+            <span data-i18n="location.email">eunyangp@hanmail.net</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon">
               <use xlink:href="../images/icons.svg#icon-clock"></use>
             </svg>
-            <span>평일 08:00 - 18:00</span>
+            <span data-i18n="location.hours">평일 08:00 - 18:00</span>
           </li>
         </ul>
       </div>
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2025 세원프린팅. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">&copy; 2025 세원프린팅. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- 자바스크립트 -->
+  <script src="../js/i18n.js"></script>
   <script src="../js/main.js"></script>
   <script>
     // FAQ 토글 기능

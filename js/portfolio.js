@@ -12,16 +12,22 @@ class PortfolioManager {
   // JSON 파일에서 포트폴리오 데이터 로드
   async loadData() {
     try {
+      // 현재 언어 가져오기
+      const currentLang = window.i18nManager ? window.i18nManager.getCurrentLanguage() : 'ko';
+      
       // 현재 경로에 따라 상대 경로 조정
       const currentPath = window.location.pathname;
       let dataPath;
       
+      // 언어에 따라 데이터 파일 결정
+      const portfolioFile = currentLang === 'en' ? 'portfolio-en.json' : 'portfolio.json';
+      
       if (currentPath.includes('/pages/')) {
-        dataPath = '../data/portfolio.json';
+        dataPath = `../data/${portfolioFile}`;
       } else if (currentPath.includes('/admin/')) {
-        dataPath = '../data/portfolio.json';
+        dataPath = `../data/${portfolioFile}`;
       } else {
-        dataPath = 'data/portfolio.json';
+        dataPath = `data/${portfolioFile}`;
       }
       
       console.log('포트폴리오 데이터 로드 시도:', dataPath);
@@ -101,7 +107,9 @@ class PortfolioManager {
     const allButton = document.createElement('button');
     allButton.className = 'filter-btn active';
     allButton.setAttribute('data-filter', 'all');
-    allButton.textContent = '전체 보기';
+    // 다국어 지원
+    const allText = window.i18nManager && window.i18nManager.getCurrentLanguage() === 'en' ? 'All' : '전체 보기';
+    allButton.textContent = allText;
     container.appendChild(allButton);
 
     // 카테고리별 버튼
@@ -345,6 +353,24 @@ class PortfolioManager {
     await this.loadData();
     console.log('포트폴리오 데이터 새로고침 완료');
     return this.data;
+  }
+
+  // 전체 포트폴리오 렌더링 (필터와 아이템 모두)
+  async renderPortfolio() {
+    // 데이터 다시 로드
+    await this.loadData();
+    
+    // 필터 버튼 렌더링
+    const filterContainer = document.querySelector('.portfolio-filter');
+    if (filterContainer) {
+      this.renderFilters(filterContainer);
+    }
+    
+    // 포트폴리오 아이템 렌더링
+    const portfolioGrid = document.querySelector('.portfolio-grid');
+    if (portfolioGrid) {
+      this.renderItems(portfolioGrid);
+    }
   }
 }
 

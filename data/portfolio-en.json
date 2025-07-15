@@ -1,0 +1,394 @@
+{
+  "categories": [
+    "Menu Boards",
+    "Spiral Binding", 
+    "Perfect Binding",
+    "Booklet Production",
+    "Financial Statements & Tax Adjustment",
+    "Proposals",
+    "Blueprint Printing & Binding",
+    "Cards & Invitations",
+    "Pamphlets & Flyers",
+    "Portfolios",
+    "Desk Calendars",
+    "Large Envelopes"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Menu Board",
+      "description": "Color printing + Lamination",
+      "category": "Menu Boards",
+      "image": "images/portfolio/메뉴판-1.jpg",
+      "alt": "Menu Board"
+    },
+    {
+      "id": 2,
+      "title": "Menu Board",
+      "description": "Premium lamination finish",
+      "category": "Menu Boards",
+      "image": "images/portfolio/메뉴판-2.jpg",
+      "alt": "Menu Board"
+    },
+    {
+      "id": 3,
+      "title": "Menu Board",
+      "description": "Various sizes supported",
+      "category": "Menu Boards",
+      "image": "images/portfolio/메뉴판-3.jpg",
+      "alt": "Menu Board"
+    },
+    {
+      "id": 4,
+      "title": "Menu Board",
+      "description": "Premium finishing",
+      "category": "Menu Boards",
+      "image": "images/portfolio/메뉴판-4.jpg",
+      "alt": "Menu Board"
+    },
+    {
+      "id": 5,
+      "title": "Menu Board",
+      "description": "Affordable menu board production",
+      "category": "Menu Boards",
+      "image": "images/portfolio/메뉴판-5.jpg",
+      "alt": "Menu Board"
+    },
+    {
+      "id": 6,
+      "title": "Spiral Binding",
+      "description": "Front & back PP film included",
+      "category": "Spiral Binding",
+      "image": "images/portfolio/스프링제본-1.jpg",
+      "alt": "Spiral Binding"
+    },
+    {
+      "id": 7,
+      "title": "Spiral Binding",
+      "description": "Various color options available",
+      "category": "Spiral Binding",
+      "image": "images/portfolio/스프링제본-2.jpg",
+      "alt": "Spiral Binding"
+    },
+    {
+      "id": 8,
+      "title": "Spiral Binding",
+      "description": "Bulk orders available",
+      "category": "Spiral Binding",
+      "image": "images/portfolio/스프링제본-3.jpg",
+      "alt": "Spiral Binding"
+    },
+    {
+      "id": 9,
+      "title": "Spiral Binding",
+      "description": "Premium cover options",
+      "category": "Spiral Binding",
+      "image": "images/portfolio/스프링제본-4.jpg",
+      "alt": "Spiral Binding"
+    },
+    {
+      "id": 10,
+      "title": "Spiral Binding",
+      "description": "Durable finishing",
+      "category": "Spiral Binding",
+      "image": "images/portfolio/스프링제본-5.jpg",
+      "alt": "Spiral Binding"
+    },
+    {
+      "id": 11,
+      "title": "Perfect Binding",
+      "description": "Color cover matte coating",
+      "category": "Perfect Binding",
+      "image": "images/portfolio/무선제본-1.jpg",
+      "alt": "Perfect Binding"
+    },
+    {
+      "id": 12,
+      "title": "Perfect Binding",
+      "description": "Book-style binding",
+      "category": "Perfect Binding",
+      "image": "images/portfolio/무선제본-2.jpg",
+      "alt": "Perfect Binding"
+    },
+    {
+      "id": 13,
+      "title": "Perfect Binding",
+      "description": "Premium finishing",
+      "category": "Perfect Binding",
+      "image": "images/portfolio/무선제본-3.jpg",
+      "alt": "Perfect Binding"
+    },
+    {
+      "id": 14,
+      "title": "Perfect Binding",
+      "description": "Large volume production available",
+      "category": "Perfect Binding",
+      "image": "images/portfolio/무선제본-4.jpg",
+      "alt": "Perfect Binding"
+    },
+    {
+      "id": 15,
+      "title": "Perfect Binding",
+      "description": "Custom options",
+      "category": "Perfect Binding",
+      "image": "images/portfolio/무선제본-5.jpg",
+      "alt": "Perfect Binding"
+    },
+    {
+      "id": 16,
+      "title": "Booklet Production",
+      "description": "Cover options for bulk orders",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-1.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 17,
+      "title": "Booklet Production",
+      "description": "Same-day work available with reservation",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-2.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 18,
+      "title": "Booklet Production",
+      "description": "Various binding methods",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-3.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 19,
+      "title": "Booklet Production",
+      "description": "Custom cover design",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-4.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 20,
+      "title": "Booklet Production",
+      "description": "Premium printing",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-5.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 21,
+      "title": "Booklet Production",
+      "description": "Custom sizing",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-6.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 22,
+      "title": "Booklet Production",
+      "description": "Hardcover options",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-7.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 23,
+      "title": "Booklet Production",
+      "description": "Professional publications",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-8.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 24,
+      "title": "Booklet Production",
+      "description": "Premium paper options",
+      "category": "Booklet Production",
+      "image": "images/portfolio/책자제작-9.jpg",
+      "alt": "Booklet Production"
+    },
+    {
+      "id": 25,
+      "title": "Tax Adjustment Statement",
+      "description": "Large volume production available",
+      "category": "Financial Statements & Tax Adjustment",
+      "image": "images/portfolio/결산서.세무조정계산서-1.jpg",
+      "alt": "Tax Adjustment Statement"
+    },
+    {
+      "id": 26,
+      "title": "Tax Adjustment Statement",
+      "description": "Professional binding",
+      "category": "Financial Statements & Tax Adjustment",
+      "image": "images/portfolio/결산서.세무조정계산서-2.jpg",
+      "alt": "Tax Adjustment Statement"
+    },
+    {
+      "id": 27,
+      "title": "Tax Adjustment Statement",
+      "description": "Accounting office delivery",
+      "category": "Financial Statements & Tax Adjustment",
+      "image": "images/portfolio/결산서.세무조정계산서-3.jpg",
+      "alt": "Tax Adjustment Statement"
+    },
+    {
+      "id": 28,
+      "title": "Proposal",
+      "description": "Premium binding",
+      "category": "Proposals",
+      "image": "images/portfolio/제안서-1.jpg",
+      "alt": "Proposal"
+    },
+    {
+      "id": 29,
+      "title": "Proposal",
+      "description": "Custom production",
+      "category": "Proposals",
+      "image": "images/portfolio/제안서-2.jpg",
+      "alt": "Proposal"
+    },
+    {
+      "id": 30,
+      "title": "Proposal",
+      "description": "Premium cover options",
+      "category": "Proposals",
+      "image": "images/portfolio/제안서-3.jpg",
+      "alt": "Proposal"
+    },
+    {
+      "id": 31,
+      "title": "Proposal",
+      "description": "Corporate customization",
+      "category": "Proposals",
+      "image": "images/portfolio/제안서-4.jpg",
+      "alt": "Proposal"
+    },
+    {
+      "id": 32,
+      "title": "Blueprint Printing & Binding",
+      "description": "Various blueprint printing & binding",
+      "category": "Blueprint Printing & Binding",
+      "image": "images/portfolio/도면출력제본-1.jpg",
+      "alt": "Blueprint Printing & Binding"
+    },
+    {
+      "id": 33,
+      "title": "Blueprint Printing & Binding",
+      "description": "Architecture/Interior blueprints",
+      "category": "Blueprint Printing & Binding",
+      "image": "images/portfolio/도면출력제본-2.jpg",
+      "alt": "Blueprint Printing & Binding"
+    },
+    {
+      "id": 34,
+      "title": "Invitation",
+      "description": "Central perforation included",
+      "category": "Cards & Invitations",
+      "image": "images/portfolio/카드.초대장-1.jpg",
+      "alt": "Card/Invitation"
+    },
+    {
+      "id": 35,
+      "title": "Invitation",
+      "description": "Postcard type",
+      "category": "Cards & Invitations",
+      "image": "images/portfolio/카드.초대장-2.jpg",
+      "alt": "Card/Invitation"
+    },
+    {
+      "id": 36,
+      "title": "Card",
+      "description": "Custom design",
+      "category": "Cards & Invitations",
+      "image": "images/portfolio/카드.초대장-3.jpg",
+      "alt": "Card/Invitation"
+    },
+    {
+      "id": 37,
+      "title": "Invitation",
+      "description": "Premium paper",
+      "category": "Cards & Invitations",
+      "image": "images/portfolio/카드.초대장-4.jpg",
+      "alt": "Card/Invitation"
+    },
+    {
+      "id": 38,
+      "title": "Pamphlet/Flyer",
+      "description": "Premium printing",
+      "category": "Pamphlets & Flyers",
+      "image": "images/portfolio/팜플렛.전단지-1.jpg",
+      "alt": "Pamphlet/Flyer"
+    },
+    {
+      "id": 39,
+      "title": "Pamphlet/Flyer",
+      "description": "Custom design",
+      "category": "Pamphlets & Flyers",
+      "image": "images/portfolio/팜플렛.전단지-2.jpg",
+      "alt": "Pamphlet/Flyer"
+    },
+    {
+      "id": 40,
+      "title": "Portfolio",
+      "description": "Premium production",
+      "category": "Portfolios",
+      "image": "images/portfolio/포토폴리오-1.jpg",
+      "alt": "Portfolio"
+    },
+    {
+      "id": 41,
+      "title": "Portfolio",
+      "description": "Custom design",
+      "category": "Portfolios",
+      "image": "images/portfolio/포토폴리오-2.jpg",
+      "alt": "Portfolio"
+    },
+    {
+      "id": 42,
+      "title": "Portfolio",
+      "description": "Premium paper options",
+      "category": "Portfolios",
+      "image": "images/portfolio/포토폴리오-3.jpg",
+      "alt": "Portfolio"
+    },
+    {
+      "id": 43,
+      "title": "Desk Calendar",
+      "description": "Premium paper options",
+      "category": "Desk Calendars",
+      "image": "images/portfolio/탁상달력-1.jpg",
+      "alt": "Desk Calendar"
+    },
+    {
+      "id": 44,
+      "title": "Desk Calendar",
+      "description": "Premium paper options",
+      "category": "Desk Calendars",
+      "image": "images/portfolio/탁상달력-2.jpg",
+      "alt": "Desk Calendar"
+    },
+    {
+      "id": 45,
+      "title": "Desk Calendar",
+      "description": "Premium paper options",
+      "category": "Desk Calendars",
+      "image": "images/portfolio/탁상달력-3.jpg",
+      "alt": "Desk Calendar"
+    },
+    {
+      "id": 46,
+      "title": "Large Envelope",
+      "description": "Premium paper options",
+      "category": "Large Envelopes",
+      "image": "images/portfolio/대봉투-1.jpg",
+      "alt": "Large Envelope"
+    },
+    {
+      "id": 47,
+      "title": "Large Envelope",
+      "description": "Premium paper options",
+      "category": "Large Envelopes",
+      "image": "images/portfolio/대봉투-2.jpg",
+      "alt": "Large Envelope"
+    }
+  ]
+}

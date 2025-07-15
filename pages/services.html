@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>서비스 | 세원프린팅 - 인쇄·복사·제본 전문</title>
+  <title data-i18n="services_page.page_title">서비스 | 세원프린팅 - 인쇄·복사·제본 전문</title>
   <meta name="description" content="세원프린팅의 다양한 서비스를 소개합니다. 인쇄, 복사, 제본, 스캔 등 모든 서비스를 한 곳에서 해결하세요.">
   <meta name="keywords" content="세원프린팅, 인쇄 서비스, 복사 서비스, 제본 서비스, 스캔 서비스">
   
@@ -28,7 +28,7 @@
     <div class="container header-content">
       <a href="../index.html" class="logo">
         <img src="../images/sewon-logo-svg.svg" alt="세원 로고" width="50" height="50">
-        <span class="logo-text">세원프린팅</span>
+        <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
       <button class="nav-toggle">
@@ -39,29 +39,35 @@
       
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="../index.html" class="nav-link">홈</a>
+          <a href="../index.html" class="nav-link" data-i18n="navigation.home">홈</a>
         </li>
         <li class="nav-item">
-          <a href="services.html" class="nav-link active">서비스</a>
+          <a href="services.html" class="nav-link active" data-i18n="navigation.services">서비스</a>
         </li>
         <li class="nav-item">
-          <a href="portfolio.html" class="nav-link">성과품</a>
+          <a href="portfolio.html" class="nav-link" data-i18n="navigation.portfolio">성과품</a>
         </li>
         <li class="nav-item">
-          <a href="location.html" class="nav-link">오시는길</a>
+          <a href="location.html" class="nav-link" data-i18n="navigation.location">오시는길</a>
         </li>
         <li class="nav-item">
-          <a href="contact.html" class="nav-link">문의하기</a>
+          <a href="contact.html" class="nav-link" data-i18n="navigation.contact">문의하기</a>
         </li>
       </ul>
+      
+      <!-- 언어 선택기 -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
+        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+      </div>
     </div>
   </header>
 
   <!-- 페이지 제목 섹션 -->
   <section class="page-header" style="background-color: rgba(26, 58, 95, 0.4); color: var(--white); padding: 6rem 0 3rem; margin-bottom: 3rem;">
     <div class="container">
-      <h1 style="color: var(--white); margin-bottom: 1rem;">서비스</h1>
-      <p style="font-size: var(--font-lg); max-width: 600px;">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 세원프린팅은 다양한 인쇄, 복사, 제본 서비스를 제공합니다. 최신 장비와 숙련된 기술로 고객님의 모든 요구사항을 충족시켜 드립니다.</p>
+      <h1 style="color: var(--white); margin-bottom: 1rem;" data-i18n="services_page.header_title">서비스</h1>
+      <p style="font-size: var(--font-lg); max-width: 600px;" data-i18n="services_page.header_subtitle">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 세원프린팅은 다양한 인쇄, 복사, 제본 서비스를 제공합니다. 최신 장비와 숙련된 기술로 고객님의 모든 요구사항을 충족시켜 드립니다.</p>
     </div>
   </section>
   <!-- POD 서비스 섹션 -->
@@ -69,47 +75,47 @@
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
         <div style="flex: 1 1 400px;">
-          <h2 class="section-title" style="text-align: left;">POD 서비스</h2>
-          <p>Print on Demand 맞춤형 소량 출판(인쇄) 서비스를 제공합니다. 디지털 인쇄를 활용해서 다양한 요구를 반영하여 소량 제품도 제작해 드립니다.</p>
+          <h2 class="section-title" style="text-align: left;" data-i18n="services.pod.title">POD 서비스</h2>
+          <p data-i18n="services.pod.description">Print on Demand 맞춤형 소량 출판(인쇄) 서비스를 제공합니다. 디지털 인쇄를 활용해서 다양한 요구를 반영하여 소량 제품도 제작해 드립니다.</p>
           <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>고속 흑백 인쇄</span>
+              <span data-i18n="services_page.features.high_speed_bw">고속 흑백 인쇄</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>고품질 컬러 인쇄</span>
+              <span data-i18n="services_page.features.high_quality_color">고품질 컬러 인쇄</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>포스터 및 배너 인쇄</span>
+              <span data-i18n="services_page.features.poster_banner">포스터 및 배너 인쇄</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>전단지 및 브로셔 인쇄</span>
+              <span data-i18n="services_page.features.flyer_brochure">전단지 및 브로셔 인쇄</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>명함 및 레터헤드 인쇄</span>
+              <span data-i18n="services_page.features.name_card">명함 및 레터헤드 인쇄</span>
             </li>
             <li style="display: flex; align-items: center;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>다양한 용지 선택 가능</span>
+              <span data-i18n="services_page.features.various_paper_types">다양한 용지 선택 가능</span>
             </li>
           </ul>
-          <a href="contact.html" class="btn">문의하기</a>
+          <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
         </div>
         <div style="flex: 1 1 400px;">
           <img src="../images/services/service-pod.svg" alt="POD 서비스" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
@@ -123,47 +129,47 @@
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
         <div style="flex: 1 1 400px; order: 2;">
-          <h2 class="section-title" style="text-align: left;">복사 서비스</h2>
-          <p>신속하고 정확한 칼라 및 흑백 복사 서비스를 제공합니다. 고속복사, 대량복사 등 모든 복사를 빠르게 처리해 드립니다.</p>
+          <h2 class="section-title" style="text-align: left;" data-i18n="services.copying.title">복사 서비스</h2>
+          <p data-i18n="services.copying.description">신속하고 정확한 칼라 및 흑백 복사 서비스를 제공합니다. 고속복사, 대량복사 등 모든 복사를 빠르게 처리해 드립니다.</p>
           <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>고속 흑백 복사</span>
+              <span data-i18n="services_page.features.high_speed_bw_copy">고속 흑백 복사</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>고품질 컬러 복사</span>
+              <span data-i18n="services_page.features.high_quality_color_copy">고품질 컬러 복사</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>대량 복사 서비스</span>
+              <span data-i18n="services_page.features.bulk_copying">대량 복사 서비스</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>양면 및 단면 복사</span>
+              <span data-i18n="services_page.features.duplex_copying">양면 및 단면 복사</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>다양한 용지 사이즈 지원</span>
+              <span data-i18n="services_page.features.various_paper_sizes">다양한 용지 사이즈 지원</span>
             </li>
             <li style="display: flex; align-items: center;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>축소 및 확대 복사</span>
+              <span data-i18n="services_page.features.scale_copying">축소 및 확대 복사</span>
             </li>
           </ul>
-          <a href="contact.html" class="btn">문의하기</a>
+          <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
         </div>
         <div style="flex: 1 1 400px; order: 1;">
           <img src="../images/services/service-copying.svg" alt="복사 서비스" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
@@ -177,47 +183,47 @@
     <div class="container">
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
         <div style="flex: 1 1 400px;">
-          <h2 class="section-title" style="text-align: left;">제본 서비스</h2>
-          <p>스프링제본(코일링/트윈링), 무선제본, 중철제본 등 다양한 방식의 제본 서비스를 제공합니다. 제안서, 보고서, 책자 등 깔끔하게 마무리해 드립니다.</p>
+          <h2 class="section-title" style="text-align: left;" data-i18n="services.binding.title">제본 서비스</h2>
+          <p data-i18n="services.binding.description">스프링제본(코일링/트윈링), 무선제본, 중철제본 등 다양한 방식의 제본 서비스를 제공합니다. 제안서, 보고서, 책자 등 깔끔하게 마무리해 드립니다.</p>
           <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>스프링 제본 (PP필름 포함)</span>
+              <span data-i18n="services_page.features.spiral_binding">스프링 제본 (PP필름 포함)</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>무선 제본</span>
+              <span data-i18n="services_page.features.perfect_binding">무선 제본</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>중철 제본</span>
+              <span data-i18n="services_page.features.saddle_stitching">중철 제본</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>하드커버 제본</span>
+              <span data-i18n="services_page.features.hardcover_binding">하드커버 제본</span>
             </li>
             <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>책자 및 매뉴얼 제본</span>
+              <span data-i18n="services_page.features.booklet_manual_binding">책자 및 매뉴얼 제본</span>
             </li>
             <li style="display: flex; align-items: center;">
               <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                 <use xlink:href="../images/icons.svg#icon-check"></use>
               </svg>
-              <span>다양한 표지 옵션</span>
+              <span data-i18n="services_page.features.various_cover_options">다양한 표지 옵션</span>
             </li>
           </ul>
-          <a href="contact.html" class="btn">문의하기</a>
+          <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
         </div>
         <div style="flex: 1 1 400px;">
           <img src="../images/services/service-binding.svg" alt="제본 서비스" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
@@ -230,47 +236,47 @@
       <div class="container">
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
           <div style="flex: 1 1 400px; order: 2;">
-            <h2 class="section-title" style="text-align: left;">스캔 서비스</h2>
-            <p>고해상도 스캔 서비스를 제공합니다. 종이 문서를 디지털 파일로 변환하여 이메일이나 USB로 제공해 드립니다. OCR서비스 또한 제공합니다.</p>
+            <h2 class="section-title" style="text-align: left;" data-i18n="services.scanning.title">스캔 서비스</h2>
+            <p data-i18n="services.scanning.description">고해상도 스캔 서비스를 제공합니다. 종이 문서를 디지털 파일로 변환하여 이메일이나 USB로 제공해 드립니다. OCR서비스 또한 제공합니다.</p>
             <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>고해상도 스캔</span>
+                <span data-i18n="services_page.features.high_resolution_scan">고해상도 스캔</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>컬러 및 흑백 스캔</span>
+                <span data-i18n="services_page.features.color_bw_scan">컬러 및 흑백 스캔</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>대량 문서 스캔</span>
+                <span data-i18n="services_page.features.bulk_document_scan">대량 문서 스캔</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>PDF, JPEG, TIFF 등 다양한 파일 형식 지원</span>
+                <span data-i18n="services_page.features.multiple_file_formats">PDF, JPEG, TIFF 등 다양한 파일 형식 지원</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>USB 및 이메일 전송</span>
+                <span data-i18n="services_page.features.usb_email_delivery">USB 및 이메일 전송</span>
               </li>
               <li style="display: flex; align-items: center;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>대형 도면 스캔</span>
+                <span data-i18n="services_page.features.large_format_scan">대형 도면 스캔</span>
               </li>
             </ul>
-            <a href="contact.html" class="btn">문의하기</a>
+            <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
           </div>
           <div style="flex: 1 1 400px; order: 1;">
             <img src="../images/services/service-scanning.svg" alt="스캔 서비스" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
@@ -284,47 +290,47 @@
       <div class="container">
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
           <div style="flex: 1 1 400px;">
-            <h2 class="section-title" style="text-align: left;">책자 제작</h2>
-            <p>제안서, 보고서, 설명서, 발표자료, 회의자료 등 개인소장용 책자라도 다양한 주문에 맞춰 제작해 드립니다.</p>
+            <h2 class="section-title" style="text-align: left;" data-i18n="services.booklets.title">책자 제작</h2>
+            <p data-i18n="services.booklets.description">제안서, 보고서, 설명서, 발표자료, 회의자료 등 개인소장용 책자라도 다양한 주문에 맞춰 제작해 드립니다.</p>
             <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>제안서</span>
+                <span data-i18n="services_page.features.proposals">제안서</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>보고서</span>
+                <span data-i18n="services_page.features.reports">보고서</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>설명서</span>
+                <span data-i18n="services_page.features.manuals">설명서</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>발표자료</span>
+                <span data-i18n="services_page.features.presentations">발표자료</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>회의자료</span>
+                <span data-i18n="services_page.features.meeting_materials">회의자료</span>
               </li>
               <li style="display: flex; align-items: center;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>개인소장용 책자</span>
+                <span data-i18n="services_page.features.personal_booklets">개인소장용 책자</span>
               </li>
             </ul>
-            <a href="contact.html" class="btn">문의하기</a>
+            <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
           </div>
           <div style="flex: 1 1 400px;">
             <img src="../images/services/service-catalog.svg" alt="카탈로그 제작" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
@@ -338,47 +344,47 @@
       <div class="container">
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
           <div style="flex: 1 1 400px; order: 2;">
-            <h2 class="section-title" style="text-align: left;">각종 인쇄물</h2>
-            <p>전단지, 소형간행물, 안내지 등 소비자의 요구에 맞춰 고화질 출력물을 제공해 드립니다.</p>
+            <h2 class="section-title" style="text-align: left;" data-i18n="services.printing.title">각종 인쇄물</h2>
+            <p data-i18n="services.printing.description">전단지, 소형간행물, 안내지 등 소비자의 요구에 맞춰 고화질 출력물을 제공해 드립니다.</p>
             <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>전단지</span>
+                <span data-i18n="services_page.features.flyers">전단지</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>소형간행물</span>
+                <span data-i18n="services_page.features.small_publications">소형간행물</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>안내지</span>
+                <span data-i18n="services_page.features.guides">안내지</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>브로슈어</span>
+                <span data-i18n="services_page.features.brochures">브로슈어</span>
               </li>
               <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>메뉴판</span>
+                <span data-i18n="services_page.features.menus">메뉴판</span>
               </li>
               <li style="display: flex; align-items: center;">
                 <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
                   <use xlink:href="../images/icons.svg#icon-check"></use>
                 </svg>
-                <span>고품질 출력</span>
+                <span data-i18n="services_page.features.high_quality_output">고품질 출력</span>
               </li>
             </ul>
-            <a href="contact.html" class="btn">문의하기</a>
+            <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
           </div>
           <div style="flex: 1 1 400px; order: 1;">
             <img src="../images/services/service-document.svg" alt="각종 인쇄물" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
@@ -392,60 +398,61 @@
     <footer class="footer">
       <div class="container footer-content">
         <div>
-          <h3 class="footer-logo">세원프린팅</h3>
-          <p class="footer-description">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
-          <p class="footer-description">출력, 복사, 제본 전문</p>
+          <h3 class="footer-logo" data-i18n="footer.company_name">세원프린팅</h3>
+          <p class="footer-description" data-i18n="footer.tagline">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
+          <p class="footer-description" data-i18n="footer.expertise">출력, 복사, 제본 전문</p>
         </div>
         
         <div>
-          <h4 class="footer-title">서비스</h4>
+          <h4 class="footer-title" data-i18n="footer.services_title">서비스</h4>
           <ul class="footer-links">
-            <li class="footer-link"><a href="#printing">POD 서비스</a></li>
-            <li class="footer-link"><a href="#copying">복사 서비스</a></li>
-            <li class="footer-link"><a href="#binding">제본 서비스</a></li>
-            <li class="footer-link"><a href="#scanning">스캔 서비스</a></li>
-            <li class="footer-link"><a href="#catalog">책자 제작</a></li>
-            <li class="footer-link"><a href="#promotional">각종 인쇄물</a></li>
+            <li class="footer-link"><a href="#printing" data-i18n="footer.services.pod">POD 서비스</a></li>
+            <li class="footer-link"><a href="#copying" data-i18n="footer.services.copying">복사 서비스</a></li>
+            <li class="footer-link"><a href="#binding" data-i18n="footer.services.binding">제본 서비스</a></li>
+            <li class="footer-link"><a href="#scanning" data-i18n="footer.services.scanning">스캔 서비스</a></li>
+            <li class="footer-link"><a href="#catalog" data-i18n="footer.services.booklets">책자 제작</a></li>
+            <li class="footer-link"><a href="#promotional" data-i18n="footer.services.printing">각종 인쇄물</a></li>
           </ul>
         </div>
         
         <div>
-          <h4 class="footer-title">연락처</h4>
+          <h4 class="footer-title" data-i18n="footer.contact_title">연락처</h4>
           <ul class="footer-links">
             <li class="footer-contact-item">
               <svg class="footer-contact-icon">
                 <use xlink:href="../images/icons.svg#icon-location"></use>
               </svg>
-              <span>서울 영등포구 영신로 30길 15</span>
+              <span data-i18n="footer.address">서울 영등포구 영신로 30길 15</span>
             </li>
             <li class="footer-contact-item">
               <svg class="footer-contact-icon">
                 <use xlink:href="../images/icons.svg#icon-phone"></use>
               </svg>
-              <span>02-6015-3100 / 010-2093-8756</span>
+              <span data-i18n="location.phone">02-6015-3100 / 010-2093-8756</span>
             </li>
             <li class="footer-contact-item">
               <svg class="footer-contact-icon">
                 <use xlink:href="../images/icons.svg#icon-email"></use>
               </svg>
-              <span>eunyangp@hanmail.net</span>
+              <span data-i18n="location.email">eunyangp@hanmail.net</span>
             </li>
             <li class="footer-contact-item">
               <svg class="footer-contact-icon">
                 <use xlink:href="../images/icons.svg#icon-clock"></use>
               </svg>
-              <span>평일 08:00 - 18:00</span>
+              <span data-i18n="location.hours">평일 08:00 - 18:00</span>
             </li>
           </ul>
         </div>
       </div>
       
       <div class="container footer-bottom">
-        <p>&copy; 2025 세원프린팅. All Rights Reserved.</p>
+        <p data-i18n="footer.copyright">&copy; 2025 세원프린팅. All Rights Reserved.</p>
       </div>
     </footer>
   
     <!-- 자바스크립트 -->
+    <script src="../js/i18n.js"></script>
     <script src="../js/main.js"></script>
   </body>
   </html>

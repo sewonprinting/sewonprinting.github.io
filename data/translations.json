@@ -1,0 +1,652 @@
+{
+  "ko": {
+    "site": {
+      "title": "세원프린팅 - 인쇄·복사·제본 전문",
+      "description": "한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다. 세원프린팅은 인쇄, 복사, 제본 전문 업체입니다.",
+      "keywords": "세원프린팅, 인쇄, 복사, 제본, 영등포"
+    },
+    "logo": {
+      "alt": "세원 로고"
+    },
+    "navigation": {
+      "home": "홈",
+      "services": "서비스", 
+      "portfolio": "성과품",
+      "location": "오시는길",
+      "contact": "문의하기"
+    },
+    "hero": {
+      "title": "한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다.",
+      "subtitle": "세원프린팅은 영등포에 위치한 인쇄·복사·제본 전문 업체입니다. 최고의 품질과 빠른 서비스로 고객님의 모든 요구사항을 충족해드립니다.",
+      "btn_contact": "문의하기",
+      "btn_services": "서비스 살펴보기"
+    },
+    "services": {
+      "title": "주요 서비스",
+      "pod": {
+        "title": "POD 서비스",
+        "description": "Print on Demand 맞춤형 소량 출판(인쇄) 서비스를 제공합니다. 디지털 인쇄를 활용해서 다양한 요구를 반영하여 소량 제품도 제작해 드립니다."
+      },
+      "copying": {
+        "title": "복사 서비스",
+        "description": "신속하고 정확한 칼라 및 흑백 복사 서비스를 제공합니다. 고속복사, 대량복사 등 모든 복사를 빠르게 처리해 드립니다."
+      },
+      "binding": {
+        "title": "제본 서비스",
+        "description": "스프링제본(코일링/트윈링), 무선제본, 중철제본 등 다양한 방식의 제본 서비스를 제공합니다. 제안서, 보고서, 책자 등 깔끔하게 마무리해 드립니다."
+      },
+      "scanning": {
+        "title": "스캔 서비스",
+        "description": "고해상도 스캔 서비스를 제공합니다. 종이 문서를 디지털 파일로 변환하여 이메일이나 USB로 제공해 드립니다. OCR서비스 또한 제공합니다."
+      },
+      "booklets": {
+        "title": "책자 제작",
+        "description": "제안서, 보고서, 설명서, 발표자료, 회의자료 등 개인소장용 책자라도 다양한 주문에 맞춰 제작해 드립니다."
+      },
+      "printing": {
+        "title": "각종 인쇄물",
+        "description": "전단지, 소형간행물, 안내지 등 소비자의 요구에 맞춰 고화질 출력물을 제공해 드립니다."
+      },
+      "more_btn": "서비스 더 알아보기"
+    },
+    "portfolio": {
+      "title": "성과품 갤러리",
+      "more_btn": "성과품 더보기"
+    },
+    "location": {
+      "title": "오시는 길",
+      "address": "서울 영등포구 영신로 30길 15 (영등포동4가 113-4)",
+      "phone": "02-6015-3100 / 010-2093-8756",
+      "email": "eunyangp@hanmail.net",
+      "hours": "평일 08:00 - 18:00",
+      "description": "영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.<br>사무실 앞 잠시 정차 가능합니다!",
+      "detail_btn": "상세 위치 보기"
+    },
+    "footer": {
+      "company_name": "세원프린팅",
+      "tagline": "한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.",
+      "expertise": "출력, 복사, 제본 전문",
+      "services_title": "서비스",
+      "contact_title": "연락처",
+      "copyright": "© 2025 세원프린팅. All Rights Reserved.",
+      "address": "서울 영등포구 영신로 30길 15",
+      "services": {
+        "pod": "POD 서비스",
+        "copying": "복사 서비스",
+        "binding": "제본 서비스",
+        "scanning": "스캔 서비스",
+        "booklets": "책자 제작",
+        "printing": "각종 인쇄물"
+      }
+    },
+    "contact": {
+      "page_title": "문의하기",
+      "page_description": "세원프린팅에 문의하세요. 인쇄, 복사, 제본 서비스에 대한 견적이나 문의사항을 남겨주시면 빠르게 답변해드립니다.",
+      "page_keywords": "세원프린팅, 문의하기, 견적요청, 연락처, 인쇄 문의",
+      "header_title": "문의하기",
+      "header_subtitle": "궁금한 사항이나 견적 요청 등 언제든지 문의해 주세요. 빠르고 정확한 답변을 드리겠습니다.",
+      "form": {
+        "name": "이름",
+        "email": "이메일",
+        "phone": "연락처",
+        "message": "문의 내용",
+        "submit": "문의하기",
+        "success": "문의가 성공적으로 전송되었습니다. 빠른 시일 내에 연락드리겠습니다."
+      },
+      "validation": {
+        "name_required": "이름을 입력해주세요.",
+        "email_required": "이메일을 입력해주세요.",
+        "email_invalid": "유효한 이메일 형식이 아닙니다.",
+        "phone_required": "연락처를 입력해주세요.",
+        "message_required": "문의 내용을 입력해주세요."
+      }
+    },
+    "services_page": {
+      "page_title": "서비스",
+      "page_description": "세원프린팅의 다양한 서비스를 소개합니다. 인쇄, 복사, 제본, 스캔 등 모든 서비스를 한 곳에서 해결하세요.",
+      "page_keywords": "세원프린팅, 인쇄 서비스, 복사 서비스, 제본 서비스, 스캔 서비스",
+      "header_title": "서비스",
+      "header_subtitle": "한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 세원프린팅은 다양한 인쇄, 복사, 제본 서비스를 제공합니다. 최신 장비와 숙련된 기술로 고객님의 모든 요구사항을 충족시켜 드립니다.",
+      "features": {
+        "high_speed_bw": "고속 흑백 인쇄",
+        "high_quality_color": "고품질 컬러 인쇄",
+        "poster_banner": "포스터 및 배너 인쇄",
+        "flyer_brochure": "전단지 및 브로셔 인쇄",
+        "name_card": "명함 인쇄",
+        "sticker": "스티커 인쇄",
+        "high_speed_bw_copy": "고속 흑백 복사",
+        "high_quality_color_copy": "고품질 컬러 복사",
+        "bulk_copying": "대량 복사 서비스",
+        "duplex_copying": "양면 및 단면 복사",
+        "various_paper_sizes": "다양한 용지 사이즈 지원",
+        "scale_copying": "축소 및 확대 복사",
+        "spiral_binding": "스프링 제본 (PP필름 포함)",
+        "perfect_binding": "무선 제본",
+        "saddle_stitching": "중철 제본",
+        "hardcover_binding": "하드커버 제본",
+        "booklet_manual_binding": "책자 및 매뉴얼 제본",
+        "various_cover_options": "다양한 표지 옵션",
+        "high_resolution_scan": "고해상도 스캔",
+        "color_bw_scan": "컬러 및 흑백 스캔",
+        "bulk_document_scan": "대량 문서 스캔",
+        "multiple_file_formats": "PDF, JPEG, TIFF 등 다양한 파일 형식 지원",
+        "usb_email_delivery": "USB 및 이메일 전송",
+        "large_format_scan": "대형 도면 스캔",
+        "proposals": "제안서",
+        "reports": "보고서",
+        "manuals": "설명서",
+        "presentations": "발표자료",
+        "meeting_materials": "회의자료",
+        "personal_booklets": "개인소장용 책자",
+        "flyers": "전단지",
+        "small_publications": "소형간행물",
+        "guides": "안내지",
+        "brochures": "브로슈어",
+        "menus": "메뉴판",
+        "high_quality_output": "고품질 출력",
+        "various_paper_types": "다양한 용지 선택 가능"
+      }
+    },
+    "contact": {
+      "btn_contact": "문의하기"
+    },
+    "portfolio_page": {
+      "page_title": "성과품",
+      "page_description": "세원프린팅의 다양한 성과품을 확인하세요. 메뉴판, 책자, 브로슈어, 제본 사례 등을 소개합니다.",
+      "page_keywords": "세원프린팅, 인쇄 성과물, 포트폴리오, 제본 사례, 인쇄 사례",
+      "header_title": "성과품",
+      "header_subtitle": "세원프린팅에서 제작한 다양한 인쇄물들을 확인하세요. 고품질 인쇄와 정밀한 제본 기술로 완성된 결과물들입니다."
+    },
+    "location_page": {
+      "page_title": "오시는길",
+      "page_description": "세원프린팅의 위치와 오시는 길을 안내합니다. 영등포에 위치한 인쇄, 복사, 제본 전문점입니다.",
+      "page_keywords": "세원프린팅, 오시는길, 영등포, 위치, 지도",
+      "header_title": "오시는 길",
+      "header_subtitle": "세원프린팅의 위치와 교통편을 안내해드립니다.",
+      "directions": {
+        "subway_title": "지하철",
+        "subway_desc": "영등포구청역 1번 출구에서 도보 5분",
+        "bus_title": "버스",
+        "bus_desc": "영등포구청 정류장 하차 후 도보 3분",
+        "car_title": "자동차",
+        "car_desc": "영등포 타임스퀘어 인근, 사무실 앞 잠시 정차 가능"
+      },
+      "business_hours": {
+        "title": "운영시간",
+        "weekdays": "평일",
+        "saturday": "토요일",
+        "sunday": "일요일",
+        "closed": "휴무"
+      },
+      "weekdays_short": "평일",
+      "saturday": "토요일",
+      "sunday": "일요일",
+      "holidays": "공휴일",
+      "directions_title": "찾아오시는 방법",
+      "address_title": "주소",
+      "hours_title": "영업시간",
+      "weekdays": "평일:",
+      "weekday_hours": "오전 8:00 - 오후 6:00",
+      "weekend": "주말 및 공휴일:",
+      "closed": "휴무",
+      "contact_title": "연락처",
+      "directions_detail_title": "찾아오시는 길",
+      "parking_title": "주차 정보",
+      "notice_title": "알림사항",
+      "map_title": "약도",
+      "public_transport_title": "대중교통 이용 시",
+      "help_title": "찾아오시기 어렵다면?",
+      "full_address": "서울특별시 영등포구 영신로 30길 15 (영등포동4가 113-4) 1층",
+      "urgent_note": "* 급한 작업의 경우 미리 연락주시면 조정 가능합니다.",
+      "phone_label": "전화:",
+      "mobile_label": "휴대폰:",
+      "email_label": "이메일:",
+      "webhard_label": "웹하드:",
+      "contact_note": "* 언제든지 문의주세요!",
+      "location_description": "영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.",
+      "from_yeongdeungpo_station": "영등포역에서 도보 약 10분 거리",
+      "from_market_station": "영등포시장역 3번 출구에서 도보 약 5분 거리",
+      "from_bus_stop": "버스 정류장 '영등포시장' 하차 후 도보 3분 거리",
+      "nearby_landmarks": "* 주변 건물: 영등포소방서, 타임스퀘어, 영등포전통시장",
+      "short_parking": "사무실 앞 잠시 정차 가능합니다.",
+      "parking_options": "장시간 주차가 필요하신 경우 근처 공영주차장을 이용해주세요:",
+      "market_parking": "영등포시장 공영주차장 (도보 3분)",
+      "timessquare_parking": "타임스퀘어 주차장 (도보 5분)",
+      "free_parking_note": "* 간단한 업무의 경우 무료 정차 가능",
+      "reservation_note": "대량 인쇄/복사나 시간이 소요되는 작업은 미리 예약해주시면 더 신속하게 처리 가능합니다.",
+      "file_transfer_note": "파일 전송이 필요하신 경우 웹하드나 이메일을 이용해주세요.",
+      "general_inquiry_note": "* 궁금하신 사항은 언제든지 연락주세요!",
+      "map_click_note": "* 클릭하시면 확대해서 보실 수 있습니다.",
+      "subway_line1": "영등포역 (1호선) - 도보 10분",
+      "subway_line5": "영등포시장역 (5호선) 3번 출구 - 도보 5분",
+      "regular_bus": "일반버스: 152, 5620, 5714, 6628, 6631",
+      "trunk_bus": "간선버스: 605, 640, 650, 662",
+      "feeder_bus": "지선버스: 5012, 5615, 5618",
+      "bus_stop": "정류장: '영등포시장' 하차",
+      "taxi_guide": "택시 기사님께 \"영등포 소방서 근처 영신로 30길\"로 안내를 요청하세요.",
+      "help_description": "찾아오시는 길에 어려움이 있으시거나, 추가 정보가 필요하시면 언제든지 연락해주세요. 친절하게 안내해드리겠습니다.",
+      "call_btn": "전화하기",
+      "subway_label": "지하철:",
+      "bus_label": "버스:",
+      "taxi_label": "택시:",
+      "map_alt": "세원프린팅 약도",
+      "phone_icon_alt": "전화 아이콘",
+      "email_icon_alt": "이메일 아이콘"
+    },
+    "customer_reviews": {
+      "title": "고객 후기",
+      "review1": {
+        "name": "김OO님",
+        "title": "디자인 회사 대표",
+        "content": "세원프린팅에서 회사 브로슈어를 제작했는데, 결과물이 정말 만족스러웠습니다. 색상이 정확하고 마감 처리가 깔끔해서 클라이언트에게 좋은 인상을 줄 수 있었습니다. 급한 일정에도 불구하고 빠르게 처리해주셔서 감사합니다."
+      },
+      "review2": {
+        "name": "이OO님",
+        "title": "대학원생",
+        "content": "논문 제본을 맡겼는데, 정말 꼼꼼하게 작업해주셨습니다. 특히 교수님께 제출하는 중요한 논문이라 걱정했는데, 기대 이상의 퀄리티로 완성해주셔서 감사합니다. 다음에도 꼭 이용할 예정입니다."
+      },
+      "review3": {
+        "name": "박OO님",
+        "title": "카페 운영자",
+        "content": "카페 메뉴판을 제작했는데, 고객들이 메뉴판 디자인에 호감을 보이더라고요. 코팅 처리가 잘 되어 있어서 오래 사용해도 깔끔함이 유지되고 있습니다. 가격도 합리적이고 서비스도 좋아서 주변 사장님들에게도 추천했습니다."
+      }
+    },
+    "contact_info": {
+      "title": "연락처 정보",
+      "subtitle": "아래 연락처로 직접 문의하시거나, 문의 양식을 작성해주세요.",
+      "phone_inquiry": "전화 문의",
+      "email_inquiry": "이메일 문의",
+      "email_available": "24시간 접수 가능",
+      "visit_inquiry": "방문 문의",
+      "webhard_info": "웹하드 정보",
+      "webhard_description": "대용량 파일은 웹하드를 이용해주세요.",
+      "webhard_id": "ID:",
+      "webhard_pw": "PW:",
+      "webhard_note": "파일 업로드 후 전화나 이메일로 알려주시면 빠른 확인이 가능합니다."
+    },
+    "inquiry_guide": {
+      "title": "문의 안내",
+      "subtitle": "아래 연락처로 직접 문의해 주시기 바랍니다.",
+      "methods_title": "문의 방법",
+      "phone_method": "📞 전화 문의",
+      "phone_description": "02-6015-3100 또는 010-2093-8756로 연락주세요.",
+      "phone_hours": "업무 시간: 평일 08:00 - 18:00",
+      "email_method": "📧 이메일 문의",
+      "email_description": "eunyangp@hanmail.net으로 견적 문의를 보내주세요.",
+      "email_details": "견적 요청 시 작업 종류, 수량, 용지 종류, 사이즈, 컬러/흑백 여부, 제본 방식 등을 자세히 알려주시면 더 정확한 견적을 안내해드립니다.",
+      "visit_method": "🚗 방문 문의",
+      "visit_description": "서울 영등포구 영신로 30길 15 (영등포소방서 근처)로 방문해주세요.",
+      "visit_parking": "사무실 앞 잠시 정차 가능합니다!"
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": {
+        "question": "대량 인쇄는 얼마나 걸리나요?",
+        "answer": "대량 인쇄의 경우 주문량과 작업 복잡성에 따라 소요 시간이 달라집니다. 일반적으로 100페이지 미만은 당일 또는 익일, 500페이지 이상은 2~3일 정도 소요됩니다. 정확한 일정은 문의 시 알려드립니다."
+      },
+      "q2": {
+        "question": "파일 형식은 어떤 것을 지원하나요?",
+        "answer": "PDF, Word(docx, doc), PowerPoint(pptx, ppt), Excel(xlsx, xls), JPG, PNG 등 대부분의 일반적인 파일 형식을 지원합니다. 특수한 파일 형식의 경우 미리 문의해주시면 지원 여부를 확인해드립니다."
+      },
+      "q3": {
+        "question": "제본 방식은 어떤 것이 있나요?",
+        "answer": "스프링 제본, 무선 제본, 중철 제본, 하드커버 제본, 스테이플 제본 등 다양한 제본 방식을 제공합니다. 각 제본 방식은 용도와 페이지 수에 따라 적합한 방식이 다르므로, 상담을 통해 최적의 제본 방식을 추천해드립니다."
+      },
+      "q4": {
+        "question": "견적은 어떻게 문의하나요?",
+        "answer": "전화(02-6015-3100), 이메일(eunyangp@hanmail.net) 또는 웹사이트 문의 양식을 통해 견적을 요청하실 수 있습니다. 정확한 견적을 위해 인쇄/복사/제본의 종류, 수량, 용지 종류, 마감 방식 등의 정보를 함께 알려주시면 더 빠른 답변이 가능합니다."
+      },
+      "q5": {
+        "question": "급한 작업도 가능한가요?",
+        "answer": "네, 급한 작업도 가능합니다. 사전에 연락주시면 최대한 빠른 시간 내에 작업을 완료할 수 있도록 도와드립니다. 단, 대량 작업이나 복잡한 제본의 경우 최소한의 작업 시간이 필요하니 양해 부탁드립니다."
+      },
+      "contact": {
+        "q1": {
+          "question": "견적은 어떻게 받을 수 있나요?",
+          "answer": "견적은 전화, 이메일 또는 이 문의 양식을 통해 요청하실 수 있습니다. 견적 요청 시 작업 종류, 수량, 용지 종류, 사이즈, 컬러/흑백 여부, 제본 방식 등을 자세히 알려주시면 더 정확한 견적을 안내해드립니다."
+        },
+        "q2": {
+          "question": "작업 완료까지 얼마나 걸리나요?",
+          "answer": "작업 기간은 작업 종류, 수량, 복잡성에 따라 달라집니다. 간단한 복사/제본은 당일 완료 가능하며, 대량 작업이나 특수 제본은 2~3일 정도 소요됩니다. 정확한 작업 기간은 주문 시 안내해드립니다."
+        },
+        "q3": {
+          "question": "파일은 어떻게 전송하나요?",
+          "answer": "소용량 파일은 이메일(eunyangp@hanmail.net)로 전송 가능하며, 대용량 파일은 웹하드를 이용해주세요. 웹하드 ID: sw3100 / PW: 3100 입니다. 파일 업로드 후 전화나 이메일로 알려주시면 더 빠른 확인이 가능합니다."
+        },
+        "q4": {
+          "question": "결제 방법은 어떻게 되나요?",
+          "answer": "현금, 카드 결제, 계좌이체 모두 가능합니다. 세금계산서 발행도 가능하니 필요하신 경우 미리 말씀해주세요. 대량 작업의 경우 선금을 요청드릴 수 있습니다."
+        },
+        "q5": {
+          "question": "배송도 가능한가요?",
+          "answer": "네, 택배 배송도 가능합니다. 배송비는 지역과 무게에 따라 달라질 수 있으며, 서울 지역 내 대량 주문의 경우 직접 배송도 가능합니다. 자세한 사항은 문의해주세요."
+        }
+      }
+    }
+  },
+  "en": {
+    "site": {
+      "title": "Sewon Printing - Professional Printing, Copying & Binding Services",
+      "description": "We create even a single book with your precious heart. Sewon Printing is a professional printing, copying, and binding company.",
+      "keywords": "Sewon Printing, printing services, copying, binding, Yeongdeungpo"
+    },
+    "logo": {
+      "alt": "Sewon Logo"
+    },
+    "navigation": {
+      "home": "Home",
+      "services": "Services",
+      "portfolio": "Portfolio", 
+      "location": "Location",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "We create even a single book with your precious heart.",
+      "subtitle": "Sewon Printing is a professional printing, copying, and binding company located in Yeongdeungpo. We meet all your requirements with the highest quality and fast service.",
+      "btn_contact": "Contact Us",
+      "btn_services": "Explore Services"
+    },
+    "services": {
+      "title": "Main Services",
+      "pod": {
+        "title": "POD Service",
+        "description": "We provide Print on Demand customized small-volume publishing (printing) services. Using digital printing, we create small-volume products reflecting various requirements."
+      },
+      "copying": {
+        "title": "Copying Service",
+        "description": "We provide fast and accurate color and black & white copying services. We handle all copying including high-speed copying and large-volume copying quickly."
+      },
+      "binding": {
+        "title": "Binding Service",
+        "description": "We provide various binding services including spiral binding (coiling/twin ring), perfect binding, saddle stitching. We finish proposals, reports, booklets, etc. neatly."
+      },
+      "scanning": {
+        "title": "Scanning Service",
+        "description": "We provide high-resolution scanning services. We convert paper documents to digital files and provide them via email or USB. OCR services are also available."
+      },
+      "booklets": {
+        "title": "Booklet Production",
+        "description": "We create various orders including proposals, reports, manuals, presentation materials, meeting materials, even personal collection booklets."
+      },
+      "printing": {
+        "title": "Various Printed Materials",
+        "description": "We provide high-quality printed outputs including flyers, small publications, guides, etc. according to consumer requirements."
+      },
+      "more_btn": "Learn More About Services"
+    },
+    "portfolio": {
+      "title": "Portfolio Gallery",
+      "more_btn": "View More Portfolio"
+    },
+    "location": {
+      "title": "Location",
+      "address": "15 Yeongsin-ro 30-gil, Yeongdeungpo-gu, Seoul (Yeongdeungpo-dong 4-ga 113-4)",
+      "phone": "02-6015-3100 / 010-2093-8756",
+      "email": "eunyangp@hanmail.net",
+      "hours": "Weekdays 08:00 - 18:00",
+      "description": "Located near the inner area of Yeongdeungpo Fire Station, across from Yeongdeungpo Times Square.<br>Brief parking available in front of the office!",
+      "detail_btn": "View Detailed Location"
+    },
+    "footer": {
+      "company_name": "Sewon Printing",
+      "tagline": "We craft even a single book with your precious heart.",
+      "expertise": "Professional Printing, Copying & Binding",
+      "services_title": "Services",
+      "contact_title": "Contact",
+      "copyright": "© 2025 Sewon Printing. All Rights Reserved.",
+      "address": "15 Yeongsin-ro 30-gil, Yeongdeungpo-gu, Seoul",
+      "services": {
+        "pod": "POD Service",
+        "copying": "Copying Service",
+        "binding": "Binding Service",
+        "scanning": "Scanning Service",
+        "booklets": "Booklet Production",
+        "printing": "Various Printed Materials"
+      }
+    },
+    "contact": {
+      "page_title": "Contact",
+      "page_description": "Contact Sewon Printing for inquiries about printing, copying, and binding services. We'll respond quickly to your quotes and questions.",
+      "page_keywords": "Sewon Printing, contact, quote request, inquiry, printing contact",
+      "header_title": "Contact",
+      "header_subtitle": "Feel free to contact us anytime for inquiries or quote requests. We'll provide fast and accurate responses.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "submit": "Send Inquiry",
+        "success": "Your inquiry has been sent successfully. We will contact you as soon as possible."
+      },
+      "validation": {
+        "name_required": "Please enter your name.",
+        "email_required": "Please enter your email.",
+        "email_invalid": "Please enter a valid email format.",
+        "phone_required": "Please enter your phone number.",
+        "message_required": "Please enter your inquiry."
+      }
+    },
+    "services_page": {
+      "page_title": "Services",
+      "page_description": "Discover Sewon Printing's various services. Get all your printing, copying, binding, and scanning needs handled in one place.",
+      "page_keywords": "Sewon Printing, printing services, copying services, binding services, scanning services",
+      "header_title": "Services",
+      "header_subtitle": "We craft even a single book with your precious heart. Sewon Printing offers various printing, copying, and binding services. We meet all your requirements with the latest equipment and skilled technology.",
+      "features": {
+        "high_speed_bw": "High-speed Black & White Printing",
+        "high_quality_color": "High-quality Color Printing",
+        "poster_banner": "Poster & Banner Printing",
+        "flyer_brochure": "Flyer & Brochure Printing",
+        "name_card": "Business Card Printing",
+        "sticker": "Sticker Printing",
+        "high_speed_bw_copy": "High-speed Black & White Copying",
+        "high_quality_color_copy": "High-quality Color Copying",
+        "bulk_copying": "Bulk Copying Service",
+        "duplex_copying": "Duplex & Simplex Copying",
+        "various_paper_sizes": "Various Paper Sizes Supported",
+        "scale_copying": "Scaling & Enlargement Copying",
+        "spiral_binding": "Spiral Binding (PP Film Included)",
+        "perfect_binding": "Perfect Binding",
+        "saddle_stitching": "Saddle Stitching",
+        "hardcover_binding": "Hardcover Binding",
+        "booklet_manual_binding": "Booklet & Manual Binding",
+        "various_cover_options": "Various Cover Options",
+        "high_resolution_scan": "High Resolution Scanning",
+        "color_bw_scan": "Color & Black/White Scanning",
+        "bulk_document_scan": "Bulk Document Scanning",
+        "multiple_file_formats": "Multiple File Formats (PDF, JPEG, TIFF, etc.)",
+        "usb_email_delivery": "USB & Email Delivery",
+        "large_format_scan": "Large Format Scanning",
+        "proposals": "Proposals",
+        "reports": "Reports",
+        "manuals": "Manuals",
+        "presentations": "Presentations",
+        "meeting_materials": "Meeting Materials",
+        "personal_booklets": "Personal Booklets",
+        "flyers": "Flyers",
+        "small_publications": "Small Publications",
+        "guides": "Guides",
+        "brochures": "Brochures",
+        "menus": "Menus",
+        "high_quality_output": "High Quality Output",
+        "various_paper_types": "Various Paper Types Available"
+      }
+    },
+    "contact": {
+      "btn_contact": "Contact Us"
+    },
+    "portfolio_page": {
+      "page_title": "Portfolio",
+      "page_description": "Check out Sewon Printing's various portfolio items. View examples of menu boards, booklets, brochures, and binding cases.",
+      "page_keywords": "Sewon Printing, printing portfolio, portfolio, binding examples, printing cases",
+      "header_title": "Portfolio",
+      "header_subtitle": "Check out various printed materials created by Sewon Printing. These are results completed with high-quality printing and precise binding technology."
+    },
+    "location_page": {
+      "page_title": "Location",
+      "page_description": "Find directions to Sewon Printing. We are a professional printing, copying, and binding shop located in Yeongdeungpo.",
+      "page_keywords": "Sewon Printing, directions, Yeongdeungpo, location, map",
+      "header_title": "Location",
+      "header_subtitle": "We'll guide you to Sewon Printing's location and transportation options.",
+      "directions": {
+        "subway_title": "Subway",
+        "subway_desc": "5-minute walk from Yeongdeungpo-gu Office Station Exit 1",
+        "bus_title": "Bus",
+        "bus_desc": "3-minute walk after getting off at Yeongdeungpo-gu Office bus stop",
+        "car_title": "Car",
+        "car_desc": "Near Yeongdeungpo Times Square, brief parking available in front of office"
+      },
+      "business_hours": {
+        "title": "Business Hours",
+        "weekdays": "Weekdays",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "closed": "Closed"
+      },
+      "weekdays_short": "Weekdays",
+      "saturday": "Saturday",
+      "sunday": "Sunday", 
+      "holidays": "Holidays",
+      "directions_title": "How to Find Us",
+      "address_title": "Address",
+      "hours_title": "Business Hours",
+      "weekdays": "Weekdays:",
+      "weekday_hours": "08:00 AM - 06:00 PM",
+      "weekend": "Weekends & Holidays:",
+      "closed": "Closed",
+      "contact_title": "Contact Information",
+      "directions_detail_title": "Directions",
+      "parking_title": "Parking Information",
+      "notice_title": "Notice",
+      "map_title": "Map",
+      "public_transport_title": "By Public Transportation",
+      "help_title": "Need Help Finding Us?",
+      "full_address": "15 Yeongsin-ro 30-gil, Yeongdeungpo-gu, Seoul (Yeongdeungpo-dong 4-ga 113-4) 1st Floor",
+      "urgent_note": "* For urgent work, adjustment possible with advance contact.",
+      "phone_label": "Phone:",
+      "mobile_label": "Mobile:",
+      "email_label": "Email:",
+      "webhard_label": "Webhard:",
+      "contact_note": "* Feel free to contact us anytime!",
+      "location_description": "Located near the inner area of Yeongdeungpo Fire Station, across from Yeongdeungpo Times Square.",
+      "from_yeongdeungpo_station": "About 10-minute walk from Yeongdeungpo Station",
+      "from_market_station": "About 5-minute walk from Yeongdeungpo Market Station Exit 3",
+      "from_bus_stop": "3-minute walk after getting off at 'Yeongdeungpo Market' bus stop",
+      "nearby_landmarks": "* Nearby buildings: Yeongdeungpo Fire Station, Times Square, Yeongdeungpo Traditional Market",
+      "short_parking": "Brief parking available in front of the office.",
+      "parking_options": "For long-term parking, please use nearby public parking lots:",
+      "market_parking": "Yeongdeungpo Market Public Parking (3-minute walk)",
+      "timessquare_parking": "Times Square Parking (5-minute walk)",
+      "free_parking_note": "* Free parking available for simple business",
+      "reservation_note": "For bulk printing/copying or time-consuming work, advance reservation allows for faster processing.",
+      "file_transfer_note": "For file transfers, please use webhard or email.",
+      "general_inquiry_note": "* Please contact us anytime for any questions!",
+      "map_click_note": "* Click to view enlarged map.",
+      "subway_line1": "Yeongdeungpo Station (Line 1) - 10-minute walk",
+      "subway_line5": "Yeongdeungpo Market Station (Line 5) Exit 3 - 5-minute walk",
+      "regular_bus": "Regular buses: 152, 5620, 5714, 6628, 6631",
+      "trunk_bus": "Trunk buses: 605, 640, 650, 662",
+      "feeder_bus": "Feeder buses: 5012, 5615, 5618",
+      "bus_stop": "Bus stop: Get off at 'Yeongdeungpo Market'",
+      "taxi_guide": "Ask the taxi driver to go to \"Near Yeongdeungpo Fire Station, Yeongsin-ro 30-gil\".",
+      "help_description": "If you have difficulty finding us or need additional information, please contact us anytime. We will kindly guide you.",
+      "call_btn": "Call Now",
+      "subway_label": "Subway:",
+      "bus_label": "Bus:",
+      "taxi_label": "Taxi:",
+      "map_alt": "Sewon Printing Map",
+      "phone_icon_alt": "Phone Icon",
+      "email_icon_alt": "Email Icon"
+    },
+    "customer_reviews": {
+      "title": "Customer Reviews",
+      "review1": {
+        "name": "Mr. K",
+        "title": "Design Company CEO",
+        "content": "We had our company brochures made at Sewon Printing, and the results were really satisfying. The colors were accurate and the finishing was clean, which made a good impression on our clients. Thank you for processing it quickly despite the tight schedule."
+      },
+      "review2": {
+        "name": "Ms. L",
+        "title": "Graduate Student",
+        "content": "I had my thesis bound here, and they really worked meticulously. I was worried because it was an important thesis to submit to my professor, but they completed it with quality beyond my expectations. I will definitely use their services again next time."
+      },
+      "review3": {
+        "name": "Mr. P",
+        "title": "Cafe Owner",
+        "content": "I had cafe menus made, and customers have been showing favorable reactions to the menu design. The coating is well done, so they maintain their neat appearance even after long use. The price is reasonable and the service is good, so I've recommended them to other business owners around me."
+      }
+    },
+    "contact_info": {
+      "title": "Contact Information",
+      "subtitle": "Please contact us directly using the contact information below, or fill out the inquiry form.",
+      "phone_inquiry": "Phone Inquiry",
+      "email_inquiry": "Email Inquiry",
+      "email_available": "24/7 Available",
+      "visit_inquiry": "Visit Inquiry",
+      "webhard_info": "Webhard Information",
+      "webhard_description": "Please use webhard for large files.",
+      "webhard_id": "ID:",
+      "webhard_pw": "PW:",
+      "webhard_note": "After uploading files, please notify us by phone or email for faster confirmation."
+    },
+    "inquiry_guide": {
+      "title": "Inquiry Guide",
+      "subtitle": "Please contact us directly using the contact information below.",
+      "methods_title": "Inquiry Methods",
+      "phone_method": "📞 Phone Inquiry",
+      "phone_description": "Please call 02-6015-3100 or 010-2093-8756.",
+      "phone_hours": "Business Hours: Weekdays 08:00 - 18:00",
+      "email_method": "📧 Email Inquiry",
+      "email_description": "Please send quote requests to eunyangp@hanmail.net.",
+      "email_details": "For quote requests, please provide detailed information about work type, quantity, paper type, size, color/black & white, binding method, etc. for more accurate quotes.",
+      "visit_method": "🚗 Visit Inquiry",
+      "visit_description": "Please visit 15 Yeongsin-ro 30-gil, Yeongdeungpo-gu, Seoul (near Yeongdeungpo Fire Station).",
+      "visit_parking": "Brief parking available in front of the office!"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How long does bulk printing take?",
+        "answer": "For bulk printing, the time required varies depending on order volume and work complexity. Generally, less than 100 pages takes same day or next day, 500 pages or more takes about 2-3 days. Exact schedule will be informed upon inquiry."
+      },
+      "q2": {
+        "question": "What file formats do you support?",
+        "answer": "We support most common file formats including PDF, Word(docx, doc), PowerPoint(pptx, ppt), Excel(xlsx, xls), JPG, PNG. For special file formats, please contact us in advance to confirm support."
+      },
+      "q3": {
+        "question": "What binding methods are available?",
+        "answer": "We provide various binding methods including spiral binding, perfect binding, saddle stitching, hardcover binding, staple binding. Each binding method is suitable for different purposes and page counts, so we recommend the optimal binding method through consultation."
+      },
+      "q4": {
+        "question": "How can I request a quote?",
+        "answer": "You can request quotes through phone (02-6015-3100), email (eunyangp@hanmail.net) or website inquiry form. For accurate quotes, please provide information about type of printing/copying/binding, quantity, paper type, finishing method, etc. for faster response."
+      },
+      "q5": {
+        "question": "Is urgent work possible?",
+        "answer": "Yes, urgent work is possible. If you contact us in advance, we will help you complete the work as quickly as possible. However, for bulk work or complex binding, minimum work time is required, so please understand."
+      },
+      "contact": {
+        "q1": {
+          "question": "How can I get a quote?",
+          "answer": "You can request quotes through phone, email, or this inquiry form. For quote requests, please provide detailed information about work type, quantity, paper type, size, color/black & white, binding method, etc. for more accurate quotes."
+        },
+        "q2": {
+          "question": "How long does work completion take?",
+          "answer": "Work period varies depending on work type, quantity, and complexity. Simple copying/binding can be completed same day, while bulk work or special binding takes about 2-3 days. Exact work period will be provided when ordering."
+        },
+        "q3": {
+          "question": "How do I send files?",
+          "answer": "Small files can be sent via email (eunyangp@hanmail.net), and large files should use webhard. Webhard ID: sw3100 / PW: 3100. After uploading files, please notify us by phone or email for faster confirmation."
+        },
+        "q4": {
+          "question": "What payment methods are available?",
+          "answer": "Cash, card payment, and bank transfer are all available. Tax invoice issuance is also possible, so please let us know in advance if needed. For bulk work, advance payment may be requested."
+        },
+        "q5": {
+          "question": "Is delivery available?",
+          "answer": "Yes, courier delivery is available. Shipping costs may vary by region and weight, and direct delivery is also possible for bulk orders within Seoul area. Please contact us for details."
+        }
+      }
+    }
+  }
+}
