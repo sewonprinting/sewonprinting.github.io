@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
         aurora.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${index * 120}deg)`;
       });
       
-      // 스크롤 이벤트에 따라 오로라 크기와 투명도 변경
+      // 스크롤 이벤트에 따라 오로라 크기와 투명도 변경 (더 부드럽게)
       window.addEventListener('scroll', () => {
         const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-        const scaleValue = 1 + (scrollPercentage * 0.4 * (index + 1));
-        const opacityChange = 0.05 * scrollPercentage * (index + 1);
+        const scaleValue = 1 + (scrollPercentage * 0.2 * (index + 1));
+        const opacityChange = 0.02 * scrollPercentage * (index + 1);
         
-        aurora.style.opacity = Math.max(0.5, 0.9 - opacityChange);
+        aurora.style.opacity = Math.max(0.3, 0.6 - opacityChange);
         aurora.style.transform = `scale(${scaleValue})`;
       });
     });
@@ -296,6 +296,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     formGroup.classList.remove('error');
   }
+  
+  // 스크롤 이벤트에 따른 헤더 투명도 변경
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    const scrollPercentage = Math.min(window.scrollY / 100, 1);
+    const opacity = 0.85 + (scrollPercentage * 0.15); // 0.85 ~ 1.0
+    
+    if (window.scrollY > 50) {
+      header.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+      header.style.backdropFilter = 'blur(15px)';
+      header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+    } else {
+      header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+      header.style.backdropFilter = 'blur(12px)';
+      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    }
+  });
+
+  // 스크롤 애니메이션 이벤트
+  window.addEventListener('scroll', animateOnScroll);
   
   // 초기 스크롤 애니메이션 실행
   animateOnScroll();
