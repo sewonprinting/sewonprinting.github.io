@@ -71,7 +71,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   overflow: hidden;
   pointer-events: none;
 }
@@ -94,7 +94,7 @@
 }
 
 .aurora:nth-child(2) {
-  opacity: 0.85;
+  opacity: 1.0;
   filter: blur(60px);
   animation: aurora-rotate 25s linear infinite;
   animation-direction: reverse;
@@ -107,7 +107,7 @@
 }
 
 .aurora:nth-child(3) {
-  opacity: 0.7;
+  opacity: 1.0;
   filter: blur(70px);
   animation: aurora-rotate 30s linear infinite;
   background: linear-gradient(60deg, 
@@ -163,11 +163,6 @@
   --transition: all 0.3s ease;
 }
 
-/* 오로라가 잘 보이도록 배경색 더 투명하게 설정 */
-body {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 /* 전체 리셋 */
 * {
   margin: 0;
@@ -175,13 +170,18 @@ body {
   box-sizing: border-box;
 }
 
-/* 기본 폰트 및 스타일 */
+/* 기본 폰트 및 스타일 + 배경 이미지 설정 */
 body {
   font-family: 'Paperlogy', sans-serif;
   color: var(--dark-gray);
   line-height: 1.5;
-  background-color: var(--white);
   overflow-x: hidden;
+  background-image: url('../images/back_image.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -312,14 +312,19 @@ a:hover {
 }
 
 .logo img, .logo svg {
-  height: 50px;
+  height: 60px;
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+  object-fit: cover;
 }
 
 .logo-text {
   margin-left: var(--spacing-sm);
-  font-weight: 700;
-  font-size: var(--font-lg);
+  font-weight: 800;
+  font-size: var(--font-xl);
   color: var(--primary-color);
+  letter-spacing: -0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .nav-toggle {
