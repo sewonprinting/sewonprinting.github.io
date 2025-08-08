@@ -1,0 +1,394 @@
+{
+  "categories": [
+    "메뉴판",
+    "스프링제본", 
+    "무선제본",
+    "책자제작",
+    "결산서.세무조정계산서",
+    "제안서",
+    "도면출력제본",
+    "카드.초대장",
+    "팜플렛.전단지",
+    "포토폴리오",
+    "탁상달력",
+    "대봉투"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "메뉴판",
+      "description": "칼라출력 + 코팅",
+      "category": "메뉴판",
+      "image": "images/portfolio/메뉴판-1.jpg",
+      "alt": "메뉴판"
+    },
+    {
+      "id": 2,
+      "title": "메뉴판",
+      "description": "고급 코팅 마감",
+      "category": "메뉴판",
+      "image": "images/portfolio/메뉴판-2.jpg",
+      "alt": "메뉴판"
+    },
+    {
+      "id": 3,
+      "title": "메뉴판",
+      "description": "다양한 사이즈 지원",
+      "category": "메뉴판",
+      "image": "images/portfolio/메뉴판-3.jpg",
+      "alt": "메뉴판"
+    },
+    {
+      "id": 4,
+      "title": "메뉴판",
+      "description": "고급 마감 처리",
+      "category": "메뉴판",
+      "image": "images/portfolio/메뉴판-4.jpg",
+      "alt": "메뉴판"
+    },
+    {
+      "id": 5,
+      "title": "메뉴판",
+      "description": "저렴한 메뉴판 제작",
+      "category": "메뉴판",
+      "image": "images/portfolio/메뉴판-5.jpg",
+      "alt": "메뉴판"
+    },
+    {
+      "id": 6,
+      "title": "스프링제본",
+      "description": "앞뒤 PP필름 포함",
+      "category": "스프링제본",
+      "image": "images/portfolio/스프링제본-1.jpg",
+      "alt": "스프링제본"
+    },
+    {
+      "id": 7,
+      "title": "스프링제본",
+      "description": "다양한 색상 선택 가능",
+      "category": "스프링제본",
+      "image": "images/portfolio/스프링제본-2.jpg",
+      "alt": "스프링제본"
+    },
+    {
+      "id": 8,
+      "title": "스프링제본",
+      "description": "대량 주문 가능",
+      "category": "스프링제본",
+      "image": "images/portfolio/스프링제본-3.jpg",
+      "alt": "스프링제본"
+    },
+    {
+      "id": 9,
+      "title": "스프링제본",
+      "description": "고급 표지 옵션",
+      "category": "스프링제본",
+      "image": "images/portfolio/스프링제본-4.jpg",
+      "alt": "스프링제본"
+    },
+    {
+      "id": 10,
+      "title": "스프링제본",
+      "description": "내구성 높은 마감",
+      "category": "스프링제본",
+      "image": "images/portfolio/스프링제본-5.jpg",
+      "alt": "스프링제본"
+    },
+    {
+      "id": 11,
+      "title": "무선제본",
+      "description": "표지칼라 무광코팅",
+      "category": "무선제본",
+      "image": "images/portfolio/무선제본-1.jpg",
+      "alt": "무선제본"
+    },
+    {
+      "id": 12,
+      "title": "무선제본",
+      "description": "책자형 제본",
+      "category": "무선제본",
+      "image": "images/portfolio/무선제본-2.jpg",
+      "alt": "무선제본"
+    },
+    {
+      "id": 13,
+      "title": "무선제본",
+      "description": "고급 마감처리",
+      "category": "무선제본",
+      "image": "images/portfolio/무선제본-3.jpg",
+      "alt": "무선제본"
+    },
+    {
+      "id": 14,
+      "title": "무선제본",
+      "description": "대량 제작 가능",
+      "category": "무선제본",
+      "image": "images/portfolio/무선제본-4.jpg",
+      "alt": "무선제본"
+    },
+    {
+      "id": 15,
+      "title": "무선제본",
+      "description": "맞춤형 옵션",
+      "category": "무선제본",
+      "image": "images/portfolio/무선제본-5.jpg",
+      "alt": "무선제본"
+    },
+    {
+      "id": 16,
+      "title": "책자제작",
+      "description": "대량시 표지 선택가능",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-1.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 17,
+      "title": "책자제작",
+      "description": "예약시 당일 작업 가능",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-2.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 18,
+      "title": "책자제작",
+      "description": "다양한 제본 방식",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-3.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 19,
+      "title": "책자제작",
+      "description": "맞춤형 표지 디자인",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-4.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 20,
+      "title": "책자제작",
+      "description": "고급 인쇄",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-5.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 21,
+      "title": "책자제작",
+      "description": "맞춤형 사이즈",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-6.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 22,
+      "title": "책자제작",
+      "description": "하드커버 옵션",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-7.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 23,
+      "title": "책자제작",
+      "description": "전문 출판물",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-8.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 24,
+      "title": "책자제작",
+      "description": "고급 종이 옵션",
+      "category": "책자제작",
+      "image": "images/portfolio/책자제작-9.jpg",
+      "alt": "책자제작"
+    },
+    {
+      "id": 25,
+      "title": "세무조정계산서",
+      "description": "대량 제작 가능",
+      "category": "결산서.세무조정계산서",
+      "image": "images/portfolio/결산서.세무조정계산서-1.jpg",
+      "alt": "세무조정계산서"
+    },
+    {
+      "id": 26,
+      "title": "세무조정계산서",
+      "description": "전문 제본",
+      "category": "결산서.세무조정계산서",
+      "image": "images/portfolio/결산서.세무조정계산서-2.jpg",
+      "alt": "세무조정계산서"
+    },
+    {
+      "id": 27,
+      "title": "세무조정계산서",
+      "description": "회계사무소 납품",
+      "category": "결산서.세무조정계산서",
+      "image": "images/portfolio/결산서.세무조정계산서-3.jpg",
+      "alt": "세무조정계산서"
+    },
+    {
+      "id": 28,
+      "title": "제안서",
+      "description": "고급 제본",
+      "category": "제안서",
+      "image": "images/portfolio/제안서-1.jpg",
+      "alt": "제안서"
+    },
+    {
+      "id": 29,
+      "title": "제안서",
+      "description": "맞춤형 제작",
+      "category": "제안서",
+      "image": "images/portfolio/제안서-2.jpg",
+      "alt": "제안서"
+    },
+    {
+      "id": 30,
+      "title": "제안서",
+      "description": "고급 표지 옵션",
+      "category": "제안서",
+      "image": "images/portfolio/제안서-3.jpg",
+      "alt": "제안서"
+    },
+    {
+      "id": 31,
+      "title": "제안서",
+      "description": "기업 맞춤형",
+      "category": "제안서",
+      "image": "images/portfolio/제안서-4.jpg",
+      "alt": "제안서"
+    },
+    {
+      "id": 32,
+      "title": "도면 출력 제본",
+      "description": "각종 도면 출력제본",
+      "category": "도면출력제본",
+      "image": "images/portfolio/도면출력제본-1.jpg",
+      "alt": "도면출력제본"
+    },
+    {
+      "id": 33,
+      "title": "도면 출력 제본",
+      "description": "건축/인테리어 도면",
+      "category": "도면출력제본",
+      "image": "images/portfolio/도면출력제본-2.jpg",
+      "alt": "도면출력제본"
+    },
+    {
+      "id": 34,
+      "title": "초대장",
+      "description": "중앙절취선 포함",
+      "category": "카드.초대장",
+      "image": "images/portfolio/카드.초대장-1.jpg",
+      "alt": "카드/초대장"
+    },
+    {
+      "id": 35,
+      "title": "초대장",
+      "description": "엽서타입",
+      "category": "카드.초대장",
+      "image": "images/portfolio/카드.초대장-2.jpg",
+      "alt": "카드/초대장"
+    },
+    {
+      "id": 36,
+      "title": "카드",
+      "description": "맞춤형 디자인",
+      "category": "카드.초대장",
+      "image": "images/portfolio/카드.초대장-3.jpg",
+      "alt": "카드/초대장"
+    },
+    {
+      "id": 37,
+      "title": "초대장",
+      "description": "고급 용지",
+      "category": "카드.초대장",
+      "image": "images/portfolio/카드.초대장-4.jpg",
+      "alt": "카드/초대장"
+    },
+    {
+      "id": 38,
+      "title": "팜플렛/전단지",
+      "description": "고급 인쇄",
+      "category": "팜플렛.전단지",
+      "image": "images/portfolio/팜플렛.전단지-1.jpg",
+      "alt": "팜플렛/전단지"
+    },
+    {
+      "id": 39,
+      "title": "팜플렛/전단지",
+      "description": "맞춤형 디자인",
+      "category": "팜플렛.전단지",
+      "image": "images/portfolio/팜플렛.전단지-2.jpg",
+      "alt": "팜플렛/전단지"
+    },
+    {
+      "id": 40,
+      "title": "포토폴리오",
+      "description": "고급 제작",
+      "category": "포토폴리오",
+      "image": "images/portfolio/포토폴리오-1.jpg",
+      "alt": "포토폴리오"
+    },
+    {
+      "id": 41,
+      "title": "포토폴리오",
+      "description": "맞춤형 디자인",
+      "category": "포토폴리오",
+      "image": "images/portfolio/포토폴리오-2.jpg",
+      "alt": "포토폴리오"
+    },
+    {
+      "id": 42,
+      "title": "포토폴리오",
+      "description": "고급 용지 옵션",
+      "category": "포토폴리오",
+      "image": "images/portfolio/포토폴리오-3.jpg",
+      "alt": "포토폴리오"
+    },
+    {
+      "id": 43,
+      "title": "탁상달력",
+      "description": "고급 용지 옵션",
+      "category": "탁상달력",
+      "image": "images/portfolio/탁상달력-1.jpg",
+      "alt": "탁상달력"
+    },
+    {
+      "id": 44,
+      "title": "탁상달력",
+      "description": "고급 용지 옵션",
+      "category": "탁상달력",
+      "image": "images/portfolio/탁상달력-2.jpg",
+      "alt": "탁상달력"
+    },
+    {
+      "id": 45,
+      "title": "탁상달력",
+      "description": "고급 용지 옵션",
+      "category": "탁상달력",
+      "image": "images/portfolio/탁상달력-3.jpg",
+      "alt": "탁상달력"
+    },
+    {
+      "id": 46,
+      "title": "대봉투",
+      "description": "고급 용지 옵션",
+      "category": "대봉투",
+      "image": "images/portfolio/대봉투-1.jpg",
+      "alt": "대봉투"
+    },
+    {
+      "id": 47,
+      "title": "대봉투",
+      "description": "고급 용지 옵션",
+      "category": "대봉투",
+      "image": "images/portfolio/대봉투-2.jpg",
+      "alt": "대봉투"
+    }
+  ]
+}

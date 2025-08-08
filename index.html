@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>세원프린팅 - 인쇄·복사·제본 전문</title>
-  <meta name="description" content="한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다. 세원프린팅은 인쇄, 복사, 제본 전문 업체입니다.">
-  <meta name="keywords" content="세원프린팅, 인쇄, 복사, 제본, 영등포">
+  <title data-i18n="site.title">세원프린팅 - 인쇄·복사·제본 전문</title>
+  <meta name="description" data-i18n="site.description" content="한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다. 세원프린팅은 인쇄, 복사, 제본 전문 업체입니다.">
+  <meta name="keywords" data-i18n="site.keywords" content="세원프린팅, 인쇄, 복사, 제본, 영등포">
   
   <!-- 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     <div class="container header-content">
       <a href="index.html" class="logo">
         <img src="images/sewon_logo.png" alt="세원 로고" width="60" height="60">
-        <span class="logo-text">세원프린팅</span>
+        <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
       <button class="nav-toggle">
@@ -39,32 +39,38 @@
       
       <ul class="nav-menu">
         <li class="nav-item">
-          <a href="index.html" class="nav-link active">홈</a>
+          <a href="index.html" class="nav-link active" data-i18n="navigation.home">홈</a>
         </li>
         <li class="nav-item">
-          <a href="pages/services.html" class="nav-link">서비스</a>
+          <a href="pages/services.html" class="nav-link" data-i18n="navigation.services">서비스</a>
         </li>
         <li class="nav-item">
-          <a href="pages/portfolio.html" class="nav-link">성과품</a>
+          <a href="pages/portfolio.html" class="nav-link" data-i18n="navigation.portfolio">성과품</a>
         </li>
         <li class="nav-item">
-          <a href="pages/location.html" class="nav-link">오시는길</a>
+          <a href="pages/location.html" class="nav-link" data-i18n="navigation.location">오시는길</a>
         </li>
         <li class="nav-item">
-          <a href="pages/contact.html" class="nav-link">문의하기</a>
+          <a href="pages/contact.html" class="nav-link" data-i18n="navigation.contact">문의하기</a>
         </li>
       </ul>
+      
+      <!-- 언어 선택기 -->
+      <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
+        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+      </div>
     </div>
   </header>
 
   <!-- 히어로 섹션 -->
   <section class="hero">
     <div class="container hero-content">
-      <h1 class="animate-on-scroll">한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다.</h1>
-      <p class="animate-on-scroll">세원프린팅은 영등포에 위치한 인쇄·복사·제본 전문 업체입니다. 최고의 품질과 빠른 서비스로 고객님의 모든 요구사항을 충족해드립니다.</p>
+      <h1 class="animate-on-scroll" data-i18n="hero.title">한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다.</h1>
+      <p class="animate-on-scroll" data-i18n="hero.subtitle">세원프린팅은 영등포에 위치한 인쇄·복사·제본 전문 업체입니다. 최고의 품질과 빠른 서비스로 고객님의 모든 요구사항을 충족해드립니다.</p>
       <div class="animate-on-scroll">
-        <a href="pages/contact.html" class="btn btn-secondary">문의하기</a>
-        <a href="pages/services.html" class="btn">서비스 살펴보기</a>
+        <a href="pages/contact.html" class="btn btn-secondary" data-i18n="hero.btn_contact">문의하기</a>
+        <a href="pages/services.html" class="btn" data-i18n="hero.btn_services">서비스 살펴보기</a>
       </div>
     </div>
     <div class="hero-bg"></div>
@@ -73,58 +79,58 @@
   <!-- 서비스 섹션 -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">주요 서비스</h2>
+      <h2 class="section-title" data-i18n="services.title">주요 서비스</h2>
       <div class="services-grid">
         <div class="service-card card animate-on-scroll">
           <svg class="service-icon" width="80" height="80" viewBox="0 0 24 24">
             <path fill="#1a3a5f" d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5-1.95 0-4.05.4-5.5 1.5v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/>
           </svg>
-          <h3 class="service-title">POD 서비스</h3>
-          <p>Print on Demand 맞춤형 소량 출판(인쇄) 서비스를 제공합니다. 디지털 인쇄를 활용해서 다양한 요구를 반영하여 소량 제품도 제작해 드립니다.</p>
+          <h3 class="service-title" data-i18n="services.pod.title">POD 서비스</h3>
+          <p data-i18n="services.pod.description">Print on Demand 맞춤형 소량 출판(인쇄) 서비스를 제공합니다. 디지털 인쇄를 활용해서 다양한 요구를 반영하여 소량 제품도 제작해 드립니다.</p>
         </div>
         
         <div class="service-card card animate-on-scroll">
           <svg class="service-icon" width="80" height="80" viewBox="0 0 24 24">
             <path fill="#1a3a5f" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
           </svg>
-          <h3 class="service-title">복사 서비스</h3>
-          <p>신속하고 정확한 칼라 및 흑백 복사 서비스를 제공합니다. 고속복사, 대량복사 등 모든 복사를 빠르게 처리해 드립니다.</p>
+          <h3 class="service-title" data-i18n="services.copying.title">복사 서비스</h3>
+          <p data-i18n="services.copying.description">신속하고 정확한 칼라 및 흑백 복사 서비스를 제공합니다. 고속복사, 대량복사 등 모든 복사를 빠르게 처리해 드립니다.</p>
         </div>
         
         <div class="service-card card animate-on-scroll">
           <svg class="service-icon" width="80" height="80" viewBox="0 0 24 24">
             <path fill="#1a3a5f" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H8c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1zm3-4H8c-.55 0-1-.45-1-1s.45-1 1-1h9c.55 0 1 .45 1 1s-.45 1-1 1zm0-4H8c-.55 0-1-.45-1-1s.45-1 1-1h9c.55 0 1 .45 1 1s-.45 1-1 1zM7 9.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm0 4c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
           </svg>
-          <h3 class="service-title">제본 서비스</h3>
-          <p>스프링제본(코일링/트윈링), 무선제본, 중철제본 등 다양한 방식의 제본 서비스를 제공합니다. 제안서, 보고서, 책자 등 깔끔하게 마무리해 드립니다.</p>
+          <h3 class="service-title" data-i18n="services.binding.title">제본 서비스</h3>
+          <p data-i18n="services.binding.description">스프링제본(코일링/트윈링), 무선제본, 중철제본 등 다양한 방식의 제본 서비스를 제공합니다. 제안서, 보고서, 책자 등 깔끔하게 마무리해 드립니다.</p>
         </div>
         
         <div class="service-card card animate-on-scroll">
           <svg class="service-icon" width="80" height="80" viewBox="0 0 24 24">
             <path fill="#1a3a5f" d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM22 7h-2V4h-3V2h5v5zm0 15v-5h-2v3h-3v2h5zM2 22h5v-2H4v-3H2v5zM2 2v5h2V4h3V2H2z"/>
           </svg>
-          <h3 class="service-title">스캔 서비스</h3>
-          <p>고해상도 스캔 서비스를 제공합니다. 종이 문서를 디지털 파일로 변환하여 이메일이나 USB로 제공해 드립니다. OCR서비스 또한 제공합니다.</p>
+          <h3 class="service-title" data-i18n="services.scanning.title">스캔 서비스</h3>
+          <p data-i18n="services.scanning.description">고해상도 스캔 서비스를 제공합니다. 종이 문서를 디지털 파일로 변환하여 이메일이나 USB로 제공해 드립니다. OCR서비스 또한 제공합니다.</p>
         </div>
         
         <div class="service-card card animate-on-scroll">
           <svg class="service-icon" width="80" height="80" viewBox="0 0 24 24">
             <path fill="#1a3a5f" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
           </svg>
-          <h3 class="service-title">책자 제작</h3>
-          <p>제안서, 보고서, 설명서, 발표자료, 회의자료 등 개인소장용 책자라도 다양한 주문에 맞춰 제작해 드립니다.</p>
+          <h3 class="service-title" data-i18n="services.booklets.title">책자 제작</h3>
+          <p data-i18n="services.booklets.description">제안서, 보고서, 설명서, 발표자료, 회의자료 등 개인소장용 책자라도 다양한 주문에 맞춰 제작해 드립니다.</p>
         </div>
         
         <div class="service-card card animate-on-scroll">
           <svg class="service-icon" width="80" height="80" viewBox="0 0 24 24">
             <path fill="#1a3a5f" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
           </svg>
-          <h3 class="service-title">각종 인쇄물</h3>
-          <p>전단지, 소형간행물, 안내지 등 소비자의 요구에 맞춰 고화질 출력물을 제공해 드립니다.</p>
+          <h3 class="service-title" data-i18n="services.printing.title">각종 인쇄물</h3>
+          <p data-i18n="services.printing.description">전단지, 소형간행물, 안내지 등 소비자의 요구에 맞춰 고화질 출력물을 제공해 드립니다.</p>
         </div>
       </div>
       <div class="text-center">
-        <a href="pages/services.html" class="btn">서비스 더 알아보기</a>
+        <a href="pages/services.html" class="btn" data-i18n="services.more_btn">서비스 더 알아보기</a>
       </div>
     </div>
   </section>
@@ -134,7 +140,7 @@
   <!-- 포트폴리오 섹션 -->
   <section class="section" style="background-color: rgba(245, 245, 245, 0.5);">
     <div class="container">
-      <h2 class="section-title">성과품 갤러리</h2>
+      <h2 class="section-title" data-i18n="portfolio.title">성과품 갤러리</h2>
       <div class="portfolio-grid">
         <div class="portfolio-item animate-on-scroll" data-category="메뉴판">
           <img src="images/portfolio/메뉴판-1.jpg" alt="메뉴판" class="portfolio-img">
@@ -169,7 +175,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a href="pages/portfolio.html" class="btn">성과품 더보기</a>
+        <a href="pages/portfolio.html" class="btn" data-i18n="portfolio.more_btn">성과품 더보기</a>
       </div>
     </div>
   </section>
@@ -182,36 +188,36 @@
     </div>
     <div class="container">
       <div class="contact-info animate-on-scroll">
-        <h3 class="contact-title">오시는 길</h3>
+        <h3 class="contact-title" data-i18n="location.title">오시는 길</h3>
         <ul class="contact-list">
           <li class="contact-item">
             <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24">
               <path fill="#f27935" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
             </svg>
-            <span>서울 영등포구 영신로 30길 15 (영등포동4가 113-4)</span>
+            <span data-i18n="location.address">서울 영등포구 영신로 30길 15 (영등포동4가 113-4)</span>
           </li>
           <li class="contact-item">
             <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24">
               <path fill="#f27935" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
             </svg>
-            <span>02-6015-3100 / 010-2093-8756</span>
+            <span data-i18n="location.phone">02-6015-3100 / 010-2093-8756</span>
           </li>
           <li class="contact-item">
             <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24">
               <path fill="#f27935" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
-            <span>eunyangp@hanmail.net</span>
+            <span data-i18n="location.email">eunyangp@hanmail.net</span>
           </li>
           <li class="contact-item">
             <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24">
               <path fill="#f27935" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
               <path fill="#f27935" d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
             </svg>
-            <span>평일 08:00 - 18:00</span>
+            <span data-i18n="location.hours">평일 08:00 - 18:00</span>
           </li>
         </ul>
-        <p>영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.<br>사무실 앞 잠시 정차 가능합니다!</p>
-        <a href="pages/location.html" class="btn">상세 위치 보기</a>
+        <p data-i18n="location.description">영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.<br>사무실 앞 잠시 정차 가능합니다!</p>
+        <a href="pages/location.html" class="btn" data-i18n="location.detail_btn">상세 위치 보기</a>
       </div>
     </div>
   </section>
@@ -222,82 +228,112 @@
       <!-- 방문자 수 카운터 (숨김 처리) -->
       <span id="visitorCount" style="display:none;">로딩 중...</span>
       <div>
-        <h3 class="footer-logo">세원프린팅</h3>
-        <p class="footer-description">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
-        <p class="footer-description">출력, 복사, 제본 전문</p>
+        <h3 class="footer-logo" data-i18n="footer.company_name">세원프린팅</h3>
+        <p class="footer-description" data-i18n="footer.tagline">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
+        <p class="footer-description" data-i18n="footer.expertise">출력, 복사, 제본 전문</p>
       </div>
       
       <div>
-        <h4 class="footer-title">서비스</h4>
+        <h4 class="footer-title" data-i18n="footer.services_title">서비스</h4>
         <ul class="footer-links">
-          <li class="footer-link"><a href="pages/services.html#printing">POD 서비스</a></li>
-          <li class="footer-link"><a href="pages/services.html#copying">복사 서비스</a></li>
-          <li class="footer-link"><a href="pages/services.html#binding">제본 서비스</a></li>
-          <li class="footer-link"><a href="pages/services.html#scanning">스캔 서비스</a></li>
-          <li class="footer-link"><a href="pages/services.html#catalog">책자 제작</a></li>
-          <li class="footer-link"><a href="pages/services.html#promotional">각종 인쇄물</a></li>
+          <li class="footer-link"><a href="pages/services.html#printing" data-i18n="footer.services.pod">POD 서비스</a></li>
+          <li class="footer-link"><a href="pages/services.html#copying" data-i18n="footer.services.copying">복사 서비스</a></li>
+          <li class="footer-link"><a href="pages/services.html#binding" data-i18n="footer.services.binding">제본 서비스</a></li>
+          <li class="footer-link"><a href="pages/services.html#scanning" data-i18n="footer.services.scanning">스캔 서비스</a></li>
+          <li class="footer-link"><a href="pages/services.html#catalog" data-i18n="footer.services.booklets">책자 제작</a></li>
+          <li class="footer-link"><a href="pages/services.html#promotional" data-i18n="footer.services.printing">각종 인쇄물</a></li>
         </ul>
       </div>
       
       <div>
-        <h4 class="footer-title">연락처</h4>
+        <h4 class="footer-title" data-i18n="footer.contact_title">연락처</h4>
         <ul class="footer-links">
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
             </svg>
-            <span>서울 영등포구 영신로 30길 15</span>
+            <span data-i18n="footer.address">서울 영등포구 영신로 30길 15</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
             </svg>
-            <span>02-6015-3100 / 010-2093-8756</span>
+            <span data-i18n="location.phone">02-6015-3100 / 010-2093-8756</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
             </svg>
-            <span>eunyangp@hanmail.net</span>
+            <span data-i18n="location.email">eunyangp@hanmail.net</span>
           </li>
           <li class="footer-contact-item">
             <svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24">
               <path fill="#f27935" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
               <path fill="#f27935" d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
             </svg>
-            <span>평일 08:00 - 18:00</span>
+            <span data-i18n="location.hours">평일 08:00 - 18:00</span>
           </li>
         </ul>
       </div>
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2025 세원프린팅. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">&copy; 2025 세원프린팅. All Rights Reserved.</p>
     </div>
   </footer>
 
   <!-- 자바스크립트 -->
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   
   <!-- 방문자 수 스크립트 -->
   <script>
   function updateVisitorCount() {
-    var webAppUrl = "https://script.google.com/macros/s/AKfycbwwRzdIFxEUmgUpzRIxdf8uJPDkKOoDlt-qSxGGJjNNhesE_IrNZuckwIrkjEW5Djjf_Q/exec"; // Google Apps Script 웹 앱 URL
-    var visitorCountElement = document.getElementById('visitorCount'); // 방문수를 표시할 HTML 요소
+    var webAppUrl = "https://script.google.com/macros/s/AKfycbwwRzdIFxEUmgUpzRIxdf8uJPDkKOoDlt-qSxGGJjNNhesE_IrNZuckwIrkjEW5Djjf_Q/exec";
+    
+    // 백그라운드에서 방문자 수 카운팅 (화면에는 표시하지 않음)
+    console.log('방문자 카운터 실행 중...');
+    
+    // 먼저 일반 fetch 시도
     fetch(webAppUrl)
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
       .then(data => {
         console.log('현재 방문수:', data);
-        if (visitorCountElement) {
-          visitorCountElement.innerText = data; // 받아온 방문수를 화면에 표시
-        }
+        // 화면에는 표시하지 않고 콘솔에만 로그 출력
       })
       .catch(error => {
-        console.error('방문수 업데이트 오류:', error);
-        if (visitorCountElement) {
-          visitorCountElement.innerText = '오류 발생';
-        }
+        console.log('Fetch 실패, JSONP 방식으로 재시도:', error);
+        // JSONP 방식으로 재시도
+        tryJSONP();
       });
+  }
+  
+  function tryJSONP() {
+    var webAppUrl = "https://script.google.com/macros/s/AKfycbwwRzdIFxEUmgUpzRIxdf8uJPDkKOoDlt-qSxGGJjNNhesE_IrNZuckwIrkjEW5Djjf_Q/exec?callback=handleVisitorCount";
+    
+    var script = document.createElement('script');
+    script.src = webAppUrl;
+    script.onerror = function() {
+      console.error('JSONP 요청도 실패했습니다. 방문자 수 기능을 사용할 수 없습니다.');
+      // 스크립트 태그 제거
+      document.head.removeChild(script);
+    };
+    script.onload = function() {
+      // 성공적으로 로드되면 스크립트 태그 제거
+      document.head.removeChild(script);
+    };
+    document.head.appendChild(script);
+  }
+  
+  // JSONP 콜백 함수
+  function handleVisitorCount(data) {
+    console.log('현재 방문수:', data);
+    // 화면에는 표시하지 않고 콘솔에만 로그 출력
   }
   // 페이지 로드 시 및 필요에 따라 방문자 수를 업데이트합니다.
   window.onload = updateVisitorCount;

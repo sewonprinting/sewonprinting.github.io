@@ -366,6 +366,36 @@ a:hover {
   width: 100%;
 }
 
+/* 언어 선택기 */
+.language-switcher {
+  display: flex;
+  gap: 5px;
+  margin-left: var(--spacing-md);
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lang-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.lang-btn.active {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--white);
+}
+
 /* 히어로 섹션 */
 .hero {
   position: relative;
@@ -786,6 +816,11 @@ a:hover {
   
   .nav-item {
     margin: var(--spacing-md) 0;
+  }
+  
+  .language-switcher {
+    margin-top: var(--spacing-md);
+    margin-left: 0;
   }
   
   .hero {

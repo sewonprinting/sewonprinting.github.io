@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 관리자 | 세원프린팅</title>
+  
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <style>
+    .admin-container {
+      max-width: 1200px;
+      margin: 100px auto 50px;
+      padding: 0 20px;
+    }
+    
+    .admin-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: var(--border-radius);
+      color: white;
+    }
+    
+    .admin-nav {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .admin-nav button {
+      flex: 1;
+      min-width: 150px;
+      padding: 1rem;
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--medium-gray);
+      color: var(--dark-gray);
+      cursor: pointer;
+      transition: var(--transition);
+      font-weight: 500;
+    }
+    
+    .admin-nav button.active {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    .admin-nav button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--box-shadow);
+    }
+    
+    .admin-section {
+      display: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: var(--box-shadow);
+      margin-bottom: 2rem;
+    }
+    
+    .admin-section.active {
+      display: block;
+    }
+    
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--medium-gray);
+      border-radius: var(--border-radius);
+      font-family: 'Noto Sans KR', sans-serif;
+      transition: var(--transition);
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 3px rgba(242, 121, 53, 0.1);
+    }
+    
+    .image-preview {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      border: 2px dashed var(--medium-gray);
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.5rem;
+      overflow: hidden;
+    }
+    
+    .image-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .image-preview.empty {
+      color: var(--dark-gray);
+      text-align: center;
+    }
+    
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-color);
+    }
+    
+    .btn-secondary {
+      background-color: var(--secondary-color);
+    }
+    
+    .btn-danger {
+      background-color: #dc3545;
+    }
+    
+    .portfolio-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    
+    .portfolio-card {
+      background-color: white;
+      border-radius: var(--border-radius);
+      padding: 1rem;
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+    }
+    
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .portfolio-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      margin-bottom: 1rem;
+    }
+    
+    .portfolio-card h4 {
+      margin: 0 0 0.5rem 0;
+      color: var(--primary-color);
+    }
+    
+    .portfolio-card p {
+      margin: 0 0 1rem 0;
+      color: var(--dark-gray);
+      font-size: 0.9rem;
+    }
+    
+    .portfolio-card .category {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .message {
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    
+    .message.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .message.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .stat-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      color: var(--dark-gray);
+      font-weight: 500;
+    }
+    
+    .login-form {
+      max-width: 400px;
+      margin: 150px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+    
+    @media (max-width: 768px) {
+      .admin-nav {
+        flex-direction: column;
+      }
+      
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 오로라 배경 효과 -->
+  <div class="aurora-container">
+    <div class="aurora"></div>
+    <div class="aurora"></div>
+    <div class="aurora"></div>
+  </div>
+
+  <!-- 로그인 폼 -->
+  <div id="loginForm" class="login-form">
+    <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">관리자 로그인</h2>
+    <div class="form-group">
+      <label for="password">비밀번호</label>
+      <input type="password" id="password" placeholder="관리자 비밀번호를 입력하세요">
+    </div>
+    <button class="btn btn-primary" onclick="login()" style="width: 100%;">로그인</button>
+    <div id="loginMessage" class="message error" style="display: none; margin-top: 1rem;">
+      비밀번호가 올바르지 않습니다.
+    </div>
+  </div>
+
+  <!-- 관리자 인터페이스 -->
+  <div id="adminInterface" class="admin-container" style="display: none;">
+    <!-- 헤더 -->
+    <div class="admin-header">
+      <h1>세원프린팅 포트폴리오 관리자</h1>
+      <p>포트폴리오를 추가, 수정, 삭제할 수 있습니다.</p>
+      <button class="btn" onclick="logout()" style="margin-top: 1rem;">로그아웃</button>
+    </div>
+
+    <!-- 네비게이션 -->
+    <div class="admin-nav">
+      <button class="active" onclick="showSection('overview')">개요</button>
+      <button onclick="showSection('add')">포트폴리오 추가</button>
+      <button onclick="showSection('manage')">포트폴리오 관리</button>
+      <button onclick="showSection('categories')">카테고리 관리</button>
+    </div>
+
+    <!-- 메시지 영역 -->
+    <div id="messageArea"></div>
+
+    <!-- 개요 섹션 -->
+    <div id="overview" class="admin-section active">
+      <h2>현황 개요</h2>
+      <div class="stats-grid" id="statsGrid">
+        <!-- 통계 카드들이 여기에 동적으로 추가됩니다 -->
+      </div>
+      <h3>최근 포트폴리오</h3>
+      <div class="portfolio-list" id="recentPortfolio">
+        <!-- 최근 포트폴리오 목록이 여기에 표시됩니다 -->
+      </div>
+    </div>
+
+    <!-- 포트폴리오 추가 섹션 -->
+    <div id="add" class="admin-section">
+      <h2>새 포트폴리오 추가</h2>
+      <form id="addForm">
+        <div class="form-grid">
+          <div>
+            <div class="form-group">
+              <label for="addTitle">제목</label>
+              <input type="text" id="addTitle" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="addCategory">카테고리</label>
+              <select id="addCategory" required>
+                <!-- 카테고리 옵션들이 동적으로 추가됩니다 -->
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="addDescription">설명</label>
+              <textarea id="addDescription" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="addAlt">대체 텍스트</label>
+              <input type="text" id="addAlt" required>
+            </div>
+          </div>
+          
+          <div>
+            <div class="form-group">
+              <label for="addImage">이미지</label>
+              <input type="file" id="addImage" accept="image/*" onchange="previewImage(this, 'addPreview')">
+              <div id="addPreview" class="image-preview empty">
+                이미지를 선택하세요
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">포트폴리오 추가</button>
+          <button type="reset" class="btn btn-secondary">초기화</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- 포트폴리오 관리 섹션 -->
+    <div id="manage" class="admin-section">
+      <h2>포트폴리오 관리</h2>
+      <div class="form-group">
+        <label for="filterCategory">카테고리 필터</label>
+        <select id="filterCategory" onchange="filterPortfolio()">
+          <option value="all">전체</option>
+          <!-- 카테고리 옵션들이 동적으로 추가됩니다 -->
+        </select>
+      </div>
+      <div class="portfolio-list" id="portfolioList">
+        <!-- 포트폴리오 목록이 여기에 표시됩니다 -->
+      </div>
+    </div>
+
+    <!-- 카테고리 관리 섹션 -->
+    <div id="categories" class="admin-section">
+      <h2>카테고리 관리</h2>
+      <div class="form-group">
+        <label for="newCategory">새 카테고리</label>
+        <div style="display: flex; gap: 1rem;">
+          <input type="text" id="newCategory" placeholder="카테고리 이름을 입력하세요">
+          <button class="btn btn-primary" onclick="addCategory()">추가</button>
+        </div>
+      </div>
+      
+      <h3>기존 카테고리</h3>
+      <div id="categoryList">
+        <!-- 카테고리 목록이 여기에 표시됩니다 -->
+      </div>
+    </div>
+
+    <!-- 수정 모달 -->
+    <div id="editModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index: 3000; align-items: center; justify-content: center;">
+      <div style="background-color: white; padding: 2rem; border-radius: var(--border-radius); max-width: 600px; width: 90%; max-height: 90%; overflow-y: auto;">
+        <h3>포트폴리오 수정</h3>
+        <form id="editForm">
+          <input type="hidden" id="editId">
+          
+          <div class="form-group">
+            <label for="editTitle">제목</label>
+            <input type="text" id="editTitle" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="editCategory">카테고리</label>
+            <select id="editCategory" required>
+              <!-- 카테고리 옵션들이 동적으로 추가됩니다 -->
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="editDescription">설명</label>
+            <textarea id="editDescription" rows="3" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="editAlt">대체 텍스트</label>
+            <input type="text" id="editAlt" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="editImage">이미지 (변경할 경우만)</label>
+            <input type="file" id="editImage" accept="image/*" onchange="previewImage(this, 'editPreview')">
+            <div id="editPreview" class="image-preview">
+              <!-- 기존 이미지가 여기에 표시됩니다 -->
+            </div>
+          </div>
+          
+          <div class="btn-group">
+            <button type="submit" class="btn btn-primary">저장</button>
+            <button type="button" class="btn btn-secondary" onclick="closeEditModal()">취소</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 자바스크립트 -->
+  <script src="../js/portfolio.js"></script>
+  <script src="portfolio-admin.js"></script>
+</body>
+</html>
