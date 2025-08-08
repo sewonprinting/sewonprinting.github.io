@@ -85,6 +85,7 @@
       "page_keywords": "세원프린팅, 문의하기, 견적요청, 연락처, 인쇄 문의",
       "header_title": "문의하기",
       "header_subtitle": "궁금한 사항이나 견적 요청 등 언제든지 문의해 주세요. 빠르고 정확한 답변을 드리겠습니다.",
+      "btn_contact": "문의하기",
       "form": {
         "name": "이름",
         "email": "이메일",
@@ -146,9 +147,6 @@
         "high_quality_output": "고품질 출력",
         "various_paper_types": "다양한 용지 선택 가능"
       }
-    },
-    "contact": {
-      "btn_contact": "문의하기"
     },
     "portfolio_page": {
       "page_title": "성과품",
@@ -410,6 +408,7 @@
       "page_keywords": "Sewon Printing, contact, quote request, inquiry, printing contact",
       "header_title": "Contact",
       "header_subtitle": "Feel free to contact us anytime for inquiries or quote requests. We'll provide fast and accurate responses.",
+      "btn_contact": "Contact Us",
       "form": {
         "name": "Name",
         "email": "Email",
@@ -471,9 +470,6 @@
         "high_quality_output": "High Quality Output",
         "various_paper_types": "Various Paper Types Available"
       }
-    },
-    "contact": {
-      "btn_contact": "Contact Us"
     },
     "portfolio_page": {
       "page_title": "Portfolio",
