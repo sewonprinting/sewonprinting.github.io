@@ -362,14 +362,13 @@ a:hover {
 }
 
 .logo img, .logo svg {
-  height: 60px;
-  border-radius: 12px;
-  border: 2px solid var(--primary-color);
-  object-fit: cover;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 3px;
 }
 
 .logo-text {
-  margin-left: var(--spacing-sm);
+  margin-left: 0;
   font-weight: 800;
   font-size: var(--font-xl);
   color: var(--primary-color);
