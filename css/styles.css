@@ -1149,7 +1149,65 @@ div[style] h3 {
 /* 문의 양식 placeholder */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  text-shadow: 
+  text-shadow:
     0px 1px 1px rgba(255, 255, 255, 0.8),
     0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== 홍보 배너 섹션 ==================== */
+.promotional-section {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(26, 58, 95, 0.05) 0%, rgba(242, 121, 53, 0.03) 100%);
+}
+
+.promotional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.promotional-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.promotional-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.promotional-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .promotional-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotional-section {
+    padding: 2rem 0;
+  }
+
+  .promotional-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .promotional-item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }

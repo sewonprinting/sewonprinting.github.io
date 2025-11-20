@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(curl:*)",
-      "mcp__playwright__playwright_navigate"
+      "mcp__playwright__playwright_navigate",
+      "Read(//c/Users/ballf/Downloads/**)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
