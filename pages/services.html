@@ -486,37 +486,94 @@
                 <line x1="320" y1="45" x2="300" y2="130" stroke="#1a3a5f" stroke-width="1"/>
               </g>
 
-              <!-- Central AI Brain/Processor -->
+              <!-- Central AI Chip/Brain -->
               <g transform="translate(200, 100)">
                 <!-- Glow effect -->
                 <circle r="55" fill="url(#glowGradient)" opacity="0.4"/>
 
-                <!-- Main brain circle -->
-                <circle r="45" fill="url(#aiGradient)" stroke="#F27935" stroke-width="3"/>
+                <!-- Main AI chip body (rounded square) -->
+                <rect x="-40" y="-40" width="80" height="80" rx="12" fill="url(#aiGradient)" stroke="#F27935" stroke-width="3"/>
 
-                <!-- Neural connections inside -->
-                <g stroke="#F27935" stroke-width="1.5" fill="none" opacity="0.8">
-                  <path d="M -20,-15 Q 0,-20 20,-15"/>
-                  <path d="M -25,0 Q 0,5 25,0"/>
-                  <path d="M -20,15 Q 0,20 20,15"/>
-                  <circle cx="-20" cy="-15" r="3" fill="#F27935"/>
-                  <circle cx="20" cy="-15" r="3" fill="#F27935"/>
-                  <circle cx="-25" cy="0" r="3" fill="#F27935"/>
-                  <circle cx="25" cy="0" r="3" fill="#F27935"/>
-                  <circle cx="-20" cy="15" r="3" fill="#F27935"/>
-                  <circle cx="20" cy="15" r="3" fill="#F27935"/>
-                  <circle cx="0" cy="0" r="5" fill="#ff9955"/>
+                <!-- Circuit board patterns -->
+                <g stroke="#F27935" stroke-width="2" fill="none" opacity="0.7">
+                  <!-- Horizontal lines -->
+                  <line x1="-30" y1="-20" x2="-10" y2="-20"/>
+                  <line x1="10" y1="-20" x2="30" y2="-20"/>
+                  <line x1="-30" y1="0" x2="-10" y2="0"/>
+                  <line x1="10" y1="0" x2="30" y2="0"/>
+                  <line x1="-30" y1="20" x2="-10" y2="20"/>
+                  <line x1="10" y1="20" x2="30" y2="20"/>
+
+                  <!-- Vertical lines -->
+                  <line x1="-20" y1="-30" x2="-20" y2="-10"/>
+                  <line x1="-20" y1="10" x2="-20" y2="30"/>
+                  <line x1="0" y1="-30" x2="0" y2="-10"/>
+                  <line x1="0" y1="10" x2="0" y2="30"/>
+                  <line x1="20" y1="-30" x2="20" y2="-10"/>
+                  <line x1="20" y1="10" x2="20" y2="30"/>
                 </g>
 
-                <!-- Orbiting particles -->
+                <!-- Connection nodes -->
+                <g fill="#F27935">
+                  <circle cx="-20" cy="-20" r="3"/>
+                  <circle cx="0" cy="-20" r="3"/>
+                  <circle cx="20" cy="-20" r="3"/>
+                  <circle cx="-20" cy="0" r="3"/>
+                  <circle cx="20" cy="0" r="3"/>
+                  <circle cx="-20" cy="20" r="3"/>
+                  <circle cx="0" cy="20" r="3"/>
+                  <circle cx="20" cy="20" r="3"/>
+                </g>
+
+                <!-- Central AI core -->
+                <circle cx="0" cy="0" r="8" fill="#ff9955" stroke="#F27935" stroke-width="2">
+                  <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+                </circle>
+
+                <!-- Corner connectors (external pins) -->
+                <g fill="#F27935" opacity="0.8">
+                  <!-- Top left -->
+                  <rect x="-48" y="-35" width="6" height="3" rx="1"/>
+                  <rect x="-48" y="-25" width="6" height="3" rx="1"/>
+                  <!-- Top right -->
+                  <rect x="42" y="-35" width="6" height="3" rx="1"/>
+                  <rect x="42" y="-25" width="6" height="3" rx="1"/>
+                  <!-- Bottom left -->
+                  <rect x="-48" y="22" width="6" height="3" rx="1"/>
+                  <rect x="-48" y="32" width="6" height="3" rx="1"/>
+                  <!-- Bottom right -->
+                  <rect x="42" y="22" width="6" height="3" rx="1"/>
+                  <rect x="42" y="32" width="6" height="3" rx="1"/>
+
+                  <!-- Left side -->
+                  <rect x="-35" y="-48" width="3" height="6" rx="1"/>
+                  <rect x="-25" y="-48" width="3" height="6" rx="1"/>
+                  <!-- Right side -->
+                  <rect x="22" y="-48" width="3" height="6" rx="1"/>
+                  <rect x="32" y="-48" width="3" height="6" rx="1"/>
+                  <!-- Bottom -->
+                  <rect x="-35" y="42" width="3" height="6" rx="1"/>
+                  <rect x="-25" y="42" width="3" height="6" rx="1"/>
+                  <rect x="22" y="42" width="3" height="6" rx="1"/>
+                  <rect x="32" y="42" width="3" height="6" rx="1"/>
+                </g>
+
+                <!-- Orbiting data particles -->
                 <g opacity="0.7">
-                  <circle cx="38" cy="-20" r="2.5" fill="#F27935">
+                  <circle cx="50" cy="-15" r="2.5" fill="#F27935">
                     <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
                   </circle>
-                  <circle cx="-38" cy="20" r="2.5" fill="#F27935">
+                  <circle cx="-50" cy="15" r="2.5" fill="#F27935">
                     <animateTransform attributeName="transform" type="rotate" from="180 0 0" to="540 0 0" dur="4s" repeatCount="indefinite"/>
                   </circle>
+                  <circle cx="15" cy="-50" r="2.5" fill="#ff9955">
+                    <animateTransform attributeName="transform" type="rotate" from="90 0 0" to="450 0 0" dur="5s" repeatCount="indefinite"/>
+                  </circle>
                 </g>
+
+                <!-- AI text label -->
+                <text x="0" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a3a5f" opacity="0.8">AI</text>
               </g>
 
               <!-- Input: Prompt/Idea -->
