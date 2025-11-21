@@ -4,7 +4,8 @@
       "Bash(curl:*)",
       "mcp__playwright__playwright_navigate",
       "Read(//c/Users/ballf/Downloads/**)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(python:*)"
     ],
     "deny": []
   }

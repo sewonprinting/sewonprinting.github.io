@@ -81,22 +81,64 @@
     <div class="container">
       <div class="promotional-grid">
         <div class="promotional-item animate-on-scroll">
-          <img src="images/promotional/urgent-deadline.png" alt="마감 임박, 시간이 부족하세요?" class="promotional-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/promotional/mobile/urgent-deadline.png">
+            <source media="(min-width: 769px)" srcset="images/promotional/pc/urgent-deadline.png">
+            <img src="images/promotional/pc/urgent-deadline.png"
+                 alt="마감 임박, 시간이 부족하세요?"
+                 class="promotional-img"
+                 loading="lazy">
+          </picture>
         </div>
         <div class="promotional-item animate-on-scroll">
-          <img src="images/promotional/perfect-result.png" alt="완벽한 결과물을 빠르게" class="promotional-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/promotional/mobile/perfect-result.png">
+            <source media="(min-width: 769px)" srcset="images/promotional/pc/perfect-result.png">
+            <img src="images/promotional/pc/perfect-result.png"
+                 alt="완벽한 결과물을 빠르게"
+                 class="promotional-img"
+                 loading="lazy">
+          </picture>
         </div>
         <div class="promotional-item animate-on-scroll">
-          <img src="images/promotional/fast-copy.png" alt="고속 복사로 시간을 벌어줍니다" class="promotional-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/promotional/mobile/fast-copy.png">
+            <source media="(min-width: 769px)" srcset="images/promotional/pc/fast-copy.png">
+            <img src="images/promotional/pc/fast-copy.png"
+                 alt="고속 복사로 시간을 벌어줍니다"
+                 class="promotional-img"
+                 loading="lazy">
+          </picture>
         </div>
         <div class="promotional-item animate-on-scroll">
-          <img src="images/promotional/spring-binding.png" alt="스프링제본 - 180도 펼침의 편리함" class="promotional-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/promotional/mobile/spring-binding.png">
+            <source media="(min-width: 769px)" srcset="images/promotional/pc/spring-binding.png">
+            <img src="images/promotional/pc/spring-binding.png"
+                 alt="스프링제본 - 180도 펼침의 편리함"
+                 class="promotional-img"
+                 loading="lazy">
+          </picture>
         </div>
         <div class="promotional-item animate-on-scroll">
-          <img src="images/promotional/perfect-binding.png" alt="무선제본 - 깔끔하고 견고하게" class="promotional-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/promotional/mobile/perfect-binding.png">
+            <source media="(min-width: 769px)" srcset="images/promotional/pc/perfect-binding.png">
+            <img src="images/promotional/pc/perfect-binding.png"
+                 alt="무선제본 - 깔끔하고 견고하게"
+                 class="promotional-img"
+                 loading="lazy">
+          </picture>
         </div>
         <div class="promotional-item animate-on-scroll">
-          <img src="images/promotional/saddle-binding.png" alt="중철제본 - 빠르고 경제적인 선택" class="promotional-img">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/promotional/mobile/saddle-binding.png">
+            <source media="(min-width: 769px)" srcset="images/promotional/pc/saddle-binding.png">
+            <img src="images/promotional/pc/saddle-binding.png"
+                 alt="중철제본 - 빠르고 경제적인 선택"
+                 class="promotional-img"
+                 loading="lazy">
+          </picture>
         </div>
       </div>
     </div>
@@ -309,6 +351,7 @@
   </footer>
 
   <!-- 자바스크립트 -->
+  <script src="js/responsive-images.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
   

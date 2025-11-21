@@ -1188,6 +1188,47 @@ div[style] h3 {
   object-fit: cover;
 }
 
+/* picture 태그 반응형 이미지 지원 */
+.promotional-item picture {
+  display: block;
+  width: 100%;
+}
+
+.promotional-item picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 포트폴리오 반응형 이미지 최적화 */
+.portfolio-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* 모바일 이미지 최적화 */
+@media (max-width: 768px) {
+  .promotional-img,
+  .portfolio-img {
+    /* 모바일에서 이미지 로딩 최적화 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+
+  /* 모바일 이미지 크기 제한 */
+  .promotional-item {
+    max-width: 100%;
+  }
+
+  .promotional-item picture,
+  .promotional-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 /* 반응형 디자인 */
 @media (max-width: 1024px) {
   .promotional-grid {

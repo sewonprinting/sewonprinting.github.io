@@ -256,11 +256,11 @@
       "email_inquiry": "이메일 문의",
       "email_available": "24시간 접수 가능",
       "visit_inquiry": "방문 문의",
-      "webhard_info": "웹하드 정보",
-      "webhard_description": "대용량 파일은 웹하드를 이용해주세요.",
-      "webhard_id": "ID:",
-      "webhard_pw": "PW:",
-      "webhard_note": "파일 업로드 후 전화나 이메일로 알려주시면 빠른 확인이 가능합니다."
+      "visit_location": "영등포소방서 근처",
+      "kakao_info": "💬 카카오톡 오픈채팅",
+      "kakao_description": "빠른 상담과 문의는 카카오톡 오픈채팅을 이용해주세요.",
+      "kakao_button": "카카오톡 오픈채팅 참여하기",
+      "kakao_note": "* 평일 업무시간 내 빠른 답변 드립니다."
     },
     "inquiry_guide": {
       "title": "문의 안내",
@@ -309,7 +309,7 @@
         },
         "q3": {
           "question": "파일은 어떻게 전송하나요?",
-          "answer": "소용량 파일은 이메일(eunyangp@hanmail.net)로 전송 가능하며, 대용량 파일은 웹하드를 이용해주세요. 웹하드 ID: sw3100 / PW: 3100 입니다. 파일 업로드 후 전화나 이메일로 알려주시면 더 빠른 확인이 가능합니다."
+          "answer": "소용량 파일은 이메일(eunyangp@hanmail.net)로 전송 가능하며, 대용량 파일은 카카오톡 오픈채팅을 통해 전송해주세요. 카카오톡으로 빠른 상담과 파일 전송이 가능합니다."
         },
         "q4": {
           "question": "결제 방법은 어떻게 되나요?",
@@ -579,11 +579,11 @@
       "email_inquiry": "Email Inquiry",
       "email_available": "24/7 Available",
       "visit_inquiry": "Visit Inquiry",
-      "webhard_info": "Webhard Information",
-      "webhard_description": "Please use webhard for large files.",
-      "webhard_id": "ID:",
-      "webhard_pw": "PW:",
-      "webhard_note": "After uploading files, please notify us by phone or email for faster confirmation."
+      "visit_location": "Near Yeongdeungpo Fire Station",
+      "kakao_info": "💬 KakaoTalk Open Chat",
+      "kakao_description": "For quick consultation and inquiries, please use KakaoTalk Open Chat.",
+      "kakao_button": "Join KakaoTalk Open Chat",
+      "kakao_note": "* Fast response during business hours on weekdays."
     },
     "inquiry_guide": {
       "title": "Inquiry Guide",
@@ -632,7 +632,7 @@
         },
         "q3": {
           "question": "How do I send files?",
-          "answer": "Small files can be sent via email (eunyangp@hanmail.net), and large files should use webhard. Webhard ID: sw3100 / PW: 3100. After uploading files, please notify us by phone or email for faster confirmation."
+          "answer": "Small files can be sent via email (eunyangp@hanmail.net), and large files can be sent through KakaoTalk Open Chat. Fast consultation and file transfer are available via KakaoTalk."
         },
         "q4": {
           "question": "What payment methods are available?",

@@ -151,8 +151,17 @@ class PortfolioManager {
     itemDiv.setAttribute('data-category', item.category);
     itemDiv.setAttribute('data-id', item.id);
 
+    // 반응형 이미지 경로 가져오기
+    const imagePath = window.responsiveImageManager
+      ? window.responsiveImageManager.getResponsiveImagePath(`../${item.image}`)
+      : `../${item.image}`;
+
     itemDiv.innerHTML = `
-      <img src="../${item.image}" alt="${item.alt}" class="portfolio-img">
+      <img src="${imagePath}"
+           data-original-src="../${item.image}"
+           alt="${item.alt}"
+           class="portfolio-img"
+           loading="lazy">
       <div class="portfolio-overlay">
         <h3 class="portfolio-title">${item.title}</h3>
         <p class="portfolio-category">${item.description}</p>
@@ -185,14 +194,20 @@ class PortfolioManager {
   // 갤러리 모달 이벤트 리스너 추가
   addGalleryListeners(container) {
     const portfolioItems = container.querySelectorAll('.portfolio-item');
-    
+
     portfolioItems.forEach(item => {
       item.addEventListener('click', () => {
-        const imgSrc = item.querySelector('img').src;
+        const img = item.querySelector('img');
         const title = item.querySelector('.portfolio-title').textContent;
         const category = item.querySelector('.portfolio-category').textContent;
-        
-        this.showGalleryModal(imgSrc, title, category);
+
+        // 원본 이미지 경로 가져오기 (data-original-src 또는 mobile/pc 경로를 원본으로 변환)
+        let originalSrc = img.getAttribute('data-original-src') || img.src;
+
+        // mobile 또는 pc 경로를 원본 경로로 변환
+        originalSrc = originalSrc.replace('/mobile/', '/').replace('/pc/', '/');
+
+        this.showGalleryModal(originalSrc, title, category);
       });
     });
   }
