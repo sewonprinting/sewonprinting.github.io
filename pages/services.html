@@ -392,7 +392,225 @@
         </div>
       </div>
     </section>
-  
+
+    <!-- AI 이미지 제작 섹션 -->
+    <section id="ai-image" class="section">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem;">
+          <div style="flex: 1 1 400px;">
+            <h2 class="section-title" style="text-align: left;" data-i18n="services.ai_image.title">🤖 AI 이미지 제작 서비스</h2>
+            <p data-i18n="services.ai_image.description">최신 AI 기술로 맞춤형 이미지를 생성합니다. 로고, 포스터, 일러스트 등 다양한 디자인을 빠르고 합리적인 가격으로 제작해 드립니다.</p>
+            <ul style="list-style-type: none; padding: 0; margin: 1.5rem 0;">
+              <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.custom_image_generation">맞춤형 이미지 생성</span>
+              </li>
+              <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.logo_branding">로고 및 브랜딩 디자인</span>
+              </li>
+              <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.poster_banner_creation">포스터/배너 제작</span>
+              </li>
+              <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.illustration_character">일러스트 및 캐릭터</span>
+              </li>
+              <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.cover_design">책 표지 디자인</span>
+              </li>
+              <li style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.fast_production">빠른 제작 (1-3일)</span>
+              </li>
+              <li style="display: flex; align-items: center;">
+                <svg style="width: 20px; height: 20px; fill: var(--secondary-color); margin-right: 0.5rem;">
+                  <use xlink:href="../images/icons.svg#icon-check"></use>
+                </svg>
+                <span data-i18n="services_page.features.unlimited_revisions">무제한 수정</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn" data-i18n="contact.btn_contact">문의하기</a>
+          </div>
+          <div style="flex: 1 1 400px;">
+            <svg viewBox="0 0 400 300" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+              <defs>
+                <!-- Gradients -->
+                <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#1a3a5f;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#2a4a7f;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#F27935;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#ff9955;stop-opacity:1" />
+                </linearGradient>
+                <radialGradient id="glowGradient">
+                  <stop offset="0%" style="stop-color:#F27935;stop-opacity:0.6" />
+                  <stop offset="100%" style="stop-color:#F27935;stop-opacity:0" />
+                </radialGradient>
+                <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+
+              <!-- Background -->
+              <rect width="400" height="300" fill="#f8f9fa"/>
+
+              <!-- Neural Network Background Pattern -->
+              <g opacity="0.15">
+                <circle cx="80" cy="50" r="3" fill="#1a3a5f"/>
+                <circle cx="150" cy="40" r="3" fill="#1a3a5f"/>
+                <circle cx="250" cy="60" r="3" fill="#1a3a5f"/>
+                <circle cx="320" cy="45" r="3" fill="#1a3a5f"/>
+                <circle cx="100" cy="120" r="3" fill="#1a3a5f"/>
+                <circle cx="300" cy="130" r="3" fill="#1a3a5f"/>
+                <line x1="80" y1="50" x2="150" y2="40" stroke="#1a3a5f" stroke-width="1"/>
+                <line x1="150" y1="40" x2="250" y2="60" stroke="#1a3a5f" stroke-width="1"/>
+                <line x1="250" y1="60" x2="320" y2="45" stroke="#1a3a5f" stroke-width="1"/>
+                <line x1="80" y1="50" x2="100" y2="120" stroke="#1a3a5f" stroke-width="1"/>
+                <line x1="320" y1="45" x2="300" y2="130" stroke="#1a3a5f" stroke-width="1"/>
+              </g>
+
+              <!-- Central AI Brain/Processor -->
+              <g transform="translate(200, 100)">
+                <!-- Glow effect -->
+                <circle r="55" fill="url(#glowGradient)" opacity="0.4"/>
+
+                <!-- Main brain circle -->
+                <circle r="45" fill="url(#aiGradient)" stroke="#F27935" stroke-width="3"/>
+
+                <!-- Neural connections inside -->
+                <g stroke="#F27935" stroke-width="1.5" fill="none" opacity="0.8">
+                  <path d="M -20,-15 Q 0,-20 20,-15"/>
+                  <path d="M -25,0 Q 0,5 25,0"/>
+                  <path d="M -20,15 Q 0,20 20,15"/>
+                  <circle cx="-20" cy="-15" r="3" fill="#F27935"/>
+                  <circle cx="20" cy="-15" r="3" fill="#F27935"/>
+                  <circle cx="-25" cy="0" r="3" fill="#F27935"/>
+                  <circle cx="25" cy="0" r="3" fill="#F27935"/>
+                  <circle cx="-20" cy="15" r="3" fill="#F27935"/>
+                  <circle cx="20" cy="15" r="3" fill="#F27935"/>
+                  <circle cx="0" cy="0" r="5" fill="#ff9955"/>
+                </g>
+
+                <!-- Orbiting particles -->
+                <g opacity="0.7">
+                  <circle cx="38" cy="-20" r="2.5" fill="#F27935">
+                    <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="-38" cy="20" r="2.5" fill="#F27935">
+                    <animateTransform attributeName="transform" type="rotate" from="180 0 0" to="540 0 0" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
+              </g>
+
+              <!-- Input: Prompt/Idea -->
+              <g transform="translate(60, 100)">
+                <rect x="-35" y="-25" width="70" height="50" rx="8" fill="url(#cardGradient)" stroke="#1a3a5f" stroke-width="2"/>
+                <text x="0" y="-5" text-anchor="middle" font-size="12" fill="#1a3a5f" font-weight="600">프롬프트</text>
+                <text x="0" y="10" text-anchor="middle" font-size="20">💭</text>
+
+                <!-- Arrow to center -->
+                <path d="M 40,0 L 90,0" stroke="#F27935" stroke-width="2.5" fill="none" marker-end="url(#arrowOrange)"/>
+              </g>
+
+              <!-- Output: Generated Images -->
+              <g transform="translate(340, 100)">
+                <rect x="-35" y="-25" width="70" height="50" rx="8" fill="url(#cardGradient)" stroke="#1a3a5f" stroke-width="2"/>
+                <text x="0" y="-5" text-anchor="middle" font-size="12" fill="#1a3a5f" font-weight="600">AI 이미지</text>
+                <text x="0" y="10" text-anchor="middle" font-size="20">🎨</text>
+
+                <!-- Arrow from center -->
+                <path d="M -40,0 L -90,0" stroke="#F27935" stroke-width="2.5" fill="none" marker-end="url(#arrowOrange)"/>
+              </g>
+
+              <!-- Bottom: Generated Image Examples -->
+              <g transform="translate(0, 200)">
+                <!-- Image 1: Logo -->
+                <g transform="translate(35, 0)">
+                  <rect x="0" y="0" width="60" height="60" rx="8" fill="url(#cardGradient)" stroke="#1a3a5f" stroke-width="2"/>
+                  <circle cx="30" cy="22" r="7" fill="none" stroke="#F27935" stroke-width="2.5"/>
+                  <path d="M 18,35 L 30,47 L 42,35" fill="none" stroke="#F27935" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="30" y="75" text-anchor="middle" font-size="10" fill="#1a3a5f">로고</text>
+                </g>
+
+                <!-- Image 2: Cover Design -->
+                <g transform="translate(120, 0)">
+                  <rect x="0" y="0" width="60" height="60" rx="8" fill="url(#cardGradient)" stroke="#1a3a5f" stroke-width="2"/>
+                  <!-- Book cover with gradient background -->
+                  <rect x="8" y="8" width="44" height="44" rx="4" fill="url(#aiGradient)"/>
+                  <!-- Decorative lines -->
+                  <line x1="15" y1="15" x2="45" y2="15" stroke="#F27935" stroke-width="2"/>
+                  <circle cx="30" cy="28" r="6" fill="none" stroke="#F27935" stroke-width="2"/>
+                  <rect x="15" y="37" width="30" height="3" rx="1.5" fill="#F27935" opacity="0.8"/>
+                  <rect x="18" y="42" width="24" height="2.5" rx="1.25" fill="#F27935" opacity="0.6"/>
+                  <rect x="20" y="46" width="20" height="2" rx="1" fill="#F27935" opacity="0.4"/>
+                  <text x="30" y="75" text-anchor="middle" font-size="10" fill="#1a3a5f">표지</text>
+                </g>
+
+                <!-- Image 3: Illustration -->
+                <g transform="translate(205, 0)">
+                  <rect x="0" y="0" width="60" height="60" rx="8" fill="url(#cardGradient)" stroke="#1a3a5f" stroke-width="2"/>
+                  <path d="M 14,42 Q 14,24 30,20 Q 46,24 46,42 Z" fill="url(#orangeGradient)" opacity="0.8"/>
+                  <circle cx="23" cy="28" r="3" fill="#1a3a5f"/>
+                  <circle cx="37" cy="28" r="3" fill="#1a3a5f"/>
+                  <path d="M 23,37 Q 30,42 37,37" fill="none" stroke="#1a3a5f" stroke-width="2" stroke-linecap="round"/>
+                  <text x="30" y="75" text-anchor="middle" font-size="10" fill="#1a3a5f">캐릭터</text>
+                </g>
+
+                <!-- Image 4: Poster -->
+                <g transform="translate(290, 0)">
+                  <rect x="0" y="0" width="60" height="60" rx="8" fill="url(#cardGradient)" stroke="#1a3a5f" stroke-width="2"/>
+                  <rect x="8" y="8" width="44" height="22" rx="3" fill="url(#aiGradient)"/>
+                  <rect x="10" y="34" width="28" height="4" rx="2" fill="#F27935"/>
+                  <rect x="10" y="41" width="38" height="3.5" rx="1.75" fill="#F27935" opacity="0.6"/>
+                  <rect x="10" y="47" width="33" height="3" rx="1.5" fill="#F27935" opacity="0.4"/>
+                  <text x="30" y="75" text-anchor="middle" font-size="10" fill="#1a3a5f">포스터</text>
+                </g>
+              </g>
+
+              <!-- Arrow marker definition -->
+              <defs>
+                <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L0,6 L9,3 z" fill="#F27935" />
+                </marker>
+              </defs>
+
+              <!-- Floating sparkles with animation -->
+              <g opacity="0.6">
+                <text x="30" y="30" font-size="16" fill="#F27935">✨
+                  <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                </text>
+                <text x="365" y="40" font-size="16" fill="#F27935">✨
+                  <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+                </text>
+                <text x="370" y="180" font-size="16" fill="#F27935">✨
+                  <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+                </text>
+                <text x="20" y="190" font-size="16" fill="#F27935">✨
+                  <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+                </text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- 푸터 -->
     <footer class="footer">
@@ -412,6 +630,7 @@
             <li class="footer-link"><a href="#scanning" data-i18n="footer.services.scanning">스캔 서비스</a></li>
             <li class="footer-link"><a href="#catalog" data-i18n="footer.services.booklets">책자 제작</a></li>
             <li class="footer-link"><a href="#promotional" data-i18n="footer.services.printing">각종 인쇄물</a></li>
+            <li class="footer-link"><a href="#ai-image" data-i18n="footer.services.ai_image">AI 이미지 제작</a></li>
           </ul>
         </div>
         

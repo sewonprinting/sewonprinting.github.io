@@ -47,6 +47,10 @@
         "title": "각종 인쇄물",
         "description": "전단지, 소형간행물, 안내지 등 소비자의 요구에 맞춰 고화질 출력물을 제공해 드립니다."
       },
+      "ai_image": {
+        "title": "🤖 AI 이미지 제작",
+        "description": "최신 AI 기술로 맞춤형 이미지를 생성합니다. 로고, 포스터, 일러스트 등 다양한 디자인을 빠르고 합리적인 가격으로 제작해 드립니다."
+      },
       "more_btn": "서비스 더 알아보기"
     },
     "portfolio": {
@@ -76,7 +80,8 @@
         "binding": "제본 서비스",
         "scanning": "스캔 서비스",
         "booklets": "책자 제작",
-        "printing": "각종 인쇄물"
+        "printing": "각종 인쇄물",
+        "ai_image": "AI 이미지 제작"
       }
     },
     "contact": {
@@ -145,7 +150,14 @@
         "brochures": "브로슈어",
         "menus": "메뉴판",
         "high_quality_output": "고품질 출력",
-        "various_paper_types": "다양한 용지 선택 가능"
+        "various_paper_types": "다양한 용지 선택 가능",
+        "custom_image_generation": "맞춤형 이미지 생성",
+        "logo_branding": "로고 및 브랜딩 디자인",
+        "poster_banner_creation": "포스터/배너 제작",
+        "illustration_character": "일러스트 및 캐릭터",
+        "cover_design": "책 표지 디자인",
+        "fast_production": "빠른 제작 (1-3일)",
+        "unlimited_revisions": "무제한 수정"
       }
     },
     "portfolio_page": {
@@ -199,7 +211,6 @@
       "phone_label": "전화:",
       "mobile_label": "휴대폰:",
       "email_label": "이메일:",
-      "webhard_label": "웹하드:",
       "contact_note": "* 언제든지 문의주세요!",
       "location_description": "영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.",
       "from_yeongdeungpo_station": "영등포역에서 도보 약 10분 거리",
@@ -212,7 +223,7 @@
       "timessquare_parking": "타임스퀘어 주차장 (도보 5분)",
       "free_parking_note": "* 간단한 업무의 경우 무료 정차 가능",
       "reservation_note": "대량 인쇄/복사나 시간이 소요되는 작업은 미리 예약해주시면 더 신속하게 처리 가능합니다.",
-      "file_transfer_note": "파일 전송이 필요하신 경우 웹하드나 이메일을 이용해주세요.",
+      "file_transfer_note": "파일 전송이 필요하신 경우 카카오톡 오픈채팅이나 이메일을 이용해주세요.",
       "general_inquiry_note": "* 궁금하신 사항은 언제든지 연락주세요!",
       "map_click_note": "* 클릭하시면 확대해서 보실 수 있습니다.",
       "subway_line1": "영등포역 (1호선) - 도보 10분",
@@ -370,6 +381,10 @@
         "title": "Various Printed Materials",
         "description": "We provide high-quality printed outputs including flyers, small publications, guides, etc. according to consumer requirements."
       },
+      "ai_image": {
+        "title": "🤖 AI Image Creation",
+        "description": "Create custom images with cutting-edge AI technology. We produce various designs including logos, posters, and illustrations quickly and at reasonable prices."
+      },
       "more_btn": "Learn More About Services"
     },
     "portfolio": {
@@ -399,7 +414,8 @@
         "binding": "Binding Service",
         "scanning": "Scanning Service",
         "booklets": "Booklet Production",
-        "printing": "Various Printed Materials"
+        "printing": "Various Printed Materials",
+        "ai_image": "AI Image Creation"
       }
     },
     "contact": {
@@ -468,7 +484,14 @@
         "brochures": "Brochures",
         "menus": "Menus",
         "high_quality_output": "High Quality Output",
-        "various_paper_types": "Various Paper Types Available"
+        "various_paper_types": "Various Paper Types Available",
+        "custom_image_generation": "Custom Image Generation",
+        "logo_branding": "Logo & Branding Design",
+        "poster_banner_creation": "Poster/Banner Creation",
+        "illustration_character": "Illustrations & Characters",
+        "cover_design": "Book Cover Design",
+        "fast_production": "Fast Production (1-3 Days)",
+        "unlimited_revisions": "Unlimited Revisions"
       }
     },
     "portfolio_page": {
@@ -522,7 +545,6 @@
       "phone_label": "Phone:",
       "mobile_label": "Mobile:",
       "email_label": "Email:",
-      "webhard_label": "Webhard:",
       "contact_note": "* Feel free to contact us anytime!",
       "location_description": "Located near the inner area of Yeongdeungpo Fire Station, across from Yeongdeungpo Times Square.",
       "from_yeongdeungpo_station": "About 10-minute walk from Yeongdeungpo Station",
@@ -535,7 +557,7 @@
       "timessquare_parking": "Times Square Parking (5-minute walk)",
       "free_parking_note": "* Free parking available for simple business",
       "reservation_note": "For bulk printing/copying or time-consuming work, advance reservation allows for faster processing.",
-      "file_transfer_note": "For file transfers, please use webhard or email.",
+      "file_transfer_note": "For file transfers, please use KakaoTalk Open Chat or email.",
       "general_inquiry_note": "* Please contact us anytime for any questions!",
       "map_click_note": "* Click to view enlarged map.",
       "subway_line1": "Yeongdeungpo Station (Line 1) - 10-minute walk",
