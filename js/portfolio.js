@@ -151,10 +151,8 @@ class PortfolioManager {
     itemDiv.setAttribute('data-category', item.category);
     itemDiv.setAttribute('data-id', item.id);
 
-    // 반응형 이미지 경로 가져오기
-    const imagePath = window.responsiveImageManager
-      ? window.responsiveImageManager.getResponsiveImagePath(`../${item.image}`)
-      : `../${item.image}`;
+    // 이미지 경로
+    const imagePath = `../${item.image}`;
 
     itemDiv.innerHTML = `
       <img src="${imagePath}"

@@ -17,6 +17,7 @@ This is a static website for 세원프린팅 (Sewon Printing), a Korean printing
 - `data/portfolio.json` - Portfolio data
 - `admin/` - Portfolio administration interface
 - `images/` - Static assets and portfolio images
+- `scripts/` - Utility scripts for portfolio management
 
 ### Key Components
 
@@ -91,7 +92,12 @@ This is a static website for 세원프린팅 (Sewon Printing), a Korean printing
 
 ## Common Tasks
 
-### Adding New Portfolio Items
+### Adding New Portfolio Items (Recommended)
+1. Add images to `images/portfolio/` with naming format: `카테고리명-번호.jpg` (e.g., `메뉴판-6.jpg`)
+2. Run: `node scripts/generate-portfolio.js`
+3. The script automatically updates `data/portfolio.json`
+
+### Adding New Portfolio Items (Alternative)
 1. Use admin interface at `admin/portfolio-manager.html`
 2. Or manually edit `data/portfolio.json`
 3. Add corresponding image to `images/portfolio/`

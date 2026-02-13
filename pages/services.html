@@ -70,6 +70,30 @@
       <p style="font-size: var(--font-lg); max-width: 600px;" data-i18n="services_page.header_subtitle">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다. 세원프린팅은 다양한 인쇄, 복사, 제본 서비스를 제공합니다. 최신 장비와 숙련된 기술로 고객님의 모든 요구사항을 충족시켜 드립니다.</p>
     </div>
   </section>
+
+  <!-- 회사 소개 동영상 섹션 -->
+  <section class="video-section section">
+    <div class="container">
+      <h2 class="section-title">세원프린팅 소개</h2>
+      <div class="shorts-video-container">
+        <div class="shorts-video-wrapper">
+          <video id="introVideo" class="shorts-video" controls playsinline poster="../images/video-poster.jpg">
+            <source src="../movie/sewon_cm.mp4" type="video/mp4">
+            브라우저가 동영상을 지원하지 않습니다.
+          </video>
+          <!-- 재생 버튼 오버레이 -->
+          <div class="video-play-overlay" id="playOverlay">
+            <button class="play-button" aria-label="동영상 재생">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- POD 서비스 섹션 -->
   <section id="printing" class="section">
     <div class="container">
@@ -736,5 +760,46 @@
     <!-- 자바스크립트 -->
     <script src="../js/i18n.js"></script>
     <script src="../js/main.js"></script>
+
+    <!-- 동영상 재생 컨트롤 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('introVideo');
+      const playOverlay = document.getElementById('playOverlay');
+      const playButton = playOverlay.querySelector('.play-button');
+
+      // 재생 버튼 클릭 시
+      playOverlay.addEventListener('click', function() {
+        video.play();
+        playOverlay.classList.add('hidden');
+      });
+
+      // 동영상 클릭 시 일시정지/재생
+      video.addEventListener('click', function() {
+        if (video.paused) {
+          video.play();
+          playOverlay.classList.add('hidden');
+        } else {
+          video.pause();
+          playOverlay.classList.remove('hidden');
+        }
+      });
+
+      // 동영상 종료 시 오버레이 다시 표시
+      video.addEventListener('ended', function() {
+        playOverlay.classList.remove('hidden');
+      });
+
+      // 일시정지 시 오버레이 표시
+      video.addEventListener('pause', function() {
+        playOverlay.classList.remove('hidden');
+      });
+
+      // 재생 시 오버레이 숨김
+      video.addEventListener('play', function() {
+        playOverlay.classList.add('hidden');
+      });
+    });
+    </script>
   </body>
   </html>

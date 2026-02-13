@@ -496,6 +496,172 @@ a:hover {
   opacity: 0.3;
 }
 
+/* 히어로 비디오 배경 */
+.hero-video {
+  background-color: #000;
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  object-fit: cover;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(26, 58, 95, 0.7) 0%,
+    rgba(26, 58, 95, 0.4) 50%,
+    rgba(26, 58, 95, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+/* 음소거 토글 버튼 */
+.mute-toggle {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.mute-toggle:hover {
+  background: rgba(242, 121, 53, 0.8);
+  border-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.mute-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* 서브페이지 히어로 (동영상 배경) */
+.page-hero {
+  height: 50vh;
+  min-height: 350px;
+  max-height: 500px;
+  margin-bottom: 3rem;
+}
+
+.page-hero .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 숏츠 스타일 동영상 섹션 */
+.video-section {
+  padding: var(--spacing-xl) 0;
+  background: linear-gradient(135deg, rgba(26, 58, 95, 0.05) 0%, rgba(242, 121, 53, 0.05) 100%);
+}
+
+.shorts-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-lg) 0;
+}
+
+.shorts-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  background: #000;
+}
+
+.shorts-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.video-play-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.play-button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(242, 121, 53, 0.9);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background: rgba(242, 121, 53, 1);
+}
+
+.play-button svg {
+  margin-left: 8px;
+}
+
+/* 모바일 대응 */
+@media (max-width: 480px) {
+  .shorts-video-wrapper {
+    max-width: 280px;
+    border-radius: 16px;
+  }
+
+  .play-button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .play-button svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /* 서비스 섹션 */
 .services-grid {
   display: grid;
@@ -953,7 +1119,23 @@ a:hover {
     width: 95%; /* 화면 너비의 95%로 설정 */
     max-width: 100%;
   }
-  
+
+  .mute-toggle {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .hero-video-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(26, 58, 95, 0.6) 0%,
+      rgba(26, 58, 95, 0.5) 50%,
+      rgba(26, 58, 95, 0.7) 100%
+    );
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
