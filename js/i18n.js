@@ -61,8 +61,6 @@ class I18nManager {
       
       if (currentPath.includes('/pages/')) {
         dataPath = '../data/translations.json';
-      } else if (currentPath.includes('/admin/')) {
-        dataPath = '../data/translations.json';
       } else {
         dataPath = 'data/translations.json';
       }

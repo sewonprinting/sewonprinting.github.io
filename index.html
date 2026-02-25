@@ -6,7 +6,16 @@
   <title data-i18n="site.title">세원프린팅 - 인쇄·복사·제본 전문</title>
   <meta name="description" data-i18n="site.description" content="한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다. 세원프린팅은 인쇄, 복사, 제본 전문 업체입니다.">
   <meta name="keywords" data-i18n="site.keywords" content="세원프린팅, 인쇄, 복사, 제본, 영등포">
-  
+  <meta property="og:title" content="세원프린팅 - 인쇄·복사·제본 전문">
+  <meta property="og:description" content="한 권의 책이라도 당신의 소중한 마음을 담아 제작해 드립니다. 세원프린팅은 인쇄, 복사, 제본 전문 업체입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sewonprinting.github.io/">
+  <meta property="og:image" content="https://sewonprinting.github.io/images/sewon_logo.png">
+  <meta property="og:locale" content="ko_KR">
+  <link rel="alternate" hreflang="ko" href="https://sewonprinting.github.io/?lang=ko">
+  <link rel="alternate" hreflang="en" href="https://sewonprinting.github.io/?lang=en">
+  <link rel="canonical" href="https://sewonprinting.github.io/">
+
   <!-- 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +23,26 @@
   
   <!-- 스타일시트 -->
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "세원프린팅",
+    "description": "인쇄, 복사, 제본 전문 업체. POD 서비스, 스캔, 책자 제작, AI 이미지 제작.",
+    "url": "https://sewonprinting.github.io/",
+    "telephone": "02-6015-3100",
+    "email": "eunyangp@hanmail.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "영신로 30길 15",
+      "addressLocality": "영등포구",
+      "addressRegion": "서울특별시",
+      "addressCountry": "KR"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00",
+    "image": "https://sewonprinting.github.io/images/sewon_logo.png"
+  }
+  </script>
 </head>
 <body>
   <!-- 오로라 배경 효과 -->
@@ -31,7 +60,7 @@
         <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
-      <button class="nav-toggle">
+      <button class="nav-toggle" aria-label="메뉴 열기">
         <svg width="24" height="24" viewBox="0 0 24 24">
           <path fill="#1a3a5f" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
@@ -57,8 +86,8 @@
       
       <!-- 언어 선택기 -->
       <div class="language-switcher">
-        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
-        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+        <button class="lang-btn active" data-lang="ko">한국어</button>
+        <button class="lang-btn" data-lang="en">English</button>
       </div>
     </div>
   </header>
@@ -66,7 +95,7 @@
   <!-- 히어로 섹션 -->
   <section class="hero hero-video">
     <!-- 배경 동영상 -->
-    <video id="heroVideo" class="hero-video-bg" autoplay loop muted playsinline>
+    <video id="heroVideo" class="hero-video-bg" autoplay loop muted playsinline preload="metadata">
       <source src="movie/sewon_cm.mp4" type="video/mp4">
     </video>
     <div class="hero-video-overlay"></div>
@@ -232,7 +261,7 @@
 
 
   <!-- 포트폴리오 섹션 -->
-  <section class="section" style="background-color: rgba(245, 245, 245, 0.5);">
+  <section class="section section-alt">
     <div class="container">
       <h2 class="section-title" data-i18n="portfolio.title">성과품 갤러리</h2>
       <div class="portfolio-grid">
@@ -278,7 +307,7 @@
   <section class="section map-section">
     <div class="map-container">
       <!-- 지도 들어갈 자리 -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6613996426224!2d126.90503807634752!3d37.5172668283998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ec3afcd15e5%3A0x6451ed3c31c68277!2s15%20Yeongsin-ro%2030-gil%2C%20Yeongdeungpo-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1713009339916!5m2!1sen!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6613996426224!2d126.90503807634752!3d37.5172668283998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ec3afcd15e5%3A0x6451ed3c31c68277!2s15%20Yeongsin-ro%2030-gil%2C%20Yeongdeungpo-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1713009339916!5m2!1sen!2skr" width="100%" height="100%" class="map-iframe" title="세원프린팅 위치 - Google Maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="container">
       <div class="contact-info animate-on-scroll">
@@ -320,7 +349,7 @@
   <footer class="footer">
     <div class="container footer-content">
       <!-- 방문자 수 카운터 (숨김 처리) -->
-      <span id="visitorCount" style="display:none;">로딩 중...</span>
+      <span id="visitorCount" class="visually-hidden">로딩 중...</span>
       <div>
         <h3 class="footer-logo" data-i18n="footer.company_name">세원프린팅</h3>
         <p class="footer-description" data-i18n="footer.tagline">한 권의 책이라도 당신의 소중한 마음을 담아 빚어냅니다.</p>
@@ -379,30 +408,6 @@
   <!-- 자바스크립트 -->
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- 히어로 비디오 음소거 토글 -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('heroVideo');
-    const muteToggle = document.getElementById('muteToggle');
-    const iconMuted = muteToggle.querySelector('.icon-muted');
-    const iconUnmuted = muteToggle.querySelector('.icon-unmuted');
-
-    muteToggle.addEventListener('click', function() {
-      if (video.muted) {
-        video.muted = false;
-        iconMuted.style.display = 'none';
-        iconUnmuted.style.display = 'block';
-        muteToggle.setAttribute('aria-label', '음소거');
-      } else {
-        video.muted = true;
-        iconMuted.style.display = 'block';
-        iconUnmuted.style.display = 'none';
-        muteToggle.setAttribute('aria-label', '음소거 해제');
-      }
-    });
-  });
-  </script>
 
   <!-- 방문자 수 스크립트 -->
   <script>

@@ -6,7 +6,10 @@
   <title data-i18n="location_page.page_title">오시는길 | 세원프린팅 - 인쇄·복사·제본 전문</title>
   <meta name="description" data-i18n="location_page.page_description" content="세원프린팅의 위치와 오시는 길을 안내합니다. 영등포에 위치한 인쇄, 복사, 제본 전문점입니다.">
   <meta name="keywords" data-i18n="location_page.page_keywords" content="세원프린팅, 오시는길, 영등포, 위치, 지도">
-  
+  <link rel="canonical" href="https://sewonprinting.github.io/pages/location.html">
+  <link rel="alternate" hreflang="ko" href="https://sewonprinting.github.io/pages/location.html">
+  <link rel="alternate" hreflang="en" href="https://sewonprinting.github.io/pages/location.html">
+
   <!-- 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,55 +18,6 @@
   <!-- 스타일시트 -->
   <link rel="stylesheet" href="../css/styles.css">
   
-  <style>
-    .map-container {
-      width: 100%;
-      height: 500px;
-      border-radius: var(--border-radius);
-      overflow: hidden;
-      box-shadow: var(--box-shadow);
-    }
-    
-    .direction-card {
-      margin-bottom: 1.5rem;
-      padding: 1.5rem;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: var(--border-radius);
-      box-shadow: var(--box-shadow);
-      display: flex;
-      align-items: flex-start;
-    }
-    
-    .direction-icon {
-      width: 30px;
-      height: 30px;
-      margin-right: 1rem;
-      flex-shrink: 0;
-      fill: var(--secondary-color);
-    }
-    
-    .business-hours {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    
-    .business-day {
-      width: 100px;
-      padding: 0.5rem;
-      text-align: center;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-      border-radius: var(--border-radius);
-      background-color: rgba(245, 245, 245, 0.7);
-      font-weight: 500;
-    }
-    
-    .highlight {
-      color: var(--white);
-      background-color: rgba(26, 58, 95, 0.7);
-    }
-  </style>
 </head>
 <body>
   <!-- 오로라 배경 효과 -->
@@ -81,7 +35,7 @@
         <span class="logo-text" data-i18n="footer.company_name">세원프린팅</span>
       </a>
       
-      <button class="nav-toggle">
+      <button class="nav-toggle" aria-label="메뉴 열기">
         <svg width="24" height="24">
           <use xlink:href="../images/icons.svg#icon-menu"></use>
         </svg>
@@ -107,32 +61,32 @@
       
       <!-- 언어 선택기 -->
       <div class="language-switcher">
-        <button class="lang-btn active" data-lang="ko" onclick="changeLanguage('ko')">한국어</button>
-        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')">English</button>
+        <button class="lang-btn active" data-lang="ko">한국어</button>
+        <button class="lang-btn" data-lang="en">English</button>
       </div>
     </div>
   </header>
 
   <!-- 페이지 제목 섹션 -->
-  <section class="page-header" style="background-color: rgba(26, 58, 95, 0.4); color: var(--white); padding: 6rem 0 3rem; margin-bottom: 3rem;">
+  <section class="page-header page-header-section">
     <div class="container">
-      <h1 style="color: var(--white); margin-bottom: 1rem;" data-i18n="location_page.header_title">오시는길</h1>
-      <p style="font-size: var(--font-lg); max-width: 600px;" data-i18n="location_page.header_subtitle">세원프린팅의 위치와 교통편을 안내해드립니다.</p>
+      <h1 class="page-header-title" data-i18n="location_page.header_title">오시는길</h1>
+      <p class="page-header-subtitle" data-i18n="location_page.header_subtitle">세원프린팅의 위치와 교통편을 안내해드립니다.</p>
     </div>
   </section>
 
   <!-- 지도 섹션 -->
   <section class="section">
     <div class="container">
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6613996426224!2d126.90503807634752!3d37.5172668283998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ec3afcd15e5%3A0x6451ed3c31c68277!2s15%20Yeongsin-ro%2030-gil%2C%20Yeongdeungpo-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1713009339916!5m2!1sen!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-container map-container-lg">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6613996426224!2d126.90503807634752!3d37.5172668283998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ec3afcd15e5%3A0x6451ed3c31c68277!2s15%20Yeongsin-ro%2030-gil%2C%20Yeongdeungpo-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1713009339916!5m2!1sen!2skr" width="100%" height="100%" class="map-iframe" title="세원프린팅 위치 - Google Maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div style="margin-top: 2rem;">
+      <div class="map-section-spacer">
         <h2 class="section-title" data-i18n="location_page.directions_title">찾아오시는 방법</h2>
-        
-        <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
-          <div style="flex: 1 1 400px;">
+
+        <div class="direction-layout">
+          <div class="direction-col">
             <div class="direction-card">
               <svg class="direction-icon">
                 <use xlink:href="../images/icons.svg#icon-location"></use>
@@ -172,13 +126,13 @@
                 <p><strong data-i18n="location_page.phone_label">전화:</strong> 02-6015-3100</p>
                 <p><strong data-i18n="location_page.mobile_label">휴대폰:</strong> 010-2093-8756</p>
                 <p><strong data-i18n="location_page.email_label">이메일:</strong> eunyangp@hanmail.net</p>
-                <p><strong>💬 카카오톡 오픈채팅:</strong> <a href="https://open.kakao.com/o/sNzU1KNh" target="_blank" rel="noopener noreferrer" style="color: var(--secondary-color); text-decoration: underline;">참여하기</a></p>
+                <p><strong>💬 카카오톡 오픈채팅:</strong> <a href="https://open.kakao.com/o/sNzU1KNh" target="_blank" rel="noopener noreferrer" class="kakao-link">참여하기</a></p>
                 <p data-i18n="location_page.contact_note">* 언제든지 문의주세요!</p>
               </div>
             </div>
           </div>
           
-          <div style="flex: 1 1 400px;">
+          <div class="direction-col">
             <div class="direction-card">
               <svg class="direction-icon">
                 <use xlink:href="../images/icons.svg#icon-arrow"></use>
@@ -186,10 +140,10 @@
               <div>
                 <h3 data-i18n="location_page.directions_detail_title">찾아오시는 길</h3>
                 <p data-i18n="location_page.location_description">영등포 타임스퀘어 건너편 영등포소방서 안쪽 부근에 위치하고 있습니다.</p>
-                <ul style="padding-left: 1.5rem; margin: 1rem 0;">
-                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.from_yeongdeungpo_station">영등포역에서 도보 약 10분 거리</li>
-                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.from_market_station">영등포시장역 3번 출구에서 도보 약 5분 거리</li>
-                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.from_bus_stop">버스 정류장 '영등포시장' 하차 후 도보 3분 거리</li>
+                <ul class="direction-list">
+                  <li class="direction-list-item" data-i18n="location_page.from_yeongdeungpo_station">영등포역에서 도보 약 10분 거리</li>
+                  <li class="direction-list-item" data-i18n="location_page.from_market_station">영등포시장역 3번 출구에서 도보 약 5분 거리</li>
+                  <li class="direction-list-item" data-i18n="location_page.from_bus_stop">버스 정류장 '영등포시장' 하차 후 도보 3분 거리</li>
                 </ul>
                 <p data-i18n="location_page.nearby_landmarks">* 주변 건물: 영등포소방서, 타임스퀘어, 영등포전통시장</p>
               </div>
@@ -203,9 +157,9 @@
                 <h3 data-i18n="location_page.parking_title">주차 정보</h3>
                 <p data-i18n="location_page.short_parking">사무실 앞 잠시 정차 가능합니다.</p>
                 <p data-i18n="location_page.parking_options">장시간 주차가 필요하신 경우 근처 공영주차장을 이용해주세요:</p>
-                <ul style="padding-left: 1.5rem; margin: 1rem 0;">
-                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.market_parking">영등포시장 공영주차장 (도보 3분)</li>
-                  <li style="margin-bottom: 0.5rem;" data-i18n="location_page.timessquare_parking">타임스퀘어 주차장 (도보 5분)</li>
+                <ul class="direction-list">
+                  <li class="direction-list-item" data-i18n="location_page.market_parking">영등포시장 공영주차장 (도보 3분)</li>
+                  <li class="direction-list-item" data-i18n="location_page.timessquare_parking">타임스퀘어 주차장 (도보 5분)</li>
                 </ul>
                 <p data-i18n="location_page.free_parking_note">* 간단한 업무의 경우 무료 정차 가능</p>
               </div>
@@ -229,14 +183,14 @@
   </section>
 
   <!-- 약도 섹션 -->
-  <section class="section" style="background-color: rgba(245, 245, 245, 0.5);">
+  <section class="section section-alt">
     <div class="container">
       <h2 class="section-title" data-i18n="location_page.map_title">약도</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center;">
-        <div style="flex: 1 1 400px; text-align: center;">
-          <a href="../images/location-map.svg" target="_blank" style="display: block; position: relative; border-radius: var(--border-radius); box-shadow: var(--box-shadow); overflow: hidden;">
-            <img src="../images/location-map.svg" alt="세원프린팅 약도" data-i18n-alt="location_page.map_alt" style="max-width: 100%; display: block; transition: transform 0.3s ease;">
-            <div style="position: absolute; bottom: 15px; right: 15px; background-color: rgba(255,255,255,0.8); padding: 8px; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <div class="map-detail-layout">
+        <div class="map-detail-col">
+          <a href="../images/location-map.svg" target="_blank" class="map-image-link">
+            <img src="../images/location-map.svg" alt="세원프린팅 약도" data-i18n-alt="location_page.map_alt" class="map-image">
+            <div class="map-zoom-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 3H21V9" stroke="#1a3a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9 21H3V15" stroke="#1a3a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -245,23 +199,23 @@
               </svg>
             </div>
           </a>
-          <p style="margin-top: 1rem; font-size: var(--font-sm);" data-i18n="location_page.map_click_note">* 클릭하시면 확대해서 보실 수 있습니다.</p>
+          <p class="map-note" data-i18n="location_page.map_click_note">* 클릭하시면 확대해서 보실 수 있습니다.</p>
         </div>
-        
-        <div style="flex: 1 1 400px;">
+
+        <div class="map-detail-col-text">
           <div class="card">
             <h3 data-i18n="location_page.public_transport_title">대중교통 이용 시</h3>
-            <ul style="padding-left: 1.5rem; margin: 1rem 0;">
-              <li style="margin-bottom: 0.8rem;">
+            <ul class="direction-list">
+              <li class="direction-list-item-lg">
                 <strong data-i18n="location_page.subway_label">지하철:</strong> 
-                <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
+                <ul class="direction-list-sub">
                   <li data-i18n="location_page.subway_line1">영등포역 (1호선) - 도보 10분</li>
                   <li data-i18n="location_page.subway_line5">영등포시장역 (5호선) 3번 출구 - 도보 5분</li>
                 </ul>
               </li>
-              <li style="margin-bottom: 0.8rem;">
+              <li class="direction-list-item-lg">
                 <strong data-i18n="location_page.bus_label">버스:</strong>
-                <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
+                <ul class="direction-list-sub">
                   <li data-i18n="location_page.regular_bus">일반버스: 152, 5620, 5714, 6628, 6631</li>
                   <li data-i18n="location_page.trunk_bus">간선버스: 605, 640, 650, 662</li>
                   <li data-i18n="location_page.feeder_bus">지선버스: 5012, 5615, 5618</li>
@@ -270,7 +224,7 @@
               </li>
               <li>
                 <strong data-i18n="location_page.taxi_label">택시:</strong>
-                <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
+                <ul class="direction-list-sub">
                   <li data-i18n="location_page.taxi_guide">택시 기사님께 "영등포 소방서 근처 영신로 30길"로 안내를 요청하세요.</li>
                 </ul>
               </li>
@@ -285,15 +239,15 @@
   <section class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="location_page.help_title">찾아오시기 어렵다면?</h2>
-      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+      <div class="help-section">
         <p data-i18n="location_page.help_description">찾아오시는 길에 어려움이 있으시거나, 추가 정보가 필요하시면 언제든지 연락해주세요. 친절하게 안내해드리겠습니다.</p>
-        <div style="margin-top: 2rem;">
-          <a href="tel:02-6015-3100" class="btn" style="margin-right: 1rem; margin-bottom: 1rem; display: inline-flex; align-items: center; justify-content: center;">
-            <img src="../images/phone-icon.svg" alt="전화 아이콘" data-i18n-alt="location_page.phone_icon_alt" style="width: 16px; height: 16px; margin-right: 0.5rem;">
+        <div class="help-buttons">
+          <a href="tel:02-6015-3100" class="btn btn-mr">
+            <img src="../images/phone-icon.svg" alt="전화 아이콘" data-i18n-alt="location_page.phone_icon_alt" class="btn-icon">
             <span data-i18n="location_page.call_btn">전화하기</span>
           </a>
-          <a href="contact.html" class="btn" style="display: inline-flex; align-items: center; justify-content: center;">
-            <img src="../images/email-icon.svg" alt="이메일 아이콘" data-i18n-alt="location_page.email_icon_alt" style="width: 16px; height: 16px; margin-right: 0.5rem;">
+          <a href="contact.html" class="btn">
+            <img src="../images/email-icon.svg" alt="이메일 아이콘" data-i18n-alt="location_page.email_icon_alt" class="btn-icon">
             <span data-i18n="navigation.contact">문의하기</span>
           </a>
         </div>

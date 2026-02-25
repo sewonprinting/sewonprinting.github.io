@@ -24,8 +24,6 @@ class PortfolioManager {
       
       if (currentPath.includes('/pages/')) {
         dataPath = `../data/${portfolioFile}`;
-      } else if (currentPath.includes('/admin/')) {
-        dataPath = `../data/${portfolioFile}`;
       } else {
         dataPath = `data/${portfolioFile}`;
       }
@@ -144,27 +142,47 @@ class PortfolioManager {
     this.addGalleryListeners(container);
   }
 
-  // 포트폴리오 아이템 요소 생성
+  // 포트폴리오 아이템 요소 생성 (DOM API - XSS 방지)
   createItemElement(item) {
     const itemDiv = document.createElement('div');
     itemDiv.className = `portfolio-item ${item.category}`;
     itemDiv.setAttribute('data-category', item.category);
     itemDiv.setAttribute('data-id', item.id);
 
-    // 이미지 경로
     const imagePath = `../${item.image}`;
+    const webpPath = imagePath.replace(/\.jpg$/, '.webp');
 
-    itemDiv.innerHTML = `
-      <img src="${imagePath}"
-           data-original-src="../${item.image}"
-           alt="${item.alt}"
-           class="portfolio-img"
-           loading="lazy">
-      <div class="portfolio-overlay">
-        <h3 class="portfolio-title">${item.title}</h3>
-        <p class="portfolio-category">${item.description}</p>
-      </div>
-    `;
+    const picture = document.createElement('picture');
+
+    const sourceWebp = document.createElement('source');
+    sourceWebp.srcset = webpPath;
+    sourceWebp.type = 'image/webp';
+
+    const img = document.createElement('img');
+    img.src = imagePath;
+    img.setAttribute('data-original-src', `../${item.image}`);
+    img.alt = item.alt;
+    img.className = 'portfolio-img';
+    img.loading = 'lazy';
+
+    picture.appendChild(sourceWebp);
+    picture.appendChild(img);
+
+    const overlay = document.createElement('div');
+    overlay.className = 'portfolio-overlay';
+
+    const title = document.createElement('h3');
+    title.className = 'portfolio-title';
+    title.textContent = item.title;
+
+    const desc = document.createElement('p');
+    desc.className = 'portfolio-category';
+    desc.textContent = item.description;
+
+    overlay.appendChild(title);
+    overlay.appendChild(desc);
+    itemDiv.appendChild(picture);
+    itemDiv.appendChild(overlay);
 
     return itemDiv;
   }
@@ -210,7 +228,7 @@ class PortfolioManager {
     });
   }
 
-  // 갤러리 모달 표시
+  // 갤러리 모달 표시 (DOM API - XSS 방지)
   showGalleryModal(imgSrc, title, category) {
     // 기존 모달 제거
     const existingModal = document.querySelector('.gallery-modal');
@@ -218,73 +236,58 @@ class PortfolioManager {
       existingModal.remove();
     }
 
-    // 새 모달 생성
+    // 새 모달 생성 (CSS 클래스 사용)
     const modal = document.createElement('div');
     modal.className = 'gallery-modal';
-    modal.style.cssText = `
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
-      z-index: 2000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    `;
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
 
-    modal.innerHTML = `
-      <div class="gallery-modal-content" style="max-width: 90%; max-height: 90%; position: relative;">
-        <span class="gallery-modal-close" style="position: absolute; top: -40px; right: 0; width: 30px; height: 30px; background-color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 18px; color: #333;">&times;</span>
-        <img src="${imgSrc}" alt="${title}" style="max-width: 100%; max-height: 90vh; border-radius: 8px;">
-        <div class="gallery-modal-info" style="position: absolute; bottom: -60px; left: 0; background-color: rgba(255, 255, 255, 0.9); padding: 10px 15px; border-radius: 5px;">
-          <h3 style="margin: 0; font-size: 1.2rem; color: #333;">${title}</h3>
-          <p style="margin: 5px 0 0; color: #666;">${category}</p>
-        </div>
-      </div>
-    `;
+    const content = document.createElement('div');
+    content.className = 'gallery-modal-content';
 
-    // 모달 추가
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'gallery-modal-close';
+    closeBtn.textContent = '\u00d7';
+    closeBtn.setAttribute('aria-label', '닫기');
+
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.alt = title;
+    img.className = 'gallery-modal-img';
+
+    const info = document.createElement('div');
+    info.className = 'gallery-modal-info';
+
+    const infoTitle = document.createElement('h3');
+    infoTitle.textContent = title;
+
+    const infoCat = document.createElement('p');
+    infoCat.textContent = category;
+
+    info.appendChild(infoTitle);
+    info.appendChild(infoCat);
+    content.appendChild(closeBtn);
+    content.appendChild(img);
+    content.appendChild(info);
+    modal.appendChild(content);
     document.body.appendChild(modal);
 
-    // 애니메이션
-    setTimeout(() => {
-      modal.style.opacity = '1';
-    }, 10);
+    setTimeout(() => { modal.style.opacity = '1'; }, 10);
+    closeBtn.focus();
 
-    // 닫기 이벤트
-    const closeBtn = modal.querySelector('.gallery-modal-close');
-    closeBtn.addEventListener('click', () => {
+    const closeModal = () => {
       modal.style.opacity = '0';
-      setTimeout(() => {
-        document.body.removeChild(modal);
-      }, 300);
-    });
+      setTimeout(() => { modal.remove(); }, 300);
+      document.removeEventListener('keydown', handleEscape);
+    };
 
-    // 모달 외부 클릭 시 닫기
+    closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (event) => {
-      if (event.target === modal) {
-        modal.style.opacity = '0';
-        setTimeout(() => {
-          document.body.removeChild(modal);
-        }, 300);
-      }
+      if (event.target === modal) closeModal();
     });
 
-    // ESC 키로 닫기
     const handleEscape = (event) => {
-      if (event.key === 'Escape') {
-        modal.style.opacity = '0';
-        setTimeout(() => {
-          if (document.body.contains(modal)) {
-            document.body.removeChild(modal);
-          }
-        }, 300);
-        document.removeEventListener('keydown', handleEscape);
-      }
+      if (event.key === 'Escape') closeModal();
     };
     document.addEventListener('keydown', handleEscape);
   }

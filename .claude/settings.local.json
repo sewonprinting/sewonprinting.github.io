@@ -5,7 +5,13 @@
       "mcp__playwright__playwright_navigate",
       "Read(//c/Users/ballf/Downloads/**)",
       "Bash(mkdir:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(xargs ls:*)",
+      "Bash(du:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(sort:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }

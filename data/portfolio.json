@@ -20,7 +20,7 @@
       "description": "대량 제작 가능",
       "category": "결산서.세무조정계산서",
       "image": "images/portfolio/결산서.세무조정계산서-1.jpg",
-      "alt": "세무조정계산서"
+      "alt": "세무조정계산서 대량 제본 완성본"
     },
     {
       "id": 2,
@@ -28,7 +28,7 @@
       "description": "전문 제본",
       "category": "결산서.세무조정계산서",
       "image": "images/portfolio/결산서.세무조정계산서-2.jpg",
-      "alt": "세무조정계산서"
+      "alt": "세무조정계산서 전문 제본 작업물"
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@
       "description": "회계사무소 납품",
       "category": "결산서.세무조정계산서",
       "image": "images/portfolio/결산서.세무조정계산서-3.jpg",
-      "alt": "세무조정계산서"
+      "alt": "회계사무소 납품용 세무조정계산서 제본"
     },
     {
       "id": 4,
@@ -44,7 +44,7 @@
       "description": "고급 용지 옵션",
       "category": "대봉투",
       "image": "images/portfolio/대봉투-1.jpg",
-      "alt": "대봉투"
+      "alt": "고급 용지로 제작한 맞춤형 대봉투"
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@
       "description": "맞춤형 사이즈",
       "category": "대봉투",
       "image": "images/portfolio/대봉투-2.jpg",
-      "alt": "대봉투"
+      "alt": "맞춤 사이즈 대봉투 인쇄 완성본"
     },
     {
       "id": 6,
@@ -60,7 +60,7 @@
       "description": "각종 도면 출력제본",
       "category": "도면출력제본",
       "image": "images/portfolio/도면출력제본-1.jpg",
-      "alt": "도면 출력 제본"
+      "alt": "건축 도면 대형 출력 및 제본"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "description": "건축/인테리어 도면",
       "category": "도면출력제본",
       "image": "images/portfolio/도면출력제본-2.jpg",
-      "alt": "도면 출력 제본"
+      "alt": "인테리어 도면 출력 제본 완성본"
     },
     {
       "id": 8,
@@ -76,7 +76,7 @@
       "description": "칼라출력 + 코팅",
       "category": "메뉴판",
       "image": "images/portfolio/메뉴판-1.jpg",
-      "alt": "메뉴판"
+      "alt": "컬러 출력 코팅 마감 음식점 메뉴판"
     },
     {
       "id": 9,
@@ -84,7 +84,7 @@
       "description": "고급 코팅 마감",
       "category": "메뉴판",
       "image": "images/portfolio/메뉴판-2.jpg",
-      "alt": "메뉴판"
+      "alt": "고급 코팅 마감 처리된 메뉴판"
     },
     {
       "id": 10,
@@ -92,7 +92,7 @@
       "description": "다양한 사이즈 지원",
       "category": "메뉴판",
       "image": "images/portfolio/메뉴판-3.jpg",
-      "alt": "메뉴판"
+      "alt": "다양한 사이즈의 맞춤형 메뉴판"
     },
     {
       "id": 11,
@@ -100,7 +100,7 @@
       "description": "고급 마감 처리",
       "category": "메뉴판",
       "image": "images/portfolio/메뉴판-4.jpg",
-      "alt": "메뉴판"
+      "alt": "고급 마감 처리된 레스토랑 메뉴판"
     },
     {
       "id": 12,
@@ -108,7 +108,7 @@
       "description": "저렴한 메뉴판 제작",
       "category": "메뉴판",
       "image": "images/portfolio/메뉴판-5.jpg",
-      "alt": "메뉴판"
+      "alt": "경제적인 가격의 메뉴판 제작물"
     },
     {
       "id": 13,
@@ -116,7 +116,7 @@
       "description": "표지칼라 무광코팅",
       "category": "무선제본",
       "image": "images/portfolio/무선제본-1.jpg",
-      "alt": "무선제본"
+      "alt": "표지 컬러 무광코팅 무선제본 책자"
     },
     {
       "id": 14,
@@ -124,7 +124,7 @@
       "description": "책자형 제본",
       "category": "무선제본",
       "image": "images/portfolio/무선제본-2.jpg",
-      "alt": "무선제본"
+      "alt": "깔끔한 책자형 무선제본 완성본"
     },
     {
       "id": 15,
@@ -132,7 +132,7 @@
       "description": "고급 마감처리",
       "category": "무선제본",
       "image": "images/portfolio/무선제본-3.jpg",
-      "alt": "무선제본"
+      "alt": "고급 마감 처리된 무선제본 서적"
     },
     {
       "id": 16,
@@ -140,7 +140,7 @@
       "description": "대량 제작 가능",
       "category": "무선제본",
       "image": "images/portfolio/무선제본-4.jpg",
-      "alt": "무선제본"
+      "alt": "대량 제작 무선제본 납품물"
     },
     {
       "id": 17,
@@ -148,7 +148,7 @@
       "description": "맞춤형 옵션",
       "category": "무선제본",
       "image": "images/portfolio/무선제본-5.jpg",
-      "alt": "무선제본"
+      "alt": "맞춤형 옵션 적용 무선제본 책자"
     },
     {
       "id": 18,
@@ -156,7 +156,7 @@
       "description": "앞뒤 PP필름 포함",
       "category": "스프링제본",
       "image": "images/portfolio/스프링제본-1.jpg",
-      "alt": "스프링제본"
+      "alt": "PP필름 표지 스프링제본 문서"
     },
     {
       "id": 19,
@@ -164,7 +164,7 @@
       "description": "다양한 색상 선택 가능",
       "category": "스프링제본",
       "image": "images/portfolio/스프링제본-2.jpg",
-      "alt": "스프링제본"
+      "alt": "다양한 색상 스프링 선택 가능한 제본"
     },
     {
       "id": 20,
@@ -172,7 +172,7 @@
       "description": "대량 주문 가능",
       "category": "스프링제본",
       "image": "images/portfolio/스프링제본-3.jpg",
-      "alt": "스프링제본"
+      "alt": "대량 주문 스프링제본 작업물"
     },
     {
       "id": 21,
@@ -180,7 +180,7 @@
       "description": "고급 표지 옵션",
       "category": "스프링제본",
       "image": "images/portfolio/스프링제본-4.jpg",
-      "alt": "스프링제본"
+      "alt": "고급 표지 적용 스프링제본 완성본"
     },
     {
       "id": 22,
@@ -188,7 +188,7 @@
       "description": "내구성 높은 마감",
       "category": "스프링제본",
       "image": "images/portfolio/스프링제본-5.jpg",
-      "alt": "스프링제본"
+      "alt": "내구성 높은 마감의 스프링제본"
     },
     {
       "id": 23,
@@ -196,7 +196,7 @@
       "description": "고급 제본",
       "category": "제안서",
       "image": "images/portfolio/제안서-1.jpg",
-      "alt": "제안서"
+      "alt": "고급 제본 마감 기업 제안서"
     },
     {
       "id": 24,
@@ -204,7 +204,7 @@
       "description": "맞춤형 제작",
       "category": "제안서",
       "image": "images/portfolio/제안서-2.jpg",
-      "alt": "제안서"
+      "alt": "맞춤형 디자인 제안서 제본"
     },
     {
       "id": 25,
@@ -212,7 +212,7 @@
       "description": "고급 표지 옵션",
       "category": "제안서",
       "image": "images/portfolio/제안서-3.jpg",
-      "alt": "제안서"
+      "alt": "고급 표지 옵션 적용 제안서"
     },
     {
       "id": 26,
@@ -220,7 +220,7 @@
       "description": "기업 맞춤형",
       "category": "제안서",
       "image": "images/portfolio/제안서-4.jpg",
-      "alt": "제안서"
+      "alt": "기업 맞춤형 제안서 전문 제본"
     },
     {
       "id": 27,
@@ -228,7 +228,7 @@
       "description": "대량시 표지 선택가능",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-1.jpg",
-      "alt": "책자제작"
+      "alt": "맞춤 표지 선택 가능한 책자 제작"
     },
     {
       "id": 28,
@@ -236,7 +236,7 @@
       "description": "예약시 당일 작업 가능",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-2.jpg",
-      "alt": "책자제작"
+      "alt": "당일 작업 완료 책자 제본"
     },
     {
       "id": 29,
@@ -244,7 +244,7 @@
       "description": "다양한 제본 방식",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-3.jpg",
-      "alt": "책자제작"
+      "alt": "다양한 제본 방식의 책자 완성본"
     },
     {
       "id": 30,
@@ -252,7 +252,7 @@
       "description": "맞춤형 표지 디자인",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-4.jpg",
-      "alt": "책자제작"
+      "alt": "맞춤형 표지 디자인 책자"
     },
     {
       "id": 31,
@@ -260,7 +260,7 @@
       "description": "고급 인쇄",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-5.jpg",
-      "alt": "책자제작"
+      "alt": "고급 인쇄 품질의 책자 제작물"
     },
     {
       "id": 32,
@@ -268,7 +268,7 @@
       "description": "대량시 표지 선택가능",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-6.jpg",
-      "alt": "책자제작"
+      "alt": "대량 주문 맞춤 표지 책자"
     },
     {
       "id": 33,
@@ -276,7 +276,7 @@
       "description": "예약시 당일 작업 가능",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-7.jpg",
-      "alt": "책자제작"
+      "alt": "예약 당일 작업 책자 제본 완성"
     },
     {
       "id": 34,
@@ -284,7 +284,7 @@
       "description": "다양한 제본 방식",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-8.jpg",
-      "alt": "책자제작"
+      "alt": "다양한 제본 방식 적용 책자"
     },
     {
       "id": 35,
@@ -292,7 +292,7 @@
       "description": "맞춤형 표지 디자인",
       "category": "책자제작",
       "image": "images/portfolio/책자제작-9.jpg",
-      "alt": "책자제작"
+      "alt": "맞춤형 표지 디자인 책자 완성본"
     },
     {
       "id": 36,
@@ -300,7 +300,7 @@
       "description": "중앙절취선 포함",
       "category": "카드.초대장",
       "image": "images/portfolio/카드.초대장-1.jpg",
-      "alt": "카드/초대장"
+      "alt": "중앙 절취선 포함 초대장 인쇄물"
     },
     {
       "id": 37,
@@ -308,7 +308,7 @@
       "description": "엽서타입",
       "category": "카드.초대장",
       "image": "images/portfolio/카드.초대장-2.jpg",
-      "alt": "카드/초대장"
+      "alt": "엽서 타입 카드 인쇄 완성본"
     },
     {
       "id": 38,
@@ -316,7 +316,7 @@
       "description": "맞춤형 디자인",
       "category": "카드.초대장",
       "image": "images/portfolio/카드.초대장-3.jpg",
-      "alt": "카드/초대장"
+      "alt": "맞춤형 디자인 초대장 제작"
     },
     {
       "id": 39,
@@ -324,7 +324,7 @@
       "description": "고급 용지",
       "category": "카드.초대장",
       "image": "images/portfolio/카드.초대장-4.jpg",
-      "alt": "카드/초대장"
+      "alt": "고급 용지 카드 초대장 인쇄"
     },
     {
       "id": 40,
@@ -332,7 +332,7 @@
       "description": "고급 용지 옵션",
       "category": "탁상달력",
       "image": "images/portfolio/탁상달력-1.jpg",
-      "alt": "탁상달력"
+      "alt": "고급 용지 맞춤 탁상달력 제작"
     },
     {
       "id": 41,
@@ -340,7 +340,7 @@
       "description": "맞춤형 디자인",
       "category": "탁상달력",
       "image": "images/portfolio/탁상달력-2.jpg",
-      "alt": "탁상달력"
+      "alt": "맞춤형 디자인 탁상달력 완성본"
     },
     {
       "id": 42,
@@ -348,7 +348,7 @@
       "description": "기업 로고 인쇄",
       "category": "탁상달력",
       "image": "images/portfolio/탁상달력-3.jpg",
-      "alt": "탁상달력"
+      "alt": "기업 로고 인쇄 탁상달력"
     },
     {
       "id": 43,
@@ -356,7 +356,7 @@
       "description": "고급 인쇄",
       "category": "팜플렛.전단지",
       "image": "images/portfolio/팜플렛.전단지-1.jpg",
-      "alt": "팜플렛/전단지"
+      "alt": "고급 컬러 인쇄 팜플렛"
     },
     {
       "id": 44,
@@ -364,7 +364,7 @@
       "description": "맞춤형 디자인",
       "category": "팜플렛.전단지",
       "image": "images/portfolio/팜플렛.전단지-2.jpg",
-      "alt": "팜플렛/전단지"
+      "alt": "맞춤형 디자인 전단지 인쇄물"
     },
     {
       "id": 45,
@@ -372,7 +372,7 @@
       "description": "고급 제작",
       "category": "포토폴리오",
       "image": "images/portfolio/포토폴리오-1.jpg",
-      "alt": "포토폴리오"
+      "alt": "고급 제작 사진 포트폴리오 북"
     },
     {
       "id": 46,
@@ -380,7 +380,7 @@
       "description": "맞춤형 디자인",
       "category": "포토폴리오",
       "image": "images/portfolio/포토폴리오-2.jpg",
-      "alt": "포토폴리오"
+      "alt": "맞춤형 디자인 포트폴리오 제본"
     },
     {
       "id": 47,
@@ -388,7 +388,7 @@
       "description": "고급 용지 옵션",
       "category": "포토폴리오",
       "image": "images/portfolio/포토폴리오-3.jpg",
-      "alt": "포토폴리오"
+      "alt": "고급 용지 포트폴리오 완성본"
     }
   ]
 }
